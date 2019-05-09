@@ -137,36 +137,36 @@
     </ol> 
   </div>
 	<section>
-		<%
+		<%-- 
 		int size= mainList.size(); /*size메소드 : 확장개체집합의 개수표시*/
 		if(size != 0 && size >0){
-		%>
+		--%>
 		<table>
 			<tr>
-			<%
+			<%--
 				for(int i=0; i<size; i++){
 					productList pList = mainList.get(i);
-			%>
+			--%>
 			<!-- <td> -->
 			<table border="1">
 				<tr>
 					<td align="center"><a href=""><img src =""> width="40%"></a></td>	
 				</tr>
 				<tr>
-					<td align="center"><a href=""><%=pList.getPname() %><br><color="red" text-decoration="line-through"><%=pList.getPrice() %>원<br><%=pList.getNPrice() %>원</a></td>
+					<td align="center"><a href=""><%--=pList.getPname() --%><br><color="red" text-decoration="line-through"><%--=pList.getPrice() --%>원<br><%--=pList.getNPrice() --%>원</a></td>
 				</tr>
 			</table>
-			<%
+			<%--
 				if(i % 4 ==3){
-			%>
+			--%>
 				</tr>
 				<tr>
-			<% 
+			<%--
 				}
 				}
 			
-			} %>
-		</table> --%>
+			} --%>
+		</table>
 		<br>
 		<div class = "totalList">
 		

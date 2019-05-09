@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"%>
-<% 
+    pageEncoding="UTF-8" %>
+<%-- import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*" --%>    
+<%--
 	int count = 1;
 	
 	/* Product productList = (Product) session.getAttribute("productList");
@@ -11,13 +12,12 @@
 	
 	ArrayList<Product> list = new ArrayList<Product>();
 	list.add(new Product()); */
-%>
+--%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="/jootopia/images/favicon.ico">
-<!-- <link rel="stylesheet" href="/jootopia/js/external/jquery-3.4.0.min.js"> -->
 <link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
