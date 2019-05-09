@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+
+html, body{
+	height : 100%;
+}
+.row {
+	width: 100%;
+	margin: auto;
+}
+
+
+/* adminNavigation css */
+.col-lg-1 {
+	cursor: pointer;
+}
+#navHomeBtn {
+	width: 35px;
+    height: auto;
+}
+
+
+/* 건수 출력 테이블 css */
+#listArea {
+	background: rgb(224, 224, 224);
+	padding: 1em;
+	text-align: center;
+	width: 100%;
+}
+#listArea a {
+	color: rgb(52, 152, 219);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+/* 검색조건 테이블 css */
+.searchArea {
+	padding: 1em;
+	width: 100%;
+}
+#searchBox {
+	width: 100%;
+	border: 1px rgb(224, 224, 224);
+}
+#searchBtnArea>input {
+	width: 90px;
+	height: 35px;
+	border: none;
+	background: rgb(224, 224, 224);
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#searchBtnArea>input:hover {
+	background: rgb(92, 55, 39);
+	color: white;
+}
+#searchBox tr td:nth-child(2n-1) {
+	text-align: center;
+}
+#searchBox tr td {
+	height: 33px;
+}
+tr td select {
+	width: 150px;
+}
+#selectDate .btnDate {
+	background: rgb(224, 224, 224);
+	color: black;
+	padding: 2px;
+	margin-left: 5px;
+	border-radius: 3px;
+}
+#selectDate>.btnDate.selected {
+	background: rgb(241, 196, 15);
+	
+}
+#selectDate input[type=date] {
+	height: 25px;
+}
+
+
+/* adminSideMenu css */
+.col-sm-2 {
+	width: 15%;
+	height: 100%;
+	background: rgba(53, 15, 15, 0.27);
+	border-bottom: none;
+	z-index: auto;
+	padding-bottom: 100%;
+	padding-top: 0.5%;
+	padding-left: inherit;
+	padding-right: inherit;
+}
+.sideMenuImg {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4%;
+	width: 70%;
+}
+.sideMenu {
+	width: 100%;
+	height: 60px;
+	background: rgba(255, 255, 255, 0.5);
+	color: white;
+	cursor: pointer;
+	padding-top: 10px;
+}
+.sideMenuBtn {
+	width: 90%;
+	align-content: center;
+	padding: 10px;
+	font-size: 1.5rem;
+	background: rgb(190, 190, 190);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px; 
+	padding: 10px;
+}
+.sideMenuBtn:hover {
+	background: rgb(189, 126, 98);
+}

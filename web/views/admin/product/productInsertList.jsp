@@ -1,16 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.Product, java.util.*, java.lang.*"%>
+    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"%>
 <% 
-	Product productList = (Product) session.getAttribute("productList");
+	int count = 1;
+	
+	/* Product productList = (Product) session.getAttribute("productList");
 	java.util.Date date = new java.util.Date();
 	java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd");
 	String startDay = dateFormat.format(date);
 	String endDay = dateFormat.format(date);
 	
-	int count = 1;
-	
 	ArrayList<Product> list = new ArrayList<Product>();
-	list.add(new Product());
+	list.add(new Product()); */
 %>
 <!DOCTYPE html>
 <html>
@@ -38,51 +38,49 @@
 		
 		<div class="selectTopList">
 		<span>미등록 상품</span><br>
-		<span>[총 <a style="color: rgb(243, 156, 18);"><%= list.size() %></a>개]</span>
+		<span>[총 <a style="color: rgb(243, 156, 18);"><%= 1 %></a>개]</span>
 		</div>
 		
 		<br>
 		
 		<div class="selectListArea">
-			<form action="" method="post">
-				<table id="selectList" class="selectList" border="1">
-					<tr>
-						<th colspan="9" style="height: 45px; text-align: left;">
-							<button class="selectBtn" onclick="pTypeChange('상품 등록')">상품 등록</button>
-							<button class="selectBtn" onclick="pTypeChange('상품 삭제')">상품 삭제</button>
-						</th>
-					</tr>
-					<tr>
-						<th width="25px"><input type="checkbox" id="allCheck"></th>
-						<th width="25px">No</th>
-						<th width="70px">상품상태</th>
-						<th width="90px">상품분류</th>
-						<th width="150px">상품코드</th>
-						<th width="70px">상품이미지</th>
-						<th width="300px">상품명</th>
-						<th width="100px">판매가(원)</th>
-						<th width="100px">할인가(%)</th>
-					</tr>
-					<% for(Product p : list) { %>
-					<tr>
-						<td ><input type="checkbox"></td>
-						<td><%= count++ %></td>
-						<td >상태임시</td>
-						<td>분류/임시</td>
-						<td><a href="../product/productInsertForm.jsp">상품코드 임시</a></td>
-						<td><img src="/jootopia/images/logo.png" width="60px" height="60px"></td>
-						<td><a href="#">상품명 임시</a></td>
-						<td>판매가 임시</td>
-						<td>할인가 임시</td>
-					</tr>
-					<% } %>
-				</table>
-			</form>
+			<table id="selectList" class="selectList" border="1">
+				<tr>
+					<th colspan="9" style="height: 45px; text-align: left;">
+						<button class="selectBtn" onclick="pTypeChange('상품 등록')">상품 등록</button>
+						<button class="selectBtn" onclick="pTypeChange('상품 삭제')">상품 삭제</button>
+					</th>
+				</tr>
+				<tr>
+					<th width="25px"><input type="checkbox" id="allCheck"></th>
+					<th width="25px">No</th>
+					<th width="70px">상품상태</th>
+					<th width="90px">상품분류</th>
+					<th width="150px">상품코드</th>
+					<th width="70px">상품이미지</th>
+					<th width="300px">상품명</th>
+					<th width="100px">판매가(원)</th>
+					<th width="100px">할인가(%)</th>
+				</tr>
+				<%-- <% for(Product p : list) { %>
+				<tr>
+					<td ><input type="checkbox"></td>
+					<td><%= count++ %></td>
+					<td >상태임시</td>
+					<td>분류/임시</td>
+					<td><a href="../product/productInsertForm.jsp">상품코드 임시</a></td>
+					<td><img src="/jootopia/images/logo.png" width="60px" height="60px"></td>
+					<td><a href="#">상품명 임시</a></td>
+					<td>판매가 임시</td>
+					<td>할인가 임시</td>
+				</tr>
+				<% } %> --%>
+			</table>
 		
 	</div> <!-- selectListArea -->
-		
 	</div> <!-- col-sm-10 -->
 	</section>
+	
 <%@ include file="/views/common/adminFooter.jsp" %>
 
 <script>
@@ -101,7 +99,7 @@
 		}else {
 			$("input[type=checkBox]").prop("checked", false);
 		}
-	})
+	});
 </script>
 </body>
 </html>

@@ -131,27 +131,28 @@
 				</div>
 				</td>
 			</tr>
-		</table>
-		</div>
+		</table> <!-- pInfo4 -->
+		</div> <!-- pInfo4Area -->
 		
 		<br>
 		
 		<div class="btnArea" align="center">
 			<button type="submit" onclick="location.href='productInsertList.jsp'">등록</button>
 			<button type="reset" onclick="location.href='productInsertList.jsp'">취소</button>
-		</div>
+		</div> <!-- btnArea -->
 		
 		<div id="fileArea" align="center">
 				<input type="file" id="mainImg" name="mainImg">
 				<!-- onchange="loadImg(this, 1);" -->
 				<input type="file" id="detailImg" name="detailImg">
 				<!--  onchange="loadImg(this, 2);" -->
-		</div>
+		</div> <!-- fileArea -->
+		
 		
 		</form>
 		</div> <!-- col-sm-10 -->
-	</section>
 	
+	</section>
 <%@ include file="/views/common/adminFooter.jsp" %>
 
 <!-- The Modal -->

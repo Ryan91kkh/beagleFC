@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.*, java.lang.*, com.kh.jooTopia.order.model.vo.Order"%>
+    pageEncoding="UTF-8" import="java.util.*, java.lang.*, com.kh.jooTopia.order.model.vo.*"%>
 <%
-	ArrayList<Order> list = new ArrayList<Order>();
-	list.add(new Order());
+	/* ArrayList<Order> list = new ArrayList<Order>();
+	list.add(new Order()); */
 %>
 <!DOCTYPE html>
 <html>
@@ -74,43 +74,41 @@
 		<br><br>
 		
 		<div class="selectListArea">
-			<form action="" method="post">
-				<table id="selectList" class="selectList" border="1">
-					<tr>
-						<th colspan="7">주문내역</th>
-					</tr>
-					<tr>
-						<th width="25px"><input type="checkbox" id="allCheck"></th>
-						<th width="200px">품목별 주문번호</th>
-						<th width="150px">상품명</th>
-						<th width="30px">수량</th>
-						<th width="100px">판매가(원)</th>
-						<th width="100px">배송비(원)</th>
-						<th width="100px">주문상태</th>
-					</tr>
-					<% for(Order o : list) { %>
-					<tr>
-						<td><input type="checkbox"></td>
-						<td>품목별 주문번호</td>
-						<td><a href="../product/productInfo.jsp">상품명</a></td>
-						<td>수량</td>
-						<td>판매가</td>
-						<td>배송비</td>
-						<td>주문상태</td>
-					</tr>
-					<% } %>
-					<tr>
-						<th colspan="4">계</th>
-						<th><%= "판매가 총액 임시" %></th>
-						<th><%= "배송비 총액 임시" %></th>
-						<th></th>
-					</tr>
-				</table>
-				<div>
-					<br>
-					<button class="selectBtn" onclick="pTypeChange('배송완료')">배송완료</button>
-				</div>
-			</form>
+			<table id="selectList" class="selectList" border="1">
+				<tr>
+					<th colspan="7">주문내역</th>
+				</tr>
+				<tr>
+					<th width="25px"><input type="checkbox" id="allCheck"></th>
+					<th width="200px">품목별 주문번호</th>
+					<th width="150px">상품명</th>
+					<th width="30px">수량</th>
+					<th width="100px">판매가(원)</th>
+					<th width="100px">배송비(원)</th>
+					<th width="100px">주문상태</th>
+				</tr>
+				<%-- <% for(Order o : list) { %>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>품목별 주문번호</td>
+					<td><a href="../product/productInfo.jsp">상품명</a></td>
+					<td>수량</td>
+					<td>판매가</td>
+					<td>배송비</td>
+					<td>주문상태</td>
+				</tr>
+				<% } %> --%>
+				<tr>						
+					<th colspan="4">계</th>
+					<th><%= "판매가 총액 임시" %></th>
+					<th><%= "배송비 총액 임시" %></th>
+					<th></th>
+				</tr>
+			</table>
+			<div>
+				<br>
+				<button class="selectBtn" onclick="pTypeChange('배송완료')">배송완료</button>
+			</div>
 		</div>
 		
 		<br><br>

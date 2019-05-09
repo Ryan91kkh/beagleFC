@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.*, java.lang.*, com.kh.jooTopia.order.model.vo.Order"%>
+    pageEncoding="UTF-8" import="java.util.*, java.lang.*, com.kh.jooTopia.order.model.vo.*"%>
 <%
-	ArrayList<Order> list = new ArrayList<Order>();
-	list.add(new Order());
+	/* ArrayList<Order> list = new ArrayList<Order>();
+	list.add(new Order()); */
 %>
 <!DOCTYPE html>
 <html>
@@ -69,7 +69,7 @@
 						<th width="100px">배송비(원)</th>
 						<th width="100px">주문상태</th>
 					</tr>
-					<% for(Order o : list) { %>
+					<%-- <% for(Order o : list) { %>
 					<tr>
 						<td><input type="checkbox"></td>
 						<td>품목별 주문번호</td>
@@ -79,7 +79,7 @@
 						<td>배송비</td>
 						<td>주문상태</td>
 					</tr>
-					<% } %>
+					<% } %> --%>
 					<tr>
 						<th colspan="4">계</th>
 						<th><%= "판매가 총액 임시" %></th>

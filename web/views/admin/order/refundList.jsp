@@ -1,18 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.Product, java.util.*, java.lang.*"%>
+    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"%>
 <%
-	Product productList = (Product) session.getAttribute("productList");
+	int count = 1;
+	String memo = "배송메시지 임시";
+	
+	/* Product productList = (Product) session.getAttribute("productList");
 	java.util.Date date = new java.util.Date();
 	java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd");
 	String startDay = dateFormat.format(date);
 	String endDay = dateFormat.format(date);
 	
-	int count = 1;
-	
 	ArrayList<Product> list = new ArrayList<Product>();
-	list.add(new Product());
-	/* list.add(new Product("판매안함", "침실", "침대", "B00000001", "보송보송 침대", 300000, 0.2)) */;
-	String memo = "배송메시지 임시";
+	list.add(new Product()); */
 %>
 <!DOCTYPE html>
 <html>
@@ -75,8 +74,8 @@ br
 						<a href="#" class="btnDate" period="90"><span>3개월</span></a>
 						<a href="#" class="btnDate" period="365"><span>1년</span></a>
 						<a href="#" class="btnDate" period="-1"><span>전체</span></a>
-						<input type="date" id="startDate" name="startDate" class="date" value="<%= startDay %>"> ~ 
-						<input type="date" id="endDate" name="endDate" class="date" value="<%= endDay %>">
+						<input type="date" id="startDate" name="startDate" class="date" value=""> ~ 
+						<input type="date" id="endDate" name="endDate" class="date" value="">
 					</td>
 				</tr>
 				<tr>
@@ -88,8 +87,8 @@ br
 						<a href="#" class="btnDate" period="90"><span>3개월</span></a>
 						<a href="#" class="btnDate" period="365"><span>1년</span></a>
 						<a href="#" class="btnDate" period="-1"><span>전체</span></a>
-						<input type="date" id="startDate" name="startDate" class="date" value="<%= startDay %>"> ~ 
-						<input type="date" id="endDate" name="endDate" class="date" value="<%= endDay %>">
+						<input type="date" id="startDate" name="startDate" class="date" value=""> ~ 
+						<input type="date" id="endDate" name="endDate" class="date" value="">
 					</td>
 				</tr>
 				<tr>
@@ -114,46 +113,44 @@ br
 		
 		<div class="selectTopList">
 		<span>주문 목록</span><br>
-		<span>[총 <a style="color: rgb(243, 156, 18);"><%= list.size() %></a>개]</span>
+		<span>[총 <a style="color: rgb(243, 156, 18);"><%= 1 %></a>개]</span>
 		</div>
 		
 		<br>
 		
 		<div class="selectListArea">
-			<form action="" method="post">
-				<table id="selectList" class="selectList" border="1">
-					<tr>
-						<th colspan="9" style="height: 45px; text-align: left;">
-							<button class="selectBtn" onclick="oTypeChange('환불완료')">환불완료</button>
-							<button class="selectBtn" onclick="oTypeChange('환불거절')">환불거절</button>
-						</th>
-					</tr>
-					<tr>
-						<th width="25px"><input type="checkbox" id="allCheck"></th>
-						<th width="25px">No</th>
-						<th width="70px">주문상태</th>
-						<th width="150px">주문일/주문코드</th>
-						<th width="150px">결제일/결제코드</th>
-						<th width="70px">주문자</th>
-						<th width="200px">상품명</th>
-						<th width="100px">취소금액</th>
-						<th width="100px">취소사유</th>
-					</tr>
-					<% for(Product p : list) { %>
-					<tr>
-						<td ><input type="checkbox"></td>
-						<td><%= count++ %></td>
-						<td >주문상태</td>
-						<td>주문일<br>/주문코드</td>
-						<td>결제일<br>/결제코드</td>
-						<td>주문자</td>
-						<td>상품명</td>
-						<td><a id="cancelPrice">취소금액</a></td>
-						<td><div id="memo" class="memo">MEMO</div></td>
-					</tr>
-					<% } %>
-				</table>
-			</form>
+			<table id="selectList" class="selectList" border="1">
+				<tr>
+					<th colspan="9" style="height: 45px; text-align: left;">
+						<button class="selectBtn" onclick="oTypeChange('환불완료')">환불완료</button>
+						<button class="selectBtn" onclick="oTypeChange('환불거절')">환불거절</button>
+					</th>
+				</tr>
+				<tr>
+					<th width="25px"><input type="checkbox" id="allCheck"></th>
+					<th width="25px">No</th>
+					<th width="70px">주문상태</th>
+					<th width="150px">주문일/주문코드</th>
+					<th width="150px">결제일/결제코드</th>
+					<th width="70px">주문자</th>
+					<th width="200px">상품명</th>
+					<th width="100px">취소금액</th>
+					<th width="100px">취소사유</th>
+				</tr>
+				<%-- <% for(Product p : list) { %>
+				<tr>
+					<td ><input type="checkbox"></td>
+					<td><%= count++ %></td>
+					<td >주문상태</td>
+					<td>주문일<br>/주문코드</td>
+					<td>결제일<br>/결제코드</td>
+					<td>주문자</td>
+					<td>상품명</td>
+					<td><a id="cancelPrice">취소금액</a></td>
+					<td><div id="memo" class="memo">MEMO</div></td>
+				</tr>
+				<% } %> --%>
+			</table>
 		
 	</div> <!-- selectListArea -->
 		

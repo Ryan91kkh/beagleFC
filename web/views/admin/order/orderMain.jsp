@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -28,31 +29,31 @@
 		<table id="pInfo1">
 			<tr>
 				<th>전체</th>
-				<td><a href="/jootopia/views/admin/product/productList.jsp">10</a>건</td>
+				<td><a href="/jootopia/views/admin/order/productList.jsp">10</a>건</td>
 			</tr>
 			<tr>
 				<th>입금전</th>
-				<td><a href="">10</a>건</td>
+				<td><a href="/jootopia/views/admin/order/paymentList.jsp">10</a>건</td>
 			</tr>
 			<tr>
 				<th>상품준비중</th>
-				<td><a href="">10</a>건</td>
-			</tr>
-			<tr>
-				<th>배송준비중</th>
-				<td><a href="">10</a>건</td>
+				<td><a href="/jootopia/views/admin/order/preparingProductList.jsp">10</a>건</td>
 			</tr>
 			<tr>
 				<th>배송중</th>
-				<td><a href="">10</a>건</td>
+				<td><a href="/jootopia/views/admin/order/shippingList.jsp">10</a>건</td>
 			</tr>
 			<tr>
 				<th>배송완료</th>
-				<td><a href="">10</a>건</td>
+				<td><a href="/jootopia/views/admin/order/deliveryCompletedList.jsp">10</a>건</td>
+			</tr>
+			<tr>
+				<th>주문취소</th>
+				<td><a href="/jootopia/views/admin/order/orderCancelList.jsp">10</a>건</td>
 			</tr>
 			<tr>
 				<th>환불중</th>
-				<td><a href="">10</a>건</td>
+				<td><a href="/jootopia/views/admin/order/refundList.jsp">10</a>건</td>
 			</tr>
 		</table>
 		</div>

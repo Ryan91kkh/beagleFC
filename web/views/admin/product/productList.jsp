@@ -1,17 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%> <%-- import="com.kh.jooTopia.product.model.vo.Product"
-    import="java.util.*, java.lang.*" --%>
-    %>
-<%-- <%
-	Product productList = (Product) session.getAttribute("productList");
+    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"%>
+<%
+	int count = 1;
+	/* Product productList = (Product) session.getAttribute("productList");
+
 	java.util.Date date = new java.util.Date();
 	java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd");
 	String startDay = dateFormat.format(date);
 	String endDay = dateFormat.format(date);
 	
 	ArrayList<Product> list = new ArrayList<Product>();
-	list.add(new Product("판매안함", "침실", "침대", "B00000001", "보송보송 침대", 300000, 0.2));
 %> --%>
+
+	list.add(new Product()); */
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +56,7 @@
 				<tr>
 					<td>검색 분류</td>
 					<td colspan="2">
-						&nbsp;<select id="searchCondition" >
+						<select id="searchCondition">
 							<option value="pName">상품명
 							<option value="pCode">상품코드
 							<option value="userName">주문자명
@@ -66,7 +69,7 @@
 				<tr>
 					<td>상품 카테고리</td>
 					<td colspan="2">
-						&nbsp;<select id="searchCategory" onchange="smallCategoty(this.value)">
+						<select id="searchCategory" onchange="smallCategoty(this.value)">
 							<option value="">- 대분류 -
 							<option value="bedRoom">침실
 							<option value="livingRoom">거실
@@ -81,22 +84,22 @@
 				<tr>
 					<td>상품 등록일</td>
 					<td id="selectDate" colspan="2">
-						&nbsp;<a href="#" class="btnDate" period="0"><span>오늘</span></a>
+						<a href="#" class="btnDate" period="0"><span>오늘</span></a>
 						<a href="#" class="btnDate" period="7"><span>7일</span></a>
 						<a href="#" class="btnDate" period="30"><span>1개월</span></a>
 						<a href="#" class="btnDate" period="90"><span>3개월</span></a>
 						<a href="#" class="btnDate" period="365"><span>1년</span></a>
-						<a href="#" class="btnDate" period="-1"><span>전체</span></a> &nbsp;&nbsp;
-						<input type="date" id="startDate" name="startDate" class="date" value="<%= startDay %>"> ~ 
-						<input type="date" id="endDate" name="endDate" class="date" value="<%= endDay %>">
+						<a href="#" class="btnDate" period="-1"><span>전체</span></a>
+						<input type="date" id="startDate" name="startDate" class="date" value="<%= new Date() %>"> ~ 
+						<input type="date" id="endDate" name="endDate" class="date" value="<%= new Date() %>">
 					</td>
 				</tr>
 				<tr>
 					<td>상품 상태</td>
 					<td colspan="2">
-						&nbsp;<input type="radio" name="pType" id="all"><label>전체</label>
-						<input type="radio" name="pType" id=""><label>판매중</label>
-						<input type="radio" name="pType" id=""><label>판매안함</label>
+						<input type="radio" name="pType" id="all"><label for="all">전체</label>
+						<input type="radio" name="pType" id="onSale"><label for="onSale">판매중</label>
+						<input type="radio" name="pType" id="soldOut"><label for="soldOut">판매안함</label>
 					</td>
 				</tr>
 			</table>
@@ -111,40 +114,53 @@
 		
 		<br><br><br><br>
 		
+		<div class="selectTopList">
 		<span>상품 목록</span><br>
-		<span>[총 <a><%= list.size() %></a>개]</span>
+		<span>[총 <a style="color: rgb(243, 156, 18);"><%= 1 %></a>개]</span>
+		</div>
 		
 		<br>
 		
-		<form>
-			<table id="searchList" border="1">
+		<div class="selectListArea">
+			<table id="selectList" class="selectList" border="1">
 				<tr>
-					<td colspan="9">
-						<button onclick="pTypeChange('판매 등록')">판매 등록</button>&nbsp;
-						<button onclick="pTypeChange('판매 안함')">판매 안함</button>&nbsp;
-						<button onclick="pTypeChange('상품 삭제')">상품 삭제</button>
-					</td>
+					<th colspan="9" style="height: 45px; text-align: left;">
+						<button class="selectBtn" onclick="pTypeChange('판매 등록')">판매 등록</button>
+						<button class="selectBtn" onclick="pTypeChange('판매 안함')">판매 안함</button>
+						<button class="selectBtn" onclick="pTypeChange('상품 삭제')">상품 삭제</button>
+					</th>
 				</tr>
 				<tr>
-					<th><input type="checkbox" class="allCheck"></th>
-					<th>No</th>
-					<th>상품상태</th>
-					<th>상품분류</th>
-					<th>상품코드</th>
-					<th>상품이미지</th>
-					<th>상품명</th>
-					<th>판매가(원)</th>
-					<th>할인가(%)</th>
+					<th width="25px"><input type="checkbox" id="allCheck"></th>
+					<th width="25px">No</th>
+					<th width="70px">상품상태</th>
+					<th width="90px">상품분류</th>
+					<th width="150px">상품코드</th>
+					<th width="70px">상품이미지</th>
+					<th width="300px">상품명</th>
+					<th width="100px">판매가(원)</th>
+					<th width="100px">할인가(%)</th>
 				</tr>
+				<%-- <% for(Product p : list) { %>
+				<tr>
+					<td ><input type="checkbox"></td>
+					<td><%= count++ %></td>
+					<td >상태임시</td>
+					<td>분류/임시</td>
+					<td><a href="../product/productInfo.jsp">상품코드 임시</a></td>
+					<td><img src="/jootopia/images/logo.png" width="60px" height="60px"></td>
+					<td><a href="#">상품명 임시</a></td>
+					<td>판매가 임시</td>
+					<td>할인가 임시</td>
+				</tr>
+				<% } %> --%>
 			</table>
-		</form>
-	</div> <!-- col-sm-10 -->
 		
+	</div> <!-- selectListArea -->
+	</div> <!-- col-sm-10 -->
 	</section>
 	
 	<%@ include file="/views/common/adminFooter.jsp" %>
-	
-	<!--  -->
 	
 	<script>
 		function smallCategoty(big) {
@@ -172,8 +188,8 @@
 			for(var i = 0; i < smallCategory.length; i++) {
 				var option = $("<option>" + smallCategory[i] + "</option>");
 				$("#small").append(option);
-			}
-		}
+			};
+		};
 		
 		$(".btnDate").click(function() {
 			
@@ -181,7 +197,7 @@
 			$("#selectDate>a").addClass("btnDate");
 			$(this).toggleClass("selected");
 			
-		})
+		});
 		
 		function pTypeChange(text) {
 			var answer = window.confirm("선택한 상품을 " + text + " 하시겠습니까?");
@@ -189,12 +205,11 @@
 			if(answer) {
 				alert("해당상품을 " + text + " 처리 하였습니다.");
 			}
-		}
+		};
 		
 		function select() {
-			console.log("실행");
 			location.href="<%= request.getContextPath() %>/selectProduct";
-		}
+		};
 		
 		$(function() {
 			$(".btnDate").click(function() {
@@ -214,10 +229,25 @@
 				var changeDay = $("#endDate").val() + $(this).attr("period");
 				console.log(changeDay);
 				$("#endDate").val(changeDay); */
-			})
-		})
+				
+			});
+		});
+		
+		$("#allCheck").click(function() {
+			
+			if($("#allCheck").prop("checked")) {
+				$("input[type=checkBox]").prop("checked", true);
+			}else {
+				$("input[type=checkBox]").prop("checked", false);
+			}
+		});
+		
+		$("td")>$("label").click(function() {
+			$(this).css("color", "red");
+			
+		});
+		
 	</script>
 	
 </body>
-
 </html>

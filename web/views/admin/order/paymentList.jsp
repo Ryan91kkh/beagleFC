@@ -1,18 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.Product, java.util.*, java.lang.*"%>
+    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"%>
 <%
-	Product productList = (Product) session.getAttribute("productList");
+	int count = 1;
+	String memo = "배송메시지 임시";
+	
+	/* Product productList = (Product) session.getAttribute("productList");
 	java.util.Date date = new java.util.Date();
 	java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd");
 	String startDay = dateFormat.format(date);
 	String endDay = dateFormat.format(date);
 	
-	int count = 1;
-	
 	ArrayList<Product> list = new ArrayList<Product>();
-	list.add(new Product());
-	/* list.add(new Product("판매안함", "침실", "침대", "B00000001", "보송보송 침대", 300000, 0.2)) */;
-	String memo = "배송메시지 임시";
+	list.add(new Product()); */
+	
 %>
 <!DOCTYPE html>
 <html>
@@ -75,8 +75,8 @@ br
 						<a href="#" class="btnDate" period="90"><span>3개월</span></a>
 						<a href="#" class="btnDate" period="365"><span>1년</span></a>
 						<a href="#" class="btnDate" period="-1"><span>전체</span></a>
-						<input type="date" id="startDate" name="startDate" class="date" value="<%= startDay %>"> ~ 
-						<input type="date" id="endDate" name="endDate" class="date" value="<%= endDay %>">
+						<input type="date" id="startDate" name="startDate" class="date" value=""> ~ 
+						<input type="date" id="endDate" name="endDate" class="date" value="">
 					</td>
 				</tr>
 				<tr>
@@ -101,7 +101,7 @@ br
 		
 		<div class="selectTopList">
 		<span>주문 목록</span><br>
-		<span>[총 <a style="color: rgb(243, 156, 18);"><%= list.size() %></a>개]</span>
+		<span>[총 <a style="color: rgb(243, 156, 18);"><%= 1 %></a>개]</span>
 		</div>
 		
 		<br>
@@ -126,7 +126,7 @@ br
 						<th width="100px">입금액(원)</th>
 						<th width="100px">베송메시지</th>
 					</tr>
-					<% for(Product p : list) { %>
+					<%-- <% for(Product p : list) { %>
 					<tr>
 						<td ><input type="checkbox"></td>
 						<td><%= count++ %></td>
@@ -138,7 +138,7 @@ br
 						<td>입금액 /<br>입금예정금액</td>
 						<td><div id="memo" class="memo">MEMO</div></td>
 					</tr>
-					<% } %>
+					<% } %> --%>
 				</table>
 			</form>
 		
@@ -231,7 +231,6 @@ br
 		
 	})
 	
-    	
 </script>
 </body>
 </html>
