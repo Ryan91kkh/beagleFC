@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
+
     pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"
     %>
 <%
@@ -9,18 +10,23 @@
 	String endDay = dateFormat.format(date); */
 	
 	String value = "bedRoom";
+
 %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="/jootopia/images/favicon.ico">
+
 <!-- <link rel="stylesheet" href="/jootopia/js/external/jquery-3.4.0.min.js"> -->
+
+
 <link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 <title>JooTopia</title>
+
 </head>
 <body>
 	
@@ -157,10 +163,12 @@
 		</div>
 		
 	</section> <!-- row -->
+
 	
 	<%@ include file="/views/common/adminFooter.jsp" %>
 	
 	<script>
+
 		$(document).ready(function() {
 			
 			<% if(value.equals("bedRoom")) { %>
@@ -171,6 +179,7 @@
 		$(document).ready(function() {
 			
 			var big = $("#big>option[selected='selected']").val();
+
 
 			var bedRoom = ["침대", "옷장", "화장대", "수납장"];
 			var livingRoom = ["테이블", "거실장", "쇼파", "수납장"];
@@ -196,6 +205,7 @@
 				var option = $("<option>" + smallCategory[i] + "</option>");
 				$("#small").append(option);
 			}
+
 		})
 		
 		$(function() {
@@ -228,5 +238,6 @@
 		} */
 	</script>
 	
+
 </body>
 </html>

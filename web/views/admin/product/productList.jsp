@@ -1,16 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
+
     pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"%>
 <%
 	int count = 1;
 	/* Product productList = (Product) session.getAttribute("productList");
+
 	java.util.Date date = new java.util.Date();
 	java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd");
 	String startDay = dateFormat.format(date);
 	String endDay = dateFormat.format(date);
 	
 	ArrayList<Product> list = new ArrayList<Product>();
+
 	list.add(new Product()); */
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
