@@ -9,7 +9,7 @@
 <script src="/jootopia/js/external/jquery-3.4.0.min.js"></script>
 <script src="/jootopia/js/external/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
-<style>
+<style>    
 		#updateBtnArea>input {
 			width: 90px;
 			height: 35px;
