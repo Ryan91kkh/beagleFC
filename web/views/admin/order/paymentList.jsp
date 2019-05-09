@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"%>
+    pageEncoding="UTF-8"%>
+<!-- import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*" -->
 <%
 	int count = 1;
 	String memo = "배송메시지 임시";

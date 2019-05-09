@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"%>
-<%
+    pageEncoding="UTF-8"%>
+<%--  import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*" --%>    
+<%--
 	int count = 1;
 	/* Product productList = (Product) session.getAttribute("productList");
 
@@ -10,10 +11,8 @@
 	String endDay = dateFormat.format(date);
 	
 	ArrayList<Product> list = new ArrayList<Product>();
-%> --%>
-
 	list.add(new Product()); */
-%>
+--%>
 
 <!DOCTYPE html>
 <html>
@@ -90,8 +89,8 @@
 						<a href="#" class="btnDate" period="90"><span>3개월</span></a>
 						<a href="#" class="btnDate" period="365"><span>1년</span></a>
 						<a href="#" class="btnDate" period="-1"><span>전체</span></a>
-						<input type="date" id="startDate" name="startDate" class="date" value="<%= new Date() %>"> ~ 
-						<input type="date" id="endDate" name="endDate" class="date" value="<%= new Date() %>">
+						<input type="date" id="startDate" name="startDate" class="date" value="<%--= new Date() --%>"> ~ 
+						<input type="date" id="endDate" name="endDate" class="date" value="<%--= new Date() --%>">
 					</td>
 				</tr>
 				<tr>

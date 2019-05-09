@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.*, java.lang.*, com.kh.jooTopia.order.model.vo.*"%>
+    pageEncoding="UTF-8"%>
+<!-- import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*" -->
 <%
 	/* ArrayList<Order> list = new ArrayList<Order>();
 	list.add(new Order()); */

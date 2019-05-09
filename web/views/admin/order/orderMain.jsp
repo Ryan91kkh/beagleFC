@@ -1,6 +1,6 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<!-- import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*" -->
 <!DOCTYPE html>
 <html>
 <head>

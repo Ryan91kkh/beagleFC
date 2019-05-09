@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-
-    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"
-    %>
+pageEncoding="UTF-8" %>
+<%-- import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*" --%>
 <%
 	/* Product productList = (Product) session.getAttribute("productList");
 	java.util.Date date = new java.util.Date();
