@@ -12,20 +12,29 @@
 
 
 
+
 <title>JooTopia</title>
 </head>
 <body>
-	<header class="row">
-		<span class="col-lg-1"></span>	
-		<span class="col-lg-1"><a href="#">고객센터</a></span>
-		<span class="col-lg-1">
-			<a href="/jootopia/views/purchase/purchaseInfo.jsp">매입신청</a>
-		</span>
+
+	
+	<!--  -->
+	<header class="row" contextmenu="">
 		
-		<span class="col-lg-6 logo">
-			<a href="/jootopia">
-				<img src="/jootopia/images/logo.png">
-			</a>
+		<span class="col-lg-1"><img id="navHomeBtn" src="/jootopia/images/adminMenuHomeBtn.png"></span>
+		<span class="col-lg-1"><a href="#">회원관리</a></span>
+		<span class="col-lg-1">
+			<a href="/jootopia/views/admin/board/review.jsp">게시판관리</a>
+		</span>
+		<span class="col-lg-1">
+			<a href="#">매입관리</a>
+		</span>
+		<span class="col-lg-1">
+			<a href="/jootopia/views/admin/product/productList.jsp">상품관리</a>
+		</span>
+		<span class="col-lg-1">
+			<a href="/jootopia/views/admin/order/orderMain.jsp">주문관리</a>
+
 		</span>
 		
 		<span class="col-lg-1">

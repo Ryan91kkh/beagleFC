@@ -3,12 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
 <link rel="stylesheet" href="/jootopia/css/user/common.css">
 
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 
 <title>JooTopia</title>
 
@@ -34,6 +36,7 @@
 	
 	<!-- 배너슬라이드는 section밖에서 설정해주세요! -->
 	
+
 
 	
 	
@@ -351,6 +354,7 @@
 		
 		
 		
+
 		</div>
 		
 		
@@ -398,6 +402,6 @@
 	
 	
 	
-	<%@ include file="/views/common/footer.jsp" %>
+	<%@ include file="/views/common/adminFooter.jsp" %>
 </body>
 </html>

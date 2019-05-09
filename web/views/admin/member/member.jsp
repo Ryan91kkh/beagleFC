@@ -78,6 +78,8 @@
 td{
 	height : 50px;
 }
+	
+
 
 </style>
 <title>JooTopia</title>
@@ -88,45 +90,59 @@ td{
 	<%@ include file="/views/common/adminSideMenu.jsp" %>
     <div class="membersearch" class="col-sm-10">
     <br><br>
-      <div class="col-sm-8">
-      <form>
-	      <table id="searchBox" border="1">
-			  <tr>
-			    <td><label class="titleName">아이디</label></td>
-			    <td><input type="text"></td>
-			    <td><label class="titleName">전화번호</label></td>
-			    <td><input type="phone"></td>
-			  </tr>
-			  <tr>
-			    <td><label class="titleName">이메일</label></td>
-			    <td><input type="email"></td>
-			    <td><label class="titleName">생년월일(ex 991225)</label></td>
-			    <td><input type="text"></td>
-			  </tr>
-			  <tr>
-			    <td><label class="titleName">주소</label></td>
-			    <td colspan="3"><input type="text"></td>
-			  </tr>
-			<tr>
-				<td colspan="4"><button class="snip1535" type="submit" align="center">조회</button></td>
-			</tr>
-		</table>
-	</form>
-   		<hr  style="border: solid 3px gray;" align="center" width="90%"; >
-   	<form>
-   		<table id="memberList" border="1">
-   			<tr>
-   				<th>아이디</th>
-   				<th>이름</th>
-   				<th>생년월일</th>
-   				<th>전화번호</th>
-   				<th>email</th>
-   				<th>주소</th>
-   			</tr>
-   		</table>
-   	</form>
-   	</div>
-   	
+      	<div class="col-sm-8">
+	     	 <form>
+		      <table id="searchBox" border="1" height="30px;">
+				  <tr>
+				    <td><label class="titleName">아이디</label></td>
+				    <td><input type="text"></td>
+				    <td><label class="titleName">전화번호</label></td>
+				    <td><input type="phone"></td>
+				  </tr>
+				  <tr>
+				    <td><label class="titleName">이메일</label></td>
+				    <td><input type="email"></td>
+				    <td><label class="titleName">생년월일(ex 991225)</label></td>
+				    <td><input type="text"></td>
+				  </tr>
+				  <tr>
+				    <td><label class="titleName">주소</label></td>
+				    <td colspan="3"><input type="text"></td>
+				  </tr>
+				<tr>
+					<td colspan="4"><button class="snip1535" type="submit" align="center">조회</button></td>
+				</tr>
+			</table>
+			</form>
+		   		<hr  style="border: solid 2px gray;" align="center" width="100%" >
+		   	<form>
+		   		<table id="memberList" border="1" align="center"> 
+		   			<tr>
+		   				<th width="50px;">선택</th>
+		   				<th width="100px;">아이디</th>
+		   				<th width="100px;">이름</th>
+		   				<th width="100px;">생년월일</th>
+		   				<th width="150px;">전화번호</th>
+		   				<th width="200px;">email</th>
+		   				<th width="300px;">주소</th>
+		   			</tr>
+		   			<tr>
+		   				<td><input type="checkbox"></td>
+		   				<td><a href="/jootopia/views/admin/member/detailMember.jsp">kyu</a></td>
+		   				<td><a href="/jootopia/views/admin/member/deleteMemberList.jsp">김규형</a></td>
+		   				<td>990302</td>
+		   				<td>01022223333</td>
+		   				<td>kyu@co.kr</td>
+		   				<td>서울시 서대문구</td>
+		   			</tr>
+		   		</table>
+		   	</form>
+		   	<hr  style="border: solid 2px gray;" align="center" width="100%" >
+		   	<div class="btnArea">
+		   		<input type="submit" value="탈퇴">
+		   		<input type="button" value="수정" onclick="location.href='/jootopia/views/admin/member/detailMember.jsp'">
+		   	</div>
+   		</div>
    </div>
    <script>
    	$(".hover").mouseleave(
@@ -134,6 +150,9 @@ td{
 		     $(this).removeClass("hover");
 		   }
 		 );
+   	$(".memberList").click(function(){
+   		location.href="detailMemberList.jsp"
+   	});
    
    </script>
       
