@@ -23,7 +23,7 @@
 		<span class="col-lg-1"><img id="navHomeBtn" src="/jootopia/images/adminMenuHomeBtn.png"></span>
 		<span class="col-lg-1"><a href="/jootopia/views/admin/member/member.jsp">회원관리</a></span>
 		<span class="col-lg-1">
-			<a href="#">게시판관리</a>
+			<a href="/jootopia/views/admin/board/review.jsp">게시판관리</a>
 		</span>
 		<span class="col-lg-1">
 			<a href="#">매입관리</a>

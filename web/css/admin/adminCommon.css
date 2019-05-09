@@ -61,6 +61,7 @@ html, body{
 	text-align: center;
 }
 #searchBox tr td {
+	padding-left: 5px;
 	height: 33px;
 }
 tr td select {
@@ -122,3 +123,207 @@ tr td select {
 .sideMenuBtn:hover {
 	background: rgb(189, 126, 98);
 }
+
+/* selectList css */
+.selectTopList a {
+	color: rgb(52, 152, 219);
+	font-weight: bold;
+	text-decoration: underline;
+}
+.selectList {
+	width: 100%;
+	height: auto;
+	border: 1px rgb(224, 224, 224);
+}
+.selectList tr th{
+	background: rgb(224, 224, 224);
+	height: 35px;
+}
+.selectList tr:nth-child(2) th{
+	background: rgb(224, 224, 224);
+	height: 35px;
+	text-align: center;
+}
+.selectList tr td, th {
+	height: 100px;
+	text-align: center;
+}
+.selectList tr td a, img {
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.selectBtn {
+	width: 90px;
+	height: 35px;
+	background: rgb(94, 94, 94);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+/* pInfo1 css */
+.pInfo1Area, .pInfo2Area, .pInfo3Area, .pInfo4Area {
+	width: 100%;
+}
+#pInfo1, #pInfo2, #pInfo3, #pInfo4 {
+	width: 100%;
+}
+#pInfo1 th, #pInfo2 th, #pInfo3 th, #pInfo4 th {
+	background: rgb(224, 224, 224);
+	text-align: center;
+	border-collapse:collapse;
+	border: 1px solid rgb(190, 190, 190);
+	padding: 15px;
+	width: 25%;
+	height: 40px;
+}
+#pInfo1 td, #pInfo2 td, #pInfo3 td, #pInfo4 td {
+	border-collapse:collapse;
+	border: 1px solid rgb(190, 190, 190);
+	padding: 10px;
+	padding-left: 10px;
+}
+#pInfo1 a {
+	color: rgb(52, 152, 219);
+	font-weight: bold;
+	text-decoration: underline;
+}
+.btnArea > button {
+	width: 90px;
+	height: 35px;
+	border: none;
+	background: rgb(224, 224, 224);
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.btnArea > button:hover {
+	background: rgb(92, 55, 39);
+	color: white;
+}
+
+
+/* help css */
+.help {
+	width: 20px;
+	background: rgb(41, 128, 185);
+	color: white;
+	display: inline-block;
+	border-radius: 50px;
+	margin-bottom: 5px;
+ 	cursor: pointer;
+}
+/* The Modal (background) */
+.helpModal {
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+    
+/* Modal Content/Box */
+.helpModalBody {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+/* The Close Button */
+.helpModalClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.helpModalClose:hover, .helpModalClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* memo div css */
+.memo {
+	width: 60px;
+	height: 30px;
+	background: rgb(94, 94, 94);
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4px;
+	cursor: pointer;
+}
+
+/* memo modal css */
+.memoModal {
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.memoModalContent {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+.memoModalBody {
+	text-align: center;
+}
+.memoModalHeader > h4 {
+	text-align: left;
+}
+.memoModalTable {
+	width: 100%;
+}
+.memoModalTable th {
+	background: rgb(224, 224, 224);
+	text-align: center;
+	padding: 3px;
+	height: 20px;
+}
+.memoModalTable input {
+	width: 100%;
+	text-align: center;
+}
+.modalBtnArea input {
+	width: 90px;
+	height: 35px;
+	border: none;
+	background: rgb(224, 224, 224);
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.modalBtnArea input:hover {
+	background: rgb(52, 152, 219);
+	color: white;
+}
+
+#refundModalTable1 th, #refundModalTable2 th, #refundModalTable3 th {
+	width: 40%;
+}
+

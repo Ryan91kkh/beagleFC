@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.Product"
-    import="java.util.*, java.lang.*"
+    pageEncoding="UTF-8"%> <%-- import="com.kh.jooTopia.product.model.vo.Product"
+    import="java.util.*, java.lang.*" --%>
     %>
-<%
+<%-- <%
 	Product productList = (Product) session.getAttribute("productList");
 	java.util.Date date = new java.util.Date();
 	java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd");
@@ -11,7 +11,7 @@
 	
 	ArrayList<Product> list = new ArrayList<Product>();
 	list.add(new Product("판매안함", "침실", "침대", "B00000001", "보송보송 침대", 300000, 0.2));
-%>
+%> --%>
 <!DOCTYPE html>
 <html>
 <head>
