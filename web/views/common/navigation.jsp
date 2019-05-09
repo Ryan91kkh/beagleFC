@@ -8,6 +8,15 @@
 <script src="/jootopia/js/external/jquery-3.4.0.min.js"></script>
 <script src="/jootopia/js/external/bootstrap.min.js"></script>
 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+
+
 <link rel="stylesheet" type="text/css" href="/jootopia/css/user/header.css">
 
 
@@ -17,7 +26,7 @@
 <body>
 	<header class="row">
 		<span class="col-lg-1"></span>	
-		<span class="col-lg-1"><a href="#">고객센터</a></span>
+		<span class="col-lg-1"><a href="/jootopia/views/notice/csMain.jsp">고객센터</a></span>
 		<span class="col-lg-1">
 			<a href="/jootopia/views/purchase/purchaseInfo.jsp">매입신청</a>
 		</span>
@@ -66,9 +75,99 @@
 	  </div>
 	</div> <!-- loginModal End -->
 
-	<nav>
+	<!-- <nav> -->
+		
+	<!-- ----------내가 넣은 네비게이션 메뉴바------------- -->	
+	<!-- 1) 위에 nav를 주석처리함 -->
+	<!-- 2) 제일 위에 부트스트렙 연결 3행 또 넣음 -->
 	
-	</nav>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><!-- Jootopia --></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">가구 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">책상</a></li>
+          <li><a href="#">의자</a></li>
+          <li><a href="#">침대</a></li>
+        </ul>
+      </li>
+      
+      
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">가전 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">책상</a></li>
+          <li><a href="#">의자</a></li>
+          <li><a href="#">침대</a></li>
+        </ul>
+      </li>
+      
+      
+      
+      
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">디자인용품 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">책상</a></li>
+          <li><a href="#">의자</a></li>
+          <li><a href="#">침대</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    
+    
+    <!-- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -->
+    
+    
+    <!-- 상품검색 시작 -->
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">검색</button>
+    </form>
+    
+    <!-- 상품검색 끝 -->
+    
+    
+    
+    
+    
+  </div>
+  </nav>
+	
+	
+	
+	
+	
+	<!-- ----------내가 넣은 네비게이션 메뉴바------------- -->	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<!-- </nav> -->
 </body>
 </html>
 
