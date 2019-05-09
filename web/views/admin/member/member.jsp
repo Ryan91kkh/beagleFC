@@ -26,7 +26,8 @@
   padding: 12px 40px 10px;
   position: relative;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 700; 
+  
 }
 .snip1535:before,
 .snip1535:after {
