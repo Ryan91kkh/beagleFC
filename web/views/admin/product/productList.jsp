@@ -1,31 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
- <%--import="com.kh.jooTopia.product.model.vo.Product, java.util.*, java.lang.*"--%>    
-<%--
+    pageEncoding="UTF-8"%> <%-- import="com.kh.jooTopia.product.model.vo.Product"
+    import="java.util.*, java.lang.*" --%>
+    %>
+<%-- <%
 	Product productList = (Product) session.getAttribute("productList");
 	java.util.Date date = new java.util.Date();
 	java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd");
 	String startDay = dateFormat.format(date);
-	
 	String endDay = dateFormat.format(date);
 	
-	int count = 1;
-	
 	ArrayList<Product> list = new ArrayList<Product>();
-	list.add(new Product());
-	/* list.add(new Product("판매안함", "침실", "침대", "B00000001", "보송보송 침대", 300000, 0.2)) */;
---%>
+	list.add(new Product("판매안함", "침실", "침대", "B00000001", "보송보송 침대", 300000, 0.2));
+%> --%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="/jootopia/images/favicon.ico">
+<!-- <link rel="stylesheet" href="/jootopia/js/external/jquery-3.4.0.min.js"> -->
 <link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 <title>JooTopia</title>
 <style>
+
+	
 </style>
 </head>
 <body>
@@ -53,7 +53,7 @@
 				<tr>
 					<td>검색 분류</td>
 					<td colspan="2">
-						<select id="searchCondition">
+						&nbsp;<select id="searchCondition" >
 							<option value="pName">상품명
 							<option value="pCode">상품코드
 							<option value="userName">주문자명
@@ -66,7 +66,7 @@
 				<tr>
 					<td>상품 카테고리</td>
 					<td colspan="2">
-						<select id="searchCategory" onchange="smallCategoty(this.value)">
+						&nbsp;<select id="searchCategory" onchange="smallCategoty(this.value)">
 							<option value="">- 대분류 -
 							<option value="bedRoom">침실
 							<option value="livingRoom">거실
@@ -81,20 +81,20 @@
 				<tr>
 					<td>상품 등록일</td>
 					<td id="selectDate" colspan="2">
-						<a href="#" class="btnDate" period="0"><span>오늘</span></a>
+						&nbsp;<a href="#" class="btnDate" period="0"><span>오늘</span></a>
 						<a href="#" class="btnDate" period="7"><span>7일</span></a>
 						<a href="#" class="btnDate" period="30"><span>1개월</span></a>
 						<a href="#" class="btnDate" period="90"><span>3개월</span></a>
 						<a href="#" class="btnDate" period="365"><span>1년</span></a>
-						<a href="#" class="btnDate" period="-1"><span>전체</span></a>
-						<input type="date" id="startDate" name="startDate" class="date" value="<%--= startDay --%>"> ~ 
-						<input type="date" id="endDate" name="endDate" class="date" value="<%--= endDay --%>">
+						<a href="#" class="btnDate" period="-1"><span>전체</span></a> &nbsp;&nbsp;
+						<input type="date" id="startDate" name="startDate" class="date" value="<%= startDay %>"> ~ 
+						<input type="date" id="endDate" name="endDate" class="date" value="<%= endDay %>">
 					</td>
 				</tr>
 				<tr>
 					<td>상품 상태</td>
 					<td colspan="2">
-						<input type="radio" name="pType" id="all"><label>전체</label>
+						&nbsp;<input type="radio" name="pType" id="all"><label>전체</label>
 						<input type="radio" name="pType" id=""><label>판매중</label>
 						<input type="radio" name="pType" id=""><label>판매안함</label>
 					</td>
@@ -111,52 +111,33 @@
 		
 		<br><br><br><br>
 		
-		<div class="selectTopList">
 		<span>상품 목록</span><br>
-		<span>[총 <a style="color: rgb(243, 156, 18);"><%--= list.size() --%></a>개]</span>
-		</div> 
+		<span>[총 <a><%= list.size() %></a>개]</span>
 		
 		<br>
 		
-		<div class="selectListArea">
-			<form action="" method="post">
-				<table id="selectList" class="selectList" border="1">
-					<tr>
-						<th colspan="9" style="height: 45px; text-align: left;">
-							<button class="selectBtn" onclick="pTypeChange('판매 등록')">판매 등록</button>
-							<button class="selectBtn" onclick="pTypeChange('판매 안함')">판매 안함</button>
-							<button class="selectBtn" onclick="pTypeChange('상품 삭제')">상품 삭제</button>
-						</th>
-					</tr>
-					<tr>
-						<th width="25px"><input type="checkbox" id="allCheck"></th>
-						<th width="25px">No</th>
-						<th width="70px">상품상태</th>
-						<th width="90px">상품분류</th>
-						<th width="150px">상품코드</th>
-						<th width="70px">상품이미지</th>
-						<th width="300px">상품명</th>
-						<th width="100px">판매가(원)</th>
-						<th width="100px">할인가(%)</th>
-					</tr>
-					<%-- for(Product p : list) { --%>
-					<tr>
-						<td ><input type="checkbox"></td>
-						<td><%--= count++ --%></td>
-						<td >상태임시</td>
-						<td>분류/임시</td>
-						<td><a href="../product/productInfo.jsp">상품코드 임시</a></td>
-						<td><img src="/jootopia/images/logo.png" width="60px" height="60px"></td>
-						<td><a href="#">상품명 임시</a></td>
-						<td>판매가 임시</td>
-						<td>할인가 임시</td>
-					</tr>
-					<%-- } --%>
-				</table>
-			</form>
-		
-	</div> <!-- selectListArea -->
-	
+		<form>
+			<table id="searchList" border="1">
+				<tr>
+					<td colspan="9">
+						<button onclick="pTypeChange('판매 등록')">판매 등록</button>&nbsp;
+						<button onclick="pTypeChange('판매 안함')">판매 안함</button>&nbsp;
+						<button onclick="pTypeChange('상품 삭제')">상품 삭제</button>
+					</td>
+				</tr>
+				<tr>
+					<th><input type="checkbox" class="allCheck"></th>
+					<th>No</th>
+					<th>상품상태</th>
+					<th>상품분류</th>
+					<th>상품코드</th>
+					<th>상품이미지</th>
+					<th>상품명</th>
+					<th>판매가(원)</th>
+					<th>할인가(%)</th>
+				</tr>
+			</table>
+		</form>
 	</div> <!-- col-sm-10 -->
 		
 	</section>
@@ -212,7 +193,7 @@
 		
 		function select() {
 			console.log("실행");
-			location.href="<%--= request.getContextPath() --%>/selectProduct";
+			location.href="<%= request.getContextPath() %>/selectProduct";
 		}
 		
 		$(function() {
@@ -233,20 +214,10 @@
 				var changeDay = $("#endDate").val() + $(this).attr("period");
 				console.log(changeDay);
 				$("#endDate").val(changeDay); */
-				
 			})
 		})
-		
-		$("#allCheck").click(function() {
-			
-			if($("#allCheck").prop("checked")) {
-				$("input[type=checkBox]").prop("checked", true);
-			}else {
-				$("input[type=checkBox]").prop("checked", false);
-			}
-		})
-		
 	</script>
 	
 </body>
+
 </html>

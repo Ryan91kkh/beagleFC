@@ -1,6 +1,7 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.Product"
-    import="java.util.*" import="java.lang.*"
+    import="java.utill.*" import="java.lang.*"
     %>
 <%
 	Product productList = (Product) session.getAttribute("productList");
@@ -14,26 +15,35 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="/jootopia/images/favicon.ico">
-<!-- <link rel="stylesheet" href="/jootopia/js/external/jquery-3.4.0.min.js"> -->
-<link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
+<link rel="stylesheet" href="/jootopia/js/external/jquery-3.4.0.min.js">
+<link rel="stylesheet" href="/jootopia/css/user/common.css">
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 <title>JooTopia</title>
+<style>
+	#pInfo, #pInfo4 {
+		width: 100%;
+		text-align: center;
+	}
+	#pInfo2, #pInfo3 {
+		width: 100%;
+	}
+	th {
+		background: lightgray;
+	}
+</style>
 </head>
 <body>
 	
 	<%@ include file="/views/common/adminNavigation.jsp" %>
 	
-	<section class="row">
-		<%@ include file="/views/common/adminSideMenu.jsp" %>
-		
-		<div class="col-sm-10">
-		<h3>상품상세</h3>
-		<hr>
-		
-		<div id="infoArea">
-		<table id="pInfo1">
+	<h3>상품상세</h3>
+	<hr>
+	
+	<form>
+	
+		<table id="pInfo" border="1">
 			<tr>
 				<th>상품명</th>
 				<td><%= "상품명 임시" %></td>
@@ -47,13 +57,12 @@
 				<td><%= "상품상태 임시" %></td>
 			</tr>
 		</table>
-		</div>
 		
 		<br><br>
 	
-		<div class="pInfo2Area">
-		<table id="pInfo2">
-			<tr><th colspan="2" height="40px"><%= "[" + "상품코드 임시" + "]" %>  <%= "상품명 임시" %></th></tr>
+	
+		<table id="pInfo2" border="1">
+			<tr><th colspan="2"><%= "[" + "상품코드 임시" + "]" %>  <%= "상품명 임시" %></th></tr>
 			<tr>
 				<th>상품카테고리</th>
 				<td>
@@ -90,27 +99,20 @@
 				<td><%= "상품수량 임시" %> (개)</td>
 			</tr>
 		</table>
-		</div>
+		
 		
 		<br><br>
 		
-		<div class="pInfo3Area">
-		<table id="pInfo3">
+		<table id="pInfo3" border="1">
 			<tr>
 				<th colspan="2">상세정보</th>
 			</tr>
 			<tr>
 				<th>상품 상세설명</th>
-				<td>
-				<textarea name="" rows="30" cols="110em" style="resize: none" readonly><%= "상품 상세설명 임시 블라블라" %></textarea>
-				</td>
+				<td rowspan="13"><%= "상품 상세설명 임시 블라블라" %></td>
 			</tr>
 		</table>
-		</div>
 		
-		<br><br>
-		
-		<div class="pInfo4Area">
 		<table id="pInfo4" border="1">
 			<tr>
 				<th colspan="2">이미지 정보</th>
@@ -124,17 +126,11 @@
 				<td><%= "상세이미지 추후 첨부" %></td>
 			</tr>
 		</table>
-		</div>
 		
-		<br>
-		
-		<div class="btnArea" align="center">
-			<button onclick="location.href='productInfoModi.jsp'">수정</button>
-			<button onclick="location.href='productList.jsp'">목록</button>
-		</div>
+		<button onclick="location.href='product/productInfoModi.jsp'">수정</button>&nbsp;&nbsp;
+		<button onclick="productDelete();">취소</button>
 	
-		</div>
-	</section>
+	</form>
 	
 	<%@ include file="/views/common/adminFooter.jsp" %>
 	
@@ -172,4 +168,5 @@
 	</script>
 	
 </body>
+
 </html>

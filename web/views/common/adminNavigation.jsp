@@ -9,7 +9,6 @@
 <script src="/jootopia/js/external/bootstrap.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="/jootopia/css/user/header.css">
-<link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
 
 
 
@@ -24,7 +23,7 @@
 		<span class="col-lg-1"><img id="navHomeBtn" src="/jootopia/images/adminMenuHomeBtn.png"></span>
 		<span class="col-lg-1"><a href="#">회원관리</a></span>
 		<span class="col-lg-1">
-			<a href="#">게시판관리</a>
+			<a href="/jootopia/views/admin/board/review.jsp">게시판관리</a>
 		</span>
 		<span class="col-lg-1">
 			<a href="#">매입관리</a>
@@ -33,7 +32,7 @@
 			<a href="/jootopia/views/admin/product/productList.jsp">상품관리</a>
 		</span>
 		<span class="col-lg-1">
-			<a href="/jootopia/views/admin/order/orderMain.jsp">주문관리</a>
+			<a href="#">주문관리</a>
 		</span>
 		<span class="col-lg-1">
 			<a href="#">창고관리</a>
@@ -77,3 +76,4 @@
 
 </body>
 </html>
+
