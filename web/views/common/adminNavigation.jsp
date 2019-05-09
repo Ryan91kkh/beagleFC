@@ -12,6 +12,7 @@
 
 
 
+
 <title>JooTopia</title>
 
 </head>
@@ -32,7 +33,7 @@
 			<a href="/jootopia/views/admin/product/productList.jsp">상품관리</a>
 		</span>
 		<span class="col-lg-1">
-			<a href="#">주문관리</a>
+			<a href="/jootopia/views/admin/order/orderMain.jsp">주문관리</a>
 		</span>
 		<span class="col-lg-1">
 			<a href="#">창고관리</a>

@@ -1,5 +1,8 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	String root = request.getRequestURI().split("/")[4];
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +15,51 @@
 	<nav class="col-sm-2" align="center">
 		<div class="sideMenuImg" id="sideMenuImg"><img src="/jootopia/images/sideMenuImg.png" width="100%"></div>
 		<br>
-		<div class="sideMenu" id="sideMenu1"><div class="sideMenuBtn" id="">메뉴1</div></div>
-		<div class="sideMenu" id="sideMenu2"><div class="sideMenuBtn" id="">메뉴2</div></div>
-		<div class="sideMenu" id="sideMenu3"><div class="sideMenuBtn" id="">메뉴3</div></div>
+		<% if(root.equals("member")) { %>
+		
+		<div class="sideMenu" id="sideMenu1"><div class="sideMenuBtn" id="">회원조회</div></div>
+		<div class="sideMenu" id="sideMenu2"><div class="sideMenuBtn" id="">탈퇴회원 조회</div></div>
+		
+		<% }else if(root.equals("board")) { %>
+		
+		<div class="sideMenu" id="sideMenu1"><div class="sideMenuBtn" id="">공지사항</div></div>
+		<div class="sideMenu" id="sideMenu2"><div class="sideMenuBtn" id="">후기게시판</div></div>
+		
+		<% }else if(root.equals("product")) { %>
+		
+		<div class="sideMenu" id="sideMenu1">
+		<div class="sideMenuBtn" id="" onclick="location.href='productList.jsp'">상품목록</div>
+		</div>
+		<div class="sideMenu" id="sideMenu2">
+		<div class="sideMenuBtn" id="" onclick="location.href='productInsertList.jsp'">상품등록</div>
+		</div>
+		<div class="sideMenu" id="sideMenu3">
+		<div class="sideMenuBtn" id="" onclick="location.href='deleteProductList.jsp'">삭제상품</div>
+		</div>	
+		
+		<% }else if(root.equals("order")) { %>
+		
+		<div class="sideMenu" id="sideMenu1">
+		<div class="sideMenuBtn" id="" onclick="location.href='paymentList.jsp'">입금전 관리</div></div>
+		<div class="sideMenu" id="sideMenu2">
+		<div class="sideMenuBtn" id="" onclick="location.href='preparingProductList.jsp'">상품준비중 관리</div></div>
+		<div class="sideMenu" id="sideMenu3">
+		<div class="sideMenuBtn" id="" onclick="location.href='shippingList.jsp'">배송중 관리</div></div>
+		<div class="sideMenu" id="sideMenu1">
+		<div class="sideMenuBtn" id="" onclick="location.href='deliveryCompletedList.jsp'">배송완료 관리</div></div>
+		<div class="sideMenu" id="sideMenu2">
+		<div class="sideMenuBtn" id="" onclick="location.href='orderCancelList.jsp'">주문취소 관리</div></div>
+		<div class="sideMenu" id="sideMenu3">
+		<div class="sideMenuBtn" id="" onclick="location.href='refundList.jsp'">환불 관리</div></div>
+		
+		<% }else if(root.equals("storage")) { %>
+		
+		<div class="sideMenu" id="sideMenu1"><div class="sideMenuBtn" id="">매입대기</div></div>
+		<div class="sideMenu" id="sideMenu2"><div class="sideMenuBtn" id="">매입진행</div></div>
+		<div class="sideMenu" id="sideMenu3"><div class="sideMenuBtn" id="">재고관리</div></div>
+		<div class="sideMenu" id="sideMenu1"><div class="sideMenuBtn" id="">출고관리</div></div>
+		
+		<% } %>
 	</nav>
 
 </body>
