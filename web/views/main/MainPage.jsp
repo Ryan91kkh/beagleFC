@@ -8,7 +8,7 @@
 <title>JooTopia</title>
 </head>
 <body>
-	<%@ include file="/views/common/adminNavigation.jsp" %>
+	<%@ include file="/views/common/navigation.jsp" %>
 	
 	<!-- 배너슬라이드는 section밖에서 설정해주세요! -->
 	

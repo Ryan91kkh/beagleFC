@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>JooTopia</title>
 <link rel="stylesheet" type="text/css" href="/jootopia/css/admin/adminCommon.css">
+<style></style>
 </head>
 <body>
 
