@@ -9,7 +9,7 @@
 <script src="/jootopia/js/external/bootstrap.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="/jootopia/css/user/header.css">
-<link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
+
 
 
 <title>JooTopia</title>
@@ -21,7 +21,7 @@
 	<header class="row" contextmenu="">
 		
 		<span class="col-lg-1"><img id="navHomeBtn" src="/jootopia/images/adminMenuHomeBtn.png"></span>
-		<span class="col-lg-1"><a href="/jootopia/views/admin/member/member.jsp">회원관리</a></span>
+		<span class="col-lg-1"><a href="#">회원관리</a></span>
 		<span class="col-lg-1">
 			<a href="#">게시판관리</a>
 		</span>
