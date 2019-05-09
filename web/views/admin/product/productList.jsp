@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-
     pageEncoding="UTF-8" import="com.kh.jooTopia.product.model.vo.*, java.util.*, java.lang.*"%>
 <%
 	int count = 1;
@@ -11,6 +10,7 @@
 	String endDay = dateFormat.format(date);
 	
 	ArrayList<Product> list = new ArrayList<Product>();
+%> --%>
 
 	list.add(new Product()); */
 %>

@@ -10,9 +10,6 @@
 
 <link rel="stylesheet" type="text/css" href="/jootopia/css/user/header.css">
 
-
-
-
 <title>JooTopia</title>
 </head>
 <body>

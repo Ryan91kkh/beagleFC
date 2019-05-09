@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 
@@ -8,7 +9,11 @@ html, body{
 	width: 100%;
 	margin: auto;
 }
-
+.title {
+	font-weight: bold;
+	margin-left: 20px;
+	margin-bottom : 30px;
+}
 
 /* adminNavigation css */
 .col-lg-1 {
@@ -32,7 +37,15 @@ html, body{
 	font-weight: bold;
 	text-decoration: underline;
 }
-
+table{
+	border-collapse: collapse;
+}
+table tr:nth-child(1){
+	width: 100%;	
+}
+table tr:nth-child(1) th{
+	background: rgb(224, 224, 224);
+}
 
 /* 검색조건 테이블 css */
 .searchArea {
@@ -326,4 +339,5 @@ tr td select {
 #refundModalTable1 th, #refundModalTable2 th, #refundModalTable3 th {
 	width: 40%;
 }
+
 

@@ -17,10 +17,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="/jootopia/images/favicon.ico">
-
-<!-- <link rel="stylesheet" href="/jootopia/js/external/jquery-3.4.0.min.js"> -->
-
-
 <link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -180,7 +176,6 @@
 			
 			var big = $("#big>option[selected='selected']").val();
 
-
 			var bedRoom = ["침대", "옷장", "화장대", "수납장"];
 			var livingRoom = ["테이블", "거실장", "쇼파", "수납장"];
 			var kitchen = ["식탁", "식탁의자", "수납장", "렌지대"];
@@ -205,7 +200,6 @@
 				var option = $("<option>" + smallCategory[i] + "</option>");
 				$("#small").append(option);
 			}
-
 		})
 		
 		$(function() {
@@ -237,7 +231,5 @@
 			}
 		} */
 	</script>
-	
-
 </body>
 </html>

@@ -19,17 +19,14 @@
 <!-- <link rel="stylesheet" href="/jootopia/js/external/jquery-3.4.0.min.js"> -->
 <link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
 
- 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 <title>JooTopia</title>
-
 </head>
 <body>
 	
 	<%@ include file="/views/common/adminNavigation.jsp" %>
 	
-
 	<section class="row">
 		<%@ include file="/views/common/adminSideMenu.jsp" %>
 		
@@ -39,7 +36,6 @@
 		
 		<div id="infoArea">
 		<table id="pInfo1">
-
 			<tr>
 				<th>상품명</th>
 				<td><%= "상품명 임시" %></td>
@@ -53,7 +49,6 @@
 				<td><%= "상품상태 임시" %></td>
 			</tr>
 		</table>
-
 		</div>
 		
 		<br><br>
@@ -148,8 +143,6 @@
 	
 		</div>
 	</section>
-
-	
 	<%@ include file="/views/common/adminFooter.jsp" %>
 	
 	<script>
