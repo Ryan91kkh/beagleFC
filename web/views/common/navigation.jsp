@@ -1,16 +1,19 @@
+<%@page import="com.kh.jooTopia.member.model.vo.Member"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<% Member loginUser = (Member)session.getAttribute("loginUser"); %>	
 <!DOCTYPE html>
 <html>
 <head>
 <!-- bootstrap연결 -->
-<link rel="stylesheet" href="/jootopia/css/external/bootstrap.min.css">
-<script src="/jootopia/js/external/jquery-3.4.0.min.js"></script>
-<script src="/jootopia/js/external/bootstrap.min.js"></script>
+<!-- <script src="/jootopia/js/external/bootstrap.min.js"></script> 주석 처리 안 하면 모달 띄우자마자 꺼짐 -->
 
+<link rel="stylesheet" href="/jootopia/css/external/bootstrap.min.css"> 
+<script src="/jootopia/js/external/jquery-3.4.0.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/jootopia/css/user/header.css">
+
 <title>JooTopia</title>
 </head>
 <body>
@@ -34,10 +37,10 @@
 		<span class="col-lg-1" onclick="location.href='/jootopia/views/main/AdminMainPage.jsp'"> 
 			Admin
 		</span> 
-		<span class="col-lg-1" onclick="location.href='#'" data-toggle="modal" data-target="#logModal"> 
+		<span class="col-lg-1"data-toggle="modal" data-target="#logModal"> 
 			Login
 		</span> 
-		<span class="col-lg-1" onclick="location.href='#'" data-toggle="modal" data-target="#joinModal"> 
+		<span class="col-lg-1" href="#joinModal" data-toggle="modal"  data-target="#joinModal"> 
 			Join us
 		</span> 
 		<span class="col-lg-1"></span>
@@ -128,6 +131,100 @@
 			</div>
 		</div>
 	</div>
+	
+	
+	<!-- joinModal -->
+	<div class="modal fade" id="joinModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title" style="font-weight:bold;" align="center">
+						회원가입
+					</h4>
+				</div>
+				<form action="<%=request.getContextPath() %>/insert.me" method="post"">
+					<div class="modal-body">
+						<table id="joinArea" align="center">
+							<tr>
+								<td><label for="">아이디</label></td>
+								<td><input type="text" name="userId"/></td>
+							</tr>
+							<tr>
+								<td><label for="">비밀번호</label></td>
+								<td><input type="password" name="userPwd" /></td>
+							</tr>
+							<tr>
+								<td><label for="">비밀번호 확인</label></td>
+								<td><input type="password" name="userPwd2" /></td>
+							</tr>
+							<tr>
+								<td><label for="">이름</label></td>
+								<td><input type="text" name="userName" /></td>
+							</tr>	
+							<tr>
+								<td><label>생년월일</label></td>
+								<td>
+								<input type="date" name="date"/>
+								</td>
+							</tr>
+							<tr>
+								<td><label>핸드폰 번호</label></td>
+								<td>
+								<input type="tel" name="tel1"  size="3"/> -
+								<input type="tel" name="tel2"  size="4"/> - 
+								<input type="tel" name="tel3"  size="4"/> <br />
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<label for="">성별</label>
+								</td>
+								<td>
+								<input type="checkBox" value="M" id="gender" value="gender"/> <label for="">남자</label>
+								<input type="checkBox" value="W" id="gender" value="gender"/> <label for="">여자</label>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="">우편번호</label></td>
+								<td><input type="text" name="zipCode"></td>
+								<td><div id="ckZip" class="ckZip">검색</div></td>
+							</tr>
+							<tr>
+								<td><label for="">주소</label></td>
+								<td><input type="text" name="address1"></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><label for="">상세주소</label></td>
+								<td><input type="text" name="address2"></td>
+								<td></td>
+							</tr>		
+							<tr>
+								<td><label for="">이메일</label></td>
+								<td><input type="email" name="email"/></td>
+							</tr>			
+						</table>
+					
+					
+						<br> <input type="submit" class="btn btn-info" value="Submit">
+						<input type="reset" class="btn btn-info" value="Reset">
+					</div>
+				</form>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- Scripts -->
+			<script src="/jootopia/js/external/main.js"></script>
+			<script src="/jootopia/js/external/skel.min.js"></script>
+			<script src="/jootopia/js/external/util.js"></script>  
+
 </body>
 </html>
 
