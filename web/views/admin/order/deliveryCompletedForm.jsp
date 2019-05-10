@@ -29,7 +29,7 @@
 		<%@ include file="/views/common/adminSideMenu.jsp" %>
 		
 		<div class="col-sm-10">
-		<h3 class="title">배송완료 주문상세</h3>
+		<h3>배송완료 주문상세</h3>
 		<hr>
 		
 		<div id="infoArea">
@@ -87,20 +87,11 @@
 					<tr>
 						<th width="25px"><input type="checkbox" id="allCheck"></th>
 						<th width="200px">품목별 주문번호</th>
-						<th width="250px">상품명</th>
+						<th width="150px">상품명</th>
 						<th width="30px">수량</th>
 						<th width="100px">판매가(원)</th>
 						<th width="100px">배송비(원)</th>
 						<th width="100px">주문상태</th>
-					</tr>
-					<tr>
-						<td><input type="checkbox"></td>
-						<td>O20190510-01</td>
-						<td><a href="<%= request.getContextPath() %>/views/admin/product/productDetail.jsp">상품명</a></td>
-						<td>1</td>
-						<td>판매가(원)</td>
-						<td>배송비(원)</td>
-						<td>배송완료</td>
 					</tr>
 					<%-- <% for(Order o : list) { %>
 					<tr>
@@ -212,7 +203,6 @@
 		<div class="btnArea" align="center">
 			<button onclick="location.href='paymentList.jsp'">확인</button>
 		</div>
-		<br><br>
 		
 		</div> <!-- col-sm-10 -->
 	</section>

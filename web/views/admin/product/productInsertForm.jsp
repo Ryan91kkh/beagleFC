@@ -25,7 +25,7 @@
 		
 		<div class="col-sm-10">
 		
-		<h3 class="title">상품등록</h3>
+		<h3>상품등록</h3>
 		<hr>
 		
 		<form action="" method="post">
@@ -93,7 +93,7 @@
 			<tr>
 				<th>상품 상세설명</th>
 				<td>
-				<textarea name="" rows="30" cols="88em" style="resize: none"><%= "상품 상세설명 임시 블라블라" %></textarea>
+				<textarea name="" rows="30" cols="110em" style="resize: none"><%= "상품 상세설명 임시 블라블라" %></textarea>
 				</td>
 			</tr>
 		</table>
@@ -115,7 +115,7 @@
 				</th>
 				<td align="center">
 				<div class="mainImgArea">
-					<img src="/jootopia/images/logo2.png" width="50%">
+					<img src="" width="100px" height="100px">
 				</div>
 				</td>
 				
@@ -127,7 +127,7 @@
 				</th>
 				<td align="center">
 				<div class="detailImgArea">
-					<img src="/jootopia/images/logo2.png" width="50%">
+					<img src="" width="100px" height="100px">
 				</div>
 				</td>
 			</tr>
@@ -161,7 +161,6 @@
     <div class="helpModalBody">
     	<span class="helpModalClose">&times;</span><br>
         <h4 id="helpModalTitle">모달 타이틀</h4>
-        <hr>
         <span id="helpModalText">모달 테스트</span>
     </div>
 </div>

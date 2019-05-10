@@ -51,7 +51,7 @@
 		<div class="sideMenuBtn" id="" onclick="location.href='productInsertList.jsp'">상품등록</div>
 		</div>
 		<div class="sideMenu" id="sideMenu3">
-		<div class="sideMenuBtn" id="" onclick="location.href='productDeleteList.jsp'">삭제상품</div>
+		<div class="sideMenuBtn" id="" onclick="location.href='deleteProductList.jsp'">삭제상품</div>
 		</div>	
 		
 		<% }else if(root.equals("order")) { %>
@@ -61,7 +61,7 @@
 		<div class="sideMenu" id="sideMenu2">
 		<div class="sideMenuBtn" id="" onclick="location.href='preparingProductList.jsp'">상품준비중 관리</div></div>
 		<div class="sideMenu" id="sideMenu3">
-		<div class="sideMenuBtn" id="" onclick="location.href='deliveryList.jsp'">배송중 관리</div></div>
+		<div class="sideMenuBtn" id="" onclick="location.href='shippingList.jsp'">배송중 관리</div></div>
 		<div class="sideMenu" id="sideMenu1">
 		<div class="sideMenuBtn" id="" onclick="location.href='deliveryCompletedList.jsp'">배송완료 관리</div></div>
 		<div class="sideMenu" id="sideMenu2">

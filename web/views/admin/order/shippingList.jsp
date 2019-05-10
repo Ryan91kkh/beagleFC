@@ -39,7 +39,7 @@ br
 		<%@ include file="/views/common/adminSideMenu.jsp" %>
 		
 		<div class="col-sm-10">
-		<h3 class="title">배송중 관리</h3>
+		<h3>배송중 관리</h3>
 		<hr>
 		
 		<div id="listArea">
@@ -49,7 +49,7 @@ br
 		
 		<div class="searchArea">
 			<table id="searchBox"  border="1" align="center">
-				<tr><th colspan="3" style="height: 35px;">　</th></tr>
+				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">　</th></tr>
 				<tr>
 					<td>검색 분류</td>
 					<td colspan="2">
@@ -100,11 +100,11 @@ br
 			</div>
 		</div>
 		
-		<br>
+		<br><br><br><br>
 		
 		<div class="selectTopList">
 		<span>주문 목록</span><br>
-		<span>[총 <a><%= 1 %></a>개]</span>
+		<span>[총 <a style="color: rgb(243, 156, 18);"><%= 1 %></a>개]</span>
 		</div>
 		
 		<br>
@@ -119,26 +119,14 @@ br
 				<tr>
 					<th width="25px"><input type="checkbox" id="allCheck"></th>
 					<th width="25px">No</th>
-					<th width="100px">주문상태</th>
+					<th width="70px">주문상태</th>
 					<th width="150px">주문일/주문코드</th>
 					<th width="90px">배송예정일</th>
-					<th width="150px">배송코드</th>
-					<th width="70px">주문자</th>
-					<th width="250px">상품명</th>
-					<th width="100px">배송메시지</th>
+					<th width="70px">배송코드</th>
+					<th width="300px">주문자</th>
+					<th width="100px">상품명</th>
+					<th width="100px">베송메시지</th>
 				</tr>
-				<tr>
-					<td><input type="checkbox"></td>
-					<td>1</td>
-					<td>배송중</td>
-					<td><a href="deliveryForm.jsp">2019-05-10 /<br>O20190510_01</a></td>
-					<td>2019-05-20</td>
-					<td><a href="deliveryForm.jsp">D20190520_01</a></td>
-					<td>주문자</td>
-					<td>상품명</td>
-					<td><div id="memo" class="memo">MEMO</div></td>
-				</tr>
-				
 				<%-- <% for(Product p : list) { %>
 				<tr>
 					<td ><input type="checkbox"></td>
@@ -155,21 +143,8 @@ br
 			</table>
 		
 	</div> <!-- selectListArea -->
-	
-	<br><br><br>
-	<div class="paging" align="center">
-		<ul class="pagination">
-			<li><a href="#">Previous</a></li>
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li><a href="#">Previous</a></li>
-		</ul>
-	</div>
-	
-	</div> <!-- col-sm-10 -->
+		
+		</div> <!-- col-sm-10 -->
 	</section>
 <%@ include file="/views/common/adminFooter.jsp" %>
 

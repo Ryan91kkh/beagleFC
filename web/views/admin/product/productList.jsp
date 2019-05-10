@@ -38,20 +38,20 @@
 		<%@ include file="/views/common/adminSideMenu.jsp" %>
 		
 		<div class="col-sm-10">
-		<h3 class="title">상품목록</h3>
-	    <hr>
+		<h3>상품목록</h3>
+		<hr>
 		
 		<div id="listArea">
 			전체 <a href="/jootopia/views/admin/product/productList.jsp">10</a>건  |  
 			판매중 <a href="#">2</a>건  |
 			판매안함 <a href="#">6</a>건  |
-			상품미등록 <a href="productInsertList.jsp">2</a>건
+			상품미등록 <a href="#">2</a>건
 		</div>
 		<br>
 		
 		<div class="searchArea">
 			<table id="searchBox"  border="1" align="center">
-				<tr><th colspan="3" style="height: 35px;">　</th></tr>
+				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">　</th></tr>
 				<tr>
 					<td>검색 분류</td>
 					<td colspan="2">
@@ -111,11 +111,11 @@
 			</div>
 		</div>
 		
-		<br>
+		<br><br><br><br>
 		
 		<div class="selectTopList">
 		<span>상품 목록</span><br>
-		<span>[총 <a><%= 1 %></a>개]</span>
+		<span>[총 <a style="color: rgb(243, 156, 18);"><%= 1 %></a>개]</span>
 		</div>
 		
 		<br>
@@ -132,24 +132,13 @@
 				<tr>
 					<th width="25px"><input type="checkbox" id="allCheck"></th>
 					<th width="25px">No</th>
-					<th width="100px">상품상태</th>
-					<th width="100px">상품분류</th>
+					<th width="70px">상품상태</th>
+					<th width="90px">상품분류</th>
 					<th width="150px">상품코드</th>
-					<th width="110px">상품이미지</th>
-					<th width="250px">상품명</th>
+					<th width="70px">상품이미지</th>
+					<th width="300px">상품명</th>
 					<th width="100px">판매가(원)</th>
 					<th width="100px">할인가(%)</th>
-				</tr>
-				<tr>
-					<td><input type="checkbox" id="allCheck"></td>
-					<td>1</td>
-					<td>판매중</td>
-					<td>침실 / 침대</td>
-					<td><a href="productDetail.jsp">P20190510_01</a></td>
-					<td><a href="productDetail.jsp"><img src="/jootopia/images/logo2.png" width="60px" height="60px"></a></td>
-					<td><a href="productDetail.jsp">침대침대</a></td>
-					<td>200000</td>
-					<td>20000 (10%)</td>
 				</tr>
 				<%-- <% for(Product p : list) { %>
 				<tr>
@@ -165,21 +154,8 @@
 				</tr>
 				<% } %> --%>
 			</table>
+		
 	</div> <!-- selectListArea -->
-	
-	<br><br><br>
-	<div class="paging" align="center">
-		<ul class="pagination">
-			<li><a href="#">Previous</a></li>
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li><a href="#">Previous</a></li>
-		</ul>
-	</div>
-	
 	</div> <!-- col-sm-10 -->
 	</section>
 	
@@ -263,6 +239,11 @@
 			}else {
 				$("input[type=checkBox]").prop("checked", false);
 			}
+		});
+		
+		$("td")>$("label").click(function() {
+			$(this).css("color", "red");
+			
 		});
 		
 	</script>
