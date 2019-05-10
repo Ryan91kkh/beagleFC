@@ -24,15 +24,11 @@
 			background: rgb(92, 55, 39);
 			color: white;
 			}
-	    #reviewList>tr{
-	    	height:30px;
-	    
-	    }
-	    #reviewList{
-	    	width:100%;
-	    	text-align:center;
-	    }
-	    .replyModalTable > tbody{
+		#qnaList{
+			text-align:center;
+			width:100%;
+		}
+		    .replyModalTable > tbody{
 			width: 200px;
 		}
 		.replyModalTable th, .replyModalTable td{
@@ -45,7 +41,6 @@
 		#replyTb{
 			align:center;
 		}
-
 </style>
 <title>JooTopia</title>
 </head>
@@ -54,94 +49,54 @@
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
       <div class="col-sm-10">
-      <h3 class="title">후기게시판 관리</h3>
-	  <hr>
-      	<div class="searchArea">
-			<table id="searchBox"  border="1" align="center">
+      <h3 class="title">1:1질문 관리</h3>
+      		<div class="searchArea">
+      			<table id="searchBox"  border="1" align="center">
 				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">　</th></tr>
 				<tr>
-					<td>작성자</td>
+					<td colspan="2">
+						&nbsp;<input type="radio" name="qType" value="all"><label>전체</label>
+						&nbsp;<input type="radio" name="qType" value="yes"><label>답변Yes</label>
+						&nbsp;<input type="radio" name="qType" value="no"><label>답변No</label>
+					</td>
 					<td colspan="2">
 						&nbsp;
-						<input type="search" placeholder="작성자를 입력하세요." width="20px">
-					</td>
-				</tr>
-				<tr>
-					<td>제목</td>
-					<td colspan="2">
-						&nbsp;
-						<input type="search" placeholder="제목을 입력하세요." width="20px">
-					</td>
-				</tr>
-				<tr>
-					<td>상품 카테고리</td>
-					<td colspan="2">
-						&nbsp;<select id="searchCategory" onchange="smallCategoty(this.value)">
-							<option value="">- 대분류 -
-							<option value="bedRoom">침실
-							<option value="livingRoom">거실
-							<option value="kitchen">주방
-							<option value="study">서재
-						</select>
-						<select id="small">
-							<option value="">- 중분류 -
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>후기 등록일</td>
-					<td id="selectDate" colspan="2">
-						&nbsp;<a href="#" class="btnDate" period="0"><span>오늘</span></a>
-						<a href="#" class="btnDate" period="7"><span>7일</span></a>
-						<a href="#" class="btnDate" period="30"><span>1개월</span></a>
-						<a href="#" class="btnDate" period="90"><span>3개월</span></a>
-						<a href="#" class="btnDate" period="365"><span>1년</span></a>
-						<a href="#" class="btnDate" period="-1"><span>전체</span></a> &nbsp;&nbsp;
-						<input type="date" id="startDate" name="startDate" class="date" value=""> ~ 
-						<input type="date" id="endDate" name="endDate" class="date" value="">
+						<input type="search" placeholder="아이디를 입력하세요." width="20px">
 					</td>
 				</tr>
 			</table>
-			
-			<br>
-			
-			<div id="searchBtnArea" align="center">
+      		<br>
+      		</div>
+      		<div id="searchBtnArea" align="center">
 				<input type="submit" value="검색" onclick="">
 				<input type="reset" value="초기화" onclick="">
 			</div>
-		</div>
-		<hr>
-		<div id="resultArea">
-		<h3>후기글 목록</h3>
+	  <hr>
+	  <div id="resultArea">
 			<form>
-		   		<table id="reviewList" border="1" align="center"> 
+		   		<table id="qnaList" border="1"> 
 		   			<tr>
 		   				<th width="50px;">선택</th>
-		   				<th width="100px;">글쓴이</th>
-		   				<th width="100px;">제목</th>
-		   				<th width="100px;">게시일</th>
-		   				<th width="150px;">상품카테고리</th>
-		   				<th width="200px;">평점</th>
-		   			</tr>
-		   			<tr id="detailreviews">
-		   				<td width="50px;"><input type="checkbox"></td>
-		   				<td width="100px;">kyukyu</td>
-		   				<td width="100px;">좋네요</td>
-		   				<td width="100px;">2019-05-09</td>
-		   				<td width="150px;">침실>침대</td>
-		   				<td width="200px;">4.5</td>
+		   				<th width="100px;">아이디</th>
+		   				<th width="50px;">글번호</th>
+		   				<th width="100px;">글제목</th>
+		   				<th width="150px;">작성일</th>
+		   				<th width="100px;">답변여부</th>
+		   				
 		   			</tr>
 		   			
 		   		</table>
 		   	</form>
+		</div>	
 		   	<br>
-		   	<div id="updateBtnArea" align="center">
+		   	<hr>
+		   	<div id="updateBtnArea" align="right">
+		   		<input type="button" value="답변"   onclick="showModal();">
 		   		<input type="button" value="삭제">
 		   	</div>
-		</div>	
       </div>
    </section>
-   <!-- The Modal -->
+  <!-- The Modal -->
 	<div id="memoModal" class="memoModal">
 	<div class="memoModalContent">
 	<div class="memoModalHeader">
@@ -149,8 +104,7 @@
 	<table>
 		<tr>
 			<td width="400px;"><h3>글제목</h3></td>
-			<td width="100px;">카테고리</td>
-			<td width="100px;">작성자</td>
+			<td width="100px;">아이디</td>
 			<td width="100px;">작성일</td>
 		</tr>
 	
@@ -171,28 +125,25 @@
 	        <div id="replyTb">
 	        <table class="replyModalTable">
 	    		<tr>
-	    			<th colspan="3">댓글</th>
+	    			<th colspan="3">답변</th>
 	    		</tr>	    		
 	    		<tr>
-	    			<td>
-	    				<input type="checkbox" >
-	    			</td>
-	    			<td>아이디</td>
-	    			<td><textarea cols="85%" rows="1" style="resize:none"></textarea></td>
+	    			<td><textarea cols="90%" rows="5" style="resize:none"></textarea></td>
 	    		</tr>
 	    	</table>
 	    	</div>
 	    	<br>
 	    	<div class="modalBtnArea" align="center">
-					<input type="submit" value="삭제" onclick="">
+					<input type="submit" value="답변" onclick="">
 					<input type="reset" value="닫기">
+					
 			</div>
 	    </div>
 	    </div>
 	</div>
    <script>
-   	$("#detailreviews").click(function() {
-   		
+  	 function showModal(){
+  		 
 		$("#memoModal").css("display", "block");
 		
 		$(".close").click(function() {
@@ -202,8 +153,9 @@
 		$(".modalBtnArea>input[type=reset]").click(function() {
 			$("#memoModal").css("display", "none");
 		});
-		
-	});
+  		 
+  	 }
+   		
    
    
    </script>

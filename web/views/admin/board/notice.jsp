@@ -24,6 +24,10 @@
 			background: rgb(92, 55, 39);
 			color: white;
 			}
+		#noticeList{
+			text-align:center;
+			width:100%;
+		}
 </style>
 <title>JooTopia</title>
 </head>
@@ -32,6 +36,8 @@
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
       <div class="col-sm-10">
+      <h3 class="title">공지사항 게시판 관리</h3>
+		<hr>
       	<div class="searchArea">
 			<table id="searchBox"  border="1" align="center">
 				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">　</th></tr>
@@ -58,7 +64,7 @@
 		<hr>
 		<div id="resultArea">
 			<form>
-		   		<table id="memberList" border="1" align="center"> 
+		   		<table id="noticeList" border="1" align="center"> 
 		   			<tr>
 		   				<th width="50px;">선택</th>
 		   				<th width="50px;">글번호</th>
@@ -71,14 +77,14 @@
 		   			
 		   		</table>
 		   	</form>
+		</div>	
 		   	<br>
 		   	<hr>
 		   	<div id="updateBtnArea" align="right">
-		   		<input type="button" value="글쓰기">
-		   		<input type="button" value="수정">
+		   		<input type="button" value="글쓰기" onclick="location.href='/jootopia/views/admin/board/noticeInsertForm.jsp'">
+		   		<input type="button" value="수정"   onclick="location.href='/jootopia/views/admin/board/updateNotice.jsp'">
 		   		<input type="button" value="삭제">
 		   	</div>
-		</div>	
 		
 		
 		

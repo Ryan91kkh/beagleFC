@@ -11,75 +11,14 @@
 <script src="/jootopia/js/external/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
 <style>
-.snip1535 {
-  background-color: #c47135;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'BenchNine', Arial, sans-serif;
-  font-size: 1em;
-  font-size: 22px;
-  line-height: 1em;
-  margin: 15px 40px;
-  outline: none;
-  padding: 12px 40px 10px;
-  position: relative;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.snip1535:before,
-.snip1535:after {
-  border-color: transparent;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  border-style: solid;
-  border-width: 0;
-  content: "";
-  height: 24px;
-  position: absolute;
-  width: 24px;
-}
-.snip1535:before {
-  border-color: #c47135;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  right: -5px;
-  top: -5px;
-}
-.snip1535:after {
-  border-bottom-width: 2px;
-  border-color: #c47135;
-  border-left-width: 2px;
-  bottom: -5px;
-  left: -5px;
-}
-.snip1535:hover,
-.snip1535.hover {
-  background-color: #c47135;
-}
-.snip1535:hover:before,
-.snip1535.hover:before,
-.snip1535:hover:after,
-.snip1535.hover:after {
-  height: 100%;
-  width: 100%;
-}
-#searchBox {
-	margin-left : auto;
-	margin-right: auto;
+	input{
+	 width:100%;
+	}
 	
-}
-#memberList {
-	margin : 0 auto;
-	
-	margin: 0;
-}
-td{
-	height : 50px;
-}
-	
-
+	#memberList{
+		width:100%;
+		text-align:center;
+	}
 
 </style>
 <title>JooTopia</title>
@@ -88,15 +27,16 @@ td{
 <%@ include file="/views/common/adminNavigation.jsp" %>
    <section class="row">
 	<%@ include file="/views/common/adminSideMenu.jsp" %>
-    <div class="membersearch" class="col-sm-10">
-    <br><br>
-      	<div class="col-sm-8">
-	     	 <form>
-		      <table id="searchBox" border="1" height="30px;">
+    <div class="col-sm-10">
+    <h3 class="title">회원관리</h3>
+	<hr>
+		<div>
+			<form>
+			<table id="searchBox" border="1">
 				  <tr>
-				    <td><label class="titleName">아이디</label></td>
-				    <td><input type="text"></td>
-				    <td><label class="titleName">전화번호</label></td>
+				    <td width="15%"><label class="titleName">아이디</label></td>
+				    <td><input type="text" width="100%"></td>
+				    <td width="15%"><label class="titleName">전화번호</label></td>
 				    <td><input type="phone"></td>
 				  </tr>
 				  <tr>
@@ -109,13 +49,16 @@ td{
 				    <td><label class="titleName">주소</label></td>
 				    <td colspan="3"><input type="text"></td>
 				  </tr>
-				<tr>
-					<td colspan="4"><button class="snip1535" type="submit" align="center">조회</button></td>
-				</tr>
 			</table>
+			<br>
+			<div id="searchBtnArea" align="right">
+				<input type="submit" value="조회">
+			</div>
 			</form>
-		   		<hr  style="border: solid 2px gray;" align="center" width="100%" >
-		   	<form>
+		</div>
+		<hr>
+		<div id="resultArea">
+			<form>
 		   		<table id="memberList" border="1" align="center"> 
 		   			<tr>
 		   				<th width="50px;">선택</th>
@@ -128,8 +71,8 @@ td{
 		   			</tr>
 		   			<tr>
 		   				<td><input type="checkbox"></td>
-		   				<td><a href="/jootopia/views/admin/member/detailMember.jsp">kyu</a></td>
-		   				<td><a href="/jootopia/views/admin/member/deleteMemberList.jsp">김규형</a></td>
+		   				<td>kyu</td>
+		   				<td>김규형</td>
 		   				<td>990302</td>
 		   				<td>01022223333</td>
 		   				<td>kyu@co.kr</td>
@@ -137,19 +80,18 @@ td{
 		   			</tr>
 		   		</table>
 		   	</form>
-		   	<hr  style="border: solid 2px gray;" align="center" width="100%" >
-		   	<div class="btnArea">
-		   		<input type="submit" value="탈퇴">
+		   	<hr>
+		   	<div id="searchBtnArea" align="right">
+		   		<input type="submit" value="강퇴">
 		   		<input type="button" value="수정" onclick="location.href='/jootopia/views/admin/member/detailMember.jsp'">
 		   	</div>
-   		</div>
+		
+		
+		</div>
+      	
    </div>
+   
    <script>
-   	$(".hover").mouseleave(
-		   function() {
-		     $(this).removeClass("hover");
-		   }
-		 );
    	$(".memberList").click(function(){
    		location.href="detailMemberList.jsp"
    	});

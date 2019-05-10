@@ -12,10 +12,10 @@
 		<span class="col-lg-1" onclick="location.href='/jootopia/views/main/AdminMainPage.jsp'">
 			<img id="navHomeBtn" src="/jootopia/images/adminMenuHomeBtn.png">
 		</span>
-		<span class="col-lg-1" onclick="location.href='/jootopia/views/admin/board/review.jsp'">
+		<span class="col-lg-1" onclick="location.href='/jootopia/views/admin/member/member.jsp'">
 			회원관리
 		</span>
-		<span class="col-lg-1" onclick="location.href='/jootopia/views/admin/board/review.jsp'">
+		<span class="col-lg-1" onclick="location.href='/jootopia/views/admin/board/notice.jsp'">
 			게시판관리
 		</span>
 		<span class="col-lg-1" onclick="location.href='/jootopia/views/admin/purchase/purchaseList.jsp'">
