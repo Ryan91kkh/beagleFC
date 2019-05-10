@@ -14,10 +14,6 @@
 		font-weight:bold;
 	}
 	
-	table{
-		text-align:center;
-	}
-	
 	#modifyBtn{
 		width:100px;
 		background-color: #FFBB00;
@@ -46,61 +42,29 @@
 		margin: 4px;
 		cursor: pointer;
 		border-radius:10px;
-	}
+	}	
 	
 	#btnArea{
 		text-align:center;
-	}	
+	}
 </style>
 </head>
 <body>
 <%@ include file="/views/common/navigation.jsp" %>
 	<section>
+	<br /><br /><br /><br />
 		<div class="row">
-		<br /><br />
-		<h1>주문 취소</h1>
-		<br /><br />
 			<div class="col-sm-3"></div>
 			<div class="col-sm-6">
-				<table class="table">
-					<tr>
-						<td><label for="">제품명</label></td>
-						<td>멀미나는 소파</td>
-					</tr>
-					<tr>
-						<td><label for="">주문일</label></td>
-						<td>2019-04-17</td>
-					</tr>		
-					<tr>
-						<td><label for="">환불 금액</label></td>
-						<td>200,000</td>
-					</tr>	
-					<tr>
-						<td><label for="">환불 사유</label></td>
-						<td>
-							<select name="" id="">
-								<option value="1">단순 변심</option>
-								<option value="2">취소 후 재주문</option>
-								<option value="3">기타</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td> </td>
-						<td> </td>
-					</tr>
-				</table>			
+				<h1>리뷰 삭제에 성공했습니다</h1>
+				<br /><br />	
+				<div class="btnArea" id="btnArea">
+					<a href="boardListPage.jsp" id="modifyBtn">게시판 페이지</a>
+					<a href="../main/MainPage.jsp" id="delBtn">메인으로</a>
+						
+				</div>
 			</div>
-			
-			
-			<div class="col-sm-3"></div>	
-			
-			</div>
-			
-			<div align="center">
-			<div class="btnArea" id="btnArea">
-				<a href="#" id="modifyBtn">확인</a>					
-		</div>		
+			<div class="col-sm-3"></div>
 		</div>
 	</section>
 <%@ include file="/views/common/footer.jsp" %>

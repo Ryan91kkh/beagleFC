@@ -108,8 +108,8 @@
 		
 		<div align="center">
 			<div class="btnArea" id="btnArea">
-				<a href="#" id="modifyBtn">확인</a>
-				<a href="#" id="delBtn">주문취소</a>						
+				<a href="orderListPage.jsp" id="modifyBtn">확인</a>
+				<a href="orderCancelPage.jsp" id="delBtn">주문취소</a>						
 			</div>	
 		</div>
 		

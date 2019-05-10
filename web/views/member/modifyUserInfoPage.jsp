@@ -85,7 +85,7 @@
 					</tr>
 				</table>
 					<div class="btnArea" id="btnArea">
-					<a href="passwordCheckPage.jsp" id="modifyBtn">수정</a>
+					<a href="../main/MainPage.jsp" id="modifyBtn">수정 완료</a>
 					<a onclick="delMember()" id="delBtn">탈퇴</a>
 						
 				</div>
@@ -100,7 +100,6 @@
 			var answer = window.confirm("정말 탈퇴하시겠습니까? ");
 			
 			if(answer == true){
-				alert("정말로 탈퇴를 누르다니... 실망이예요~");
 				location.href="deleteMemberPage.jsp";
 		
 				

@@ -119,7 +119,7 @@
 						</td>
 						<td colspan="4">
 							<textarea name="content" id="" cols="80" rows="3"
-							style="resize:none; " readonly>
+							style="resize:none; " readonly>거른댜
 							</textarea>
 						</td>
 						</tr>
@@ -134,8 +134,9 @@
 	
 		<div align="center">
 			<div class="btnArea" id="btnArea">
-				<a href="modifyQaAPage.jsp" id="modifyBtn">수정</a>
-				<a onclick="delPurchase()" id="delBtn">삭제</a>						
+				<a href="purchaseStatusPage.jsp" id="modifyBtn">매입 상세조회</a>
+				<a href="modifyPurchasePage.jsp" id="modifyBtn">수정</a>
+				<a onclick="delPurchase()" id="delBtn">삭제</a>										
 			</div>	
 		</div>
 	</section>

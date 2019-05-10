@@ -57,66 +57,51 @@
 <%@ include file="/views/common/navigation.jsp" %>
 	<section>
 		<div class="row">
-		<br />
-			<h1>매입 내역 상세 페이지</h1>
-			<br />
-			<div class="col-sm-2"></div>
-			<div class="col-sm-3">
-			
-			<table>
-				<tr>
-					<td rowspan="4">
-					<img src="/jootopia/images/so.jpg" alt="" style="width:280px; heihgt:200px;"/>
-					</td>
-				</tr>
-			</table>
-			</div>
-			
-			<div class="col-sm-5">
+		<br /><br />
+		<h1>주문 취소</h1>
+		<br /><br />
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
 				<table class="table">
 					<tr>
 						<td><label for="">제품명</label></td>
-						<td>다리 하나 없는 소파</td>
+						<td>멀미나는 소파</td>
 					</tr>
 					<tr>
-						<td><label for="">매입 신청일</label></td>
+						<td><label for="">주문일</label></td>
 						<td>2019-04-17</td>
-					</tr>				
+					</tr>		
 					<tr>
-						<td><label for="">매입 승낙일</label></td>
-						<td>2019-04-19</td>						
+						<td><label for="">환불 금액</label></td>
+						<td>200,000</td>
 					</tr>	
 					<tr>
-						<td><label for="">처리 금액</label></td>
-						<td>65,000</td>
-					</tr>
-					<tr>						
-						<td colspan="2" rowspan="2" style="text-align:center;"><label>처리 현황</label><br />
-						<img src="/jootopia/images/sample.PNG" alt="" style="width:280px; heihgt:200px;"/>
+						<td><label for="">환불 사유</label></td>
+						<td>
+							<select name="" id="">
+								<option value="1">단순 변심</option>
+								<option value="2">취소 후 재주문</option>
+								<option value="3">기타</option>
+							</select>
 						</td>
 					</tr>
-			<!-- 		<tr>
-						<td colspan="2">
-						<img src="/jootopia/images/sample.PNG" alt="" style="width:280px; heihgt:200px;"/>
-						</td>
-					</tr> -->
 					<tr>
 						<td> </td>
 						<td> </td>
 					</tr>
-					<tr>
-					
-					</tr>
-				</table>
+				</table>			
 			</div>
 			
-			<div class="col-sm-2"></div>				
-		</div>
-		<div align="center">
+			
+			<div class="col-sm-3"></div>	
+			
+			</div>
+			/
+			<div align="center">
 			<div class="btnArea" id="btnArea">
-					<a href="boardListPage.jsp" id="modifyBtn">확인</a>
-			</div>	
+				<a href="orderCancelSuccessPage.jsp" id="modifyBtn">확인</a>					
 		</div>		
+		</div>
 	</section>
 <%@ include file="/views/common/footer.jsp" %>
 </body>

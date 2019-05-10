@@ -59,7 +59,7 @@
 				<h1>1:1문의 삭제에 성공했습니다.</h1>
 				<br /><br />	
 				<div class="btnArea" id="btnArea">
-					<a href="#" id="modifyBtn">1:1문의 작성</a>
+					<a href="boardListPage.jsp" id="modifyBtn">게시판 페이지</a>
 					<a href="../main/MainPage.jsp" id="delBtn">메인으로</a>
 						
 				</div>
