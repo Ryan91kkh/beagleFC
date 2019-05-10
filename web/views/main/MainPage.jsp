@@ -16,6 +16,7 @@
     background-color: blue;
 } 
 
+
 .photogtoup1{
 	margin-bottom:400px;
 	
@@ -28,6 +29,7 @@
 	margin: 0 auto;
 }
  */
+
 </style>
 </head>
 <body>
@@ -38,10 +40,6 @@
 	<br><br>
 	<section>
 <div class="container">
- <!--  <h2>Carousel Example</h2> -->  
-  <!-- 검색 -->
-  <!-- <input type="text" name="search"><input type = "button" value = "search" onclick = "window.location='../searchInformation.jsp'">  -->
-  <!-- 이벤트공지사항 슬라이드 -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
   
     <!-- Indicators -->

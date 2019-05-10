@@ -9,11 +9,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>JooTopia</title>
 <link rel="stylesheet" type="text/css" href="/jootopia/css/admin/adminCommon.css">
+<style>
+	*{
+		min-height:unset;
+	}
+</style>
 </head>
 <body>
-
-	<nav class="col-sm-2" align="center">
-		<div class="sideMenuImg" id="sideMenuImg"><img src="/jootopia/images/sideMenuImg.png" width="100%"></div>
+	<nav class="sideNav col-sm-2" align="center">
+		<div class="sideMenuImg" id="sideMenuImg">
+			<img src="/jootopia/images/sideMenuImg.png" width="100%">
+		</div>
 		<br>
 		<% if(root.equals("member")) { %>
 		
@@ -61,6 +67,5 @@
 		
 		<% } %>
 	</nav>
-
 </body>
 </html>
