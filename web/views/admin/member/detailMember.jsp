@@ -10,7 +10,10 @@
 <script src="/jootopia/js/external/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
 <style>
-	
+	.updateBtn{
+		margin:auto;
+		width:0%;
+	}
 	.btnDate {
 	background: rgb(224, 224, 224);
 	color: black;
@@ -31,7 +34,7 @@
 		text-align:center;
 	
 	}
-
+	
 </style>
 <title>JooTopia</title>
 </head>
@@ -40,8 +43,6 @@
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
       <div class="col-sm-10">
-      <h3 class="title">회원상세보기</h3>
-		<hr>
       <br>
       <br>
       	<div>
@@ -50,7 +51,7 @@
 				  <tr>
 				    <td><label class="titleName">아이디</label></td>
 				    <td>kyu</td>
-				    <td width="20%"><label class="titleName">전화번호</label></td>
+				    <td><label class="titleName">전화번호</label></td>
 				    <td><01022223333</td>
 				  </tr>
 				  <tr>
@@ -64,21 +65,19 @@
 				    <td colspan="3">서울시 서대문구</td>
 				  </tr>
 			</table>
-			<br>
-			<div id="searchBtnArea">
+			<div class="updateBtn">
 				<input type="submit" value="수정완료">
 			</div>
 		  </form>
 		</div><!--폼 -->
-	   		<hr>
+	   		<hr  style="border: solid 2px gray;" align="center" width="100%" >
 	      	<div>
-		      	<select id="selectFormBox" onchange="SetSelectBox();" height="30%;">
+		      	<select id="selectBox">
 		      		<option value="orderList">주문</option>
 		      		<option value="reviewList">후기</option>
 		      		<option value="sellingList">매입</option>
 		      		<option value="qnaList">1:1문의글</option>
 		      	</select>
-		      	&nbsp;
 		      	<button>검색</button>
 		      		<a href="#" class="btnDate" period="7"><span>7일</span></a>
 					<a href="#" class="btnDate" period="30"><span>1개월</span></a>
@@ -88,7 +87,6 @@
 					<input type="date" id="startDate" name="startDate" class="date" > ~ 
 					<input type="date" id="endDate" name="endDate" class="date" >
       		</div>
-      		<hr>
       		<div id="resultArea">
       			<form>
       				<table id="orderListTb" border="1px;">
@@ -101,7 +99,7 @@
       					</tr>
       				</table>
       			</form>
-      				<table id="sellingListTb" border="1px;" style="display:none">
+      				<table id="sellingListTb" border="1px;">
       					<tr>
       						<th width="300px;" height="30px">카테고리</th>
       						<th width="300px;" height="30px">신청일</th>
@@ -110,7 +108,7 @@
       						<th width="300px;" height="30px">비고</th>
       					</tr>
       				</table>
-      				<table id="reviewListTb" border="1px;" style="display:none">
+      				<table id="reviewListTb" border="1px;">
       					<tr>
       						<th width="300px;" height="30px">글번호</th>
       						<th width="300px;" height="30px">제목</th>
@@ -119,7 +117,7 @@
       						<th width="300px;" height="30px">평점</th>
       					</tr>
       				</table>
-      				<table id="qnaListTb" border="1px;" style="display:none">
+      				<table id="qnaListTb" border="1px;" >
       					<tr>
       						<th width="300px;" height="30px">작성일</th>
       						<th width="300px;" height="30px">제목</th>
@@ -142,42 +140,7 @@
 			
       	
       	<script>
-      		function SetSelectBox(){
-      			var schField = $("#selectFormBox option:selected").val();
-      			
-      			console.log(schField);
-      			
-      			if(schField=="orderList"){
-      				document.getElementById('orderListTb').style.display  = 'block';
-      				document.getElementById('reviewListTb').style.display  = 'none';
-      				document.getElementById('sellingListTb').style.display  = 'none';
-      				document.getElementById('qnaListTb').style.display  = 'none';
-      				
-      			}else if(schField == "reviewList"){
-      				document.getElementById('orderListTb').style.display  = 'none';
-      				document.getElementById('reviewListTb').style.display  = 'block';
-      				document.getElementById('sellingListTb').style.display  = 'none';
-      				document.getElementById('qnaListTb').style.display  = 'none';
-      				
-      				
-      			}else if(schField == "sellingList"){
-      				document.getElementById('orderListTb').style.display  = 'none';
-      				document.getElementById('reviewListTb').style.display  = 'none';
-      				document.getElementById('sellingListTb').style.display  = 'block';
-      				document.getElementById('qnaListTb').style.display  = 'none';
-      				
-      			}else{
-      				document.getElementById('orderListTb').style.display  = 'none';
-      				document.getElementById('reviewListTb').style.display  = 'none';
-      				document.getElementById('sellingListTb').style.display  = 'none';
-      				document.getElementById('qnaListTb').style.display  = 'block';
-      				
-      			}
-      			
-      		}	
-      	
-      		
-      		/* $(function(){
+      		$(function(){
       			$("#selectBox").change(function(){
       				var tableSelect = $("#selectBox option:seleted").val();
       				if( tableSelect == 'qnaListTb'){
@@ -186,7 +149,7 @@
       				}
       			});
       		});
-      	 */
+      	
       	
       	
       	</script>

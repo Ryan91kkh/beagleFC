@@ -28,10 +28,6 @@
 	    	height:30px;
 	    
 	    }
-	    #reviewList{
-	    	width:100%;
-	    	text-align:center;
-	    }
 	    .replyModalTable > tbody{
 			width: 200px;
 		}
@@ -42,9 +38,6 @@
 			height: 20px;
 			align: center;
 		}
-		#replyTb{
-			align:center;
-		}
 
 </style>
 <title>JooTopia</title>
@@ -54,8 +47,6 @@
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
       <div class="col-sm-10">
-      <h3 class="title">후기게시판 관리</h3>
-	  <hr>
       	<div class="searchArea">
 			<table id="searchBox"  border="1" align="center">
 				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">　</th></tr>
@@ -139,6 +130,12 @@
 		   		<input type="button" value="삭제">
 		   	</div>
 		</div>	
+		<button onclick="location.href='/jootopia/views/admin/board/notice.jsp'">공지사항</button>
+		
+		
+		
+		
+		
       </div>
    </section>
    <!-- The Modal -->
@@ -158,6 +155,7 @@
 	</table>
 	<hr>
 	</div>
+	
 	<!-- Modal content -->
 	    <div class="memoModalBody" align="center">
 	    	<table class="memoModalTable">
@@ -168,7 +166,6 @@
 	    		</tr>
 	    	</table>
 	    	<br>
-	        <div id="replyTb">
 	        <table class="replyModalTable">
 	    		<tr>
 	    			<th colspan="3">댓글</th>
@@ -178,11 +175,16 @@
 	    				<input type="checkbox" >
 	    			</td>
 	    			<td>아이디</td>
-	    			<td><textarea cols="85%" rows="1" style="resize:none"></textarea></td>
+	    			<td><textarea cols="70%" rows="1" style="resize:none"></textarea></td>
 	    		</tr>
+	    		<%-- <tr>
+	    			<td>
+	    				<input type="text" name="oMemo" value="<%= "배송메시지 임시" %>">
+	    			</td>
+	    		</tr> --%>
 	    	</table>
-	    	</div>
 	    	<br>
+	    	
 	    	<div class="modalBtnArea" align="center">
 					<input type="submit" value="삭제" onclick="">
 					<input type="reset" value="닫기">

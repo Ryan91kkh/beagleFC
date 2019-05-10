@@ -23,24 +23,13 @@
 		<br>
 		<% if(root.equals("member")) { %>
 		
-		<div class="sideMenu" id="sideMenu1">
-			<div class="sideMenuBtn" id="memberSide1" onclick="location.href='member.jsp'">회원조회</div>
-		</div>
-		<div class="sideMenu" id="sideMenu2">
-			<div class="sideMenuBtn" id="memberSide2" onclick="location.href='deleteMemberList.jsp'">탈퇴회원 조회</div>
-		</div>
+		<div class="sideMenu" id="sideMenu1"><div class="sideMenuBtn" id="">회원조회</div></div>
+		<div class="sideMenu" id="sideMenu2"><div class="sideMenuBtn" id="">탈퇴회원 조회</div></div>
 		
 		<% }else if(root.equals("board")) { %>
 		
-		<div class="sideMenu" id="sideMenu1">
-			<div class="sideMenuBtn" id="boardSide1" onclick="location.href='notice.jsp'">공지사항</div>
-		</div>
-		<div class="sideMenu" id="sideMenu2">
-			<div class="sideMenuBtn" id="boardSide1" onclick="location.href='review.jsp'">후기게시판</div>
-		</div>
-		<div class="sideMenu" id="sideMenu3">
-			<div class="sideMenuBtn" id="boardSide1" onclick="location.href='qna.jsp'">1:1질문게시판</div>
-		</div>
+		<div class="sideMenu" id="sideMenu1"><div class="sideMenuBtn" id="">공지사항</div></div>
+		<div class="sideMenu" id="sideMenu2"><div class="sideMenuBtn" id="">후기게시판</div></div>
 		
 		<% }else if(root.equals("product")) { %>
 		

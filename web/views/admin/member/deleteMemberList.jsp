@@ -24,12 +24,6 @@
 		background: rgb(92, 55, 39);
 		color: white;
 	}
-	#memberList{
-		text-align:center;
-	}
-	#memberList tr{
-		height:50%;
-	}
 </style>
 <title>JooTopia</title>
 </head>
@@ -38,8 +32,6 @@
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
       <div class="col-sm-10">
-      <h3 class="title">탈퇴회원관리</h3>
-	  <hr>
        <div class="searchArea">
 			<table id="searchBox"  border="1" align="center">
 				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">　</th></tr>
@@ -97,7 +89,7 @@
 		<hr>
 		<div id="resultArea">
 			<form>
-		   		<table id="memberList" border="1" align="center" width="100%"> 
+		   		<table id="memberList" border="1" align="center"> 
 		   			<tr>
 		   				<th width="50px;">선택</th>
 		   				<th width="100px;">아이디</th>
@@ -109,7 +101,7 @@
 		   			</tr>
 		   			<tr>
 		   				<td><input type="checkbox"></td>
-		   				<td>kyu</td>
+		   				<td><a href="/jootopia/views/admin/member/detailMember.jsp">kyu</a></td>
 		   				<td><a href="/jootopia/views/admin/member/deleteMemberList.jsp">김규형</a></td>
 		   				<td>990302</td>
 		   				<td>01022223333</td>
@@ -120,7 +112,9 @@
 		   	</form>
 		   	<br>
 		   	<div id="updateBtnArea" align="center">
-		   		<input type="button" value="복구">
+		   		<input type="button" value="글쓰기">
+		   		<input type="button" value="수정">
+		   		<input type="button" value="삭제">
 		   	</div>
 		</div>	
 		<hr>
