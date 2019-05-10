@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="/jootopia/images/favicon.ico">
-<link rel="stylesheet" href="jquery-3.4.0.min.js">
-<link rel="stylesheet" href="/jootopia/css/common.css">
+<link rel="stylesheet" href="/jootopia/js/external/jquery-3.4.0.min.js">
+<link rel="stylesheet" href="/jootopia/css/user/common.css">
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -31,12 +31,13 @@
 	width:100px;
 	height:100px;
 	border:1px solid black;
-	margin-left: 100px;
-	
+	margin-bottom: 200%;
+	margin-left: 3%;
+	margin-right: 3%;
 } 
 
 .checkboxgroup{
-	margin-left:350px;
+	margin-left:10%;
 }
 
 </style>
@@ -59,7 +60,7 @@
 			<%-- <button onclick="location.href='<%=request.getContextPath()%>/views/notice/faqMembership.jsp'">회원가입</button> --%>
 			<button onclick="location.href='<%=request.getContextPath()%>/views/notice/faqPersonal.jsp'">개인정보</button>
 			<button onclick="location.href='<%=request.getContextPath()%>/views/notice/faqPurchase.jsp'">상품구매</button>
-			<button onclick="location.href='<%=request.getContextPath()%>/views/notice/faqOrderCancle.jsp'">주문절차/취소</button>
+			<button onclick="location.href='<%=request.getContextPath()%>/views/notice/faqOrderCancle.jsp'">주문/취소</button>
 			<button onclick="location.href='<%=request.getContextPath()%>/views/notice/faqPaymentSending.jsp'">결제/배송</button>
 			<button onclick="location.href='<%=request.getContextPath()%>/views/notice/faqRefunding.jsp'">교환/환불</button>
 			<button onclick="location.href='<%=request.getContextPath()%>/views/notice/faqTheothers.jsp'">기타</button>
