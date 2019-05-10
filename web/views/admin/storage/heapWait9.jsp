@@ -17,12 +17,14 @@
 <%@ include file="/views/common/adminNavigation.jsp" %>
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
-      <!-- <div id="adminSection" class="col-sm-10"> -->
-      	
-      	<div class="col-sm-10">
+      <div id="adminSection" class="col-sm-10"> 
+      
+      <h3 class="title">상품적치대기</h3>
+	    	<hr>     
+      
       <div class="searchArea">
 			<table id="searchBox"  border="1" align="center">
-				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">상품출고리스트</th></tr>
+				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">상품적치대기</th></tr>
 				<tr>
 					<td>검색 분류</td>
 					<td colspan="2">
@@ -81,7 +83,7 @@
 				<input type="reset" value="초기화" onclick="">
 			</div>
 		</div>
-		</div>
+		
 		<br><br><br><br>
       
       <br><br>
@@ -92,38 +94,34 @@
 		<tr>
 			<th>No</th>
 			<th>상품바코드</th>
-			<th>적치바코드</th>
 			<th>대분류</th>
 			<th>중분류</th>
-			<th>출고날짜</th>			
+			<th>상품등급</th>			
 		</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td>1</td>
 				<td>A001</td>
-				<td>C1234</td>
 				<td>가구</td>
 				<td>침대</td>
-				<td>19/01/01</td>
+				<td>상</td>
 				
 			</tr>
 			<tr>
 				<td>2</td>
 				<td>B002</td>
-				<td>D1234</td>
 				<td>가구</td>
-				<td>침대</td>
-				<td>19/01/01</td>
+				<td>책상</td>
+				<td>중</td>
 				
 			</tr>
 			<tr>
 				<td>3</td>
 				<td>C003</td>
-				<td>E1234</td>
 				<td>가구</td>
-				<td>침대</td>
-				<td>19/01/01</td>
+				<td>의자</td>
+				<td>하</td>
 				
 			</tr>
 		</tbody>
@@ -176,9 +174,10 @@
 		</ul>
 	</div>
 	</div>
+      
+      
       	
-      	
-      <!-- </div> -->
+      </div>
    </section>
 <%@ include file="/views/common/adminFooter.jsp" %>
 </body>

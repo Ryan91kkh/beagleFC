@@ -31,20 +31,14 @@
 	border: 1px solid #ccc;
 }
 
-div.left {
-	width: auto;
-	float: left;
-	margin-left: 100px;
-
-	/* box-sizing: border-box;  */
+.imgArea img {
+	width: 500px;
+	height: 400px;
+	margin-bottom: 20px;
+	border:2px solid orangered;
 }
 
-div.right {
-	width: auto;
-	float: right;
-	margin-right: 50px;
-	/* box-sizing: border-box;   */
-}
+
 </style>
 <title>JooTopia</title>
 </head>
@@ -52,20 +46,21 @@ div.right {
 <%@ include file="/views/common/adminNavigation.jsp" %>
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
-      <!-- <div id="adminSection" class="col-sm-10"> -->
-      
+      <div id="adminSection" class="col-sm-10">
+      <h3 class="title">적치완료_상세</h3>
+	    	<hr>
       
       <br />
 		<br />
 		<br />
 
 
-		<div class="left">
-					
+		
+				<div class="col-sm-6 imgArea">	
 				<div id="ImgArea1">
-				<tr>
-					<td><img src="../web/images/flower1.PNG" id="Img1" width="500" height="400"></td>
-				</tr>			
+				
+					<img src="/jootopia/images/b1.jpg" id="Img1">
+							
 			</div>			
 		</div>
 
@@ -106,7 +101,7 @@ div.right {
 			</table>
 			<br />
 			
-			<!-- </div> -->
+			</div>
       	
       </div>
    </section>
