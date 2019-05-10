@@ -64,7 +64,7 @@
 					</tr>
 				</table>
 			<div class="btnArea">
-			<a href="modifyUserInfoPage.jsp" id="modifyBtn">확인</a>
+			<a href="passwordCheckPage.jsp" id="modifyBtn">확인</a>
 			</div>
 			
 			</div>

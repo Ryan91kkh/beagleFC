@@ -45,21 +45,6 @@
 		cursor: pointer;
 		border-radius:10px;
 	}
-	#orderBtn{
-		width:200px;
-		background-color: white;
-		border: 1px solid black;
-		color:black;
-		padding: 15px 0;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 15px;
-		margin: 4px;
-		cursor: pointer;
-		border-radius:10px;
-		
-	}	
 	
 	#btnArea{
 		text-align:center;
@@ -98,11 +83,9 @@
 
 				<div class="btnArea" id="btnArea">
 					<a href="passwordCheckPage.jsp" id="modifyBtn">수정</a>
-					<a href="passwordCheckPage.jsp" id="delBtn">삭제</a><br />
-					<a href="orderListPage.jsp" id="orderBtn">임시)주문내역</a><br />
-					<a href="boardListPage.jsp" id="orderBtn">임시)게시글 조회</a>
+					<a href="passwordCheckPage.jsp" id="delBtn">삭제</a>
+						
 				</div>
-				
 			</div>
 			<div class="col-sm-3"></div>
 		</div>

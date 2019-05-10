@@ -112,7 +112,7 @@
 		</div>
 		<div align="center">
 			<div class="btnArea" id="btnArea">
-				<a href="boardListPage.jsp" id="modifyBtn">확인</a>
+				<a href="#" id="modifyBtn">확인</a>
 				<a onclick="delQaA()" id="delBtn">삭제</a>						
 			</div>	
 		</div>

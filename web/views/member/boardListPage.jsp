@@ -65,7 +65,7 @@
 	<section>
 	<br /><br />
 		<div class="row">
-			<h1 align="center">게시글 조회</h1>
+			<h1 align="center">주문 내역</h1>
 			<div class="col-sm-3"></div>
 			<div class="col-sm-6" id="tableArea">
 				<table class="table">
@@ -78,10 +78,10 @@
 					</tr>
 					<tr>
 						<td>1</td>
-						<td><a href="reviewPage.jsp">아나 쓰레기잖아효</a></td>
+						<td>아나 쓰레기잖아효</td>
 						<td>2018-02-21</td>
 						<td>50<td>
-						<td>후기</td>
+						<td>후기쓰</td>
 					</tr>
 					<tr>
 						<td>2</td>
@@ -92,14 +92,14 @@
 					</tr>
 					<tr>
 						<td>3</td>
-						<td><a href="purchaseListDetail.jsp">소파 가져가주세용~ㅋ</a></td>
+						<td>소파 가져가주세용~ㅋ</td>
 						<td>2019-01-01</td>
 						<td>30</td>
 						<td>매입 신청</td>
 					</tr>	
 					<tr>
 						<td>4</td>
-						<td><a href="QaAPage.jsp">저 궁금한 게 있는데용;ㅋ</a></td>
+						<td>저 궁금한 게 있는데용;ㅋ</td>
 						<td>2019-02-03</td>
 						<td>25</td>
 						<td>1:1 문의</td>

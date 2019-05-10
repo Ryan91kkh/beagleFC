@@ -65,7 +65,7 @@
 					</tr>
 					<tr style="color:black;">
 						<td>1</td>
-						<td><a href="detailOrderPage.jsp">멀미나는 쇼파</a></td>
+						<td><a href="#">멀미나는 쇼파</a></td>
 						<td>200,000</td>
 						<td>2019-04-17</td>
 						<td><a href="#" id="delBtn">조회</a></td>

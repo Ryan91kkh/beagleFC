@@ -112,7 +112,7 @@
 		</div>
 		<div align="center">
 			<div class="btnArea" id="btnArea">
-				<a href="boardListPage.jsp" id="modifyBtn">수정</a>
+				<a href="modifyQaAPage.jsp" id="modifyBtn">수정</a>
 				<a onclick="delQaA()" id="delBtn">삭제</a>						
 			</div>	
 		</div>

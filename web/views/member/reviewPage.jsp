@@ -98,8 +98,8 @@
 					<td rowspan="2"><label for="">내용</label><br /></td>
 					<td colspan="4">
 						<textarea name="content" id="" cols="80" rows="5"
-						style="resize:none; readonly" 
-						>야~~~~~~~~~~~~주토피아가 짱~~~~~~~~~이양아ㅏ아아ㅏ~~</textarea>
+						style="resize:none;" 
+						></textarea>
 					</td>
 				</tr>
 			</table>
@@ -114,7 +114,7 @@
 							</td>
 							<td colspan="4">
 									<textarea name="content" id="" cols="80" rows="3"
-									style="resize:none; " readonly>어쩌라고~~~~~~~~~!
+									style="resize:none; " readonly>
 									</textarea>
 							</td>
 						</tr>
@@ -126,7 +126,7 @@
 		</div>
 		<div align="center">
 			<div class="btnArea" id="btnArea">
-				<a href="modifyReviewPage.jsp" id="modifyBtn">수정</a>
+				<a href="modifyQaAPage.jsp" id="modifyBtn">수정</a>
 				<a onclick="delQaA()" id="delBtn">삭제</a>						
 			</div>	
 		</div>
@@ -138,7 +138,7 @@
 			var answer = window.confirm("해당 후기를 삭제하시겠습니까? ");
 			
 			if(answer == true){
-				location.href="deleteReviewPage.jsp";	
+				location.href="deleteQaAPage.jsp";	
 			}else{
 				alert("잘 선택하셨어요~");
 			}
