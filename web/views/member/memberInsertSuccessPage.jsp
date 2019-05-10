@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%  %>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,15 +11,11 @@
 <title>JooTopia</title>
 <style>
 	div>h1{
-		font-weight:bold;
-		align:center;
-	}
-	
-	#tableArea{
 		text-align:center;
+		font-weight:bold;
 	}
 	
-		#modifyBtn{
+	#modifyBtn{
 		width:100px;
 		background-color: #FFBB00;
 	   border: none;
@@ -33,40 +30,40 @@
 	   border-radius:10px;
 	}
 	
-	table{
-	text-align:center;
-	}
+	#delBtn{
+		width:100px;
+		background-color: #7A7A7A;
+		border: none;
+		color:#fff;
+		padding: 15px 0;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 15px;
+		margin: 4px;
+		cursor: pointer;
+		border-radius:10px;
+	}	
 	
+	#btnArea{
+		text-align:center;
+	}
 </style>
 </head>
 <body>
 <%@ include file="/views/common/navigation.jsp" %>
 	<section>
+	<br /><br /><br /><br />
 		<div class="row">
 			<div class="col-sm-3"></div>
-			
-			<div class="col-sm-6" id="tableArea">
-				<h1>비밀번호 입력</h1>
-				<br />
-				<p>회원님의 개인 정보 보호를 위해 비밀번호를 한 번 더 입력해주세요.</p>
-				<table class="table">
-					<tr>
-						<td><label for="">아이디</label></td>
-						<td>so3o02</td>
-					</tr>
-					<tr>
-						<td><label for="">비밀번호</label></td>
-						<td><input type="password" name="userPwd"/></td>
-					</tr>
-					<tr>
-					<td> </td>
-					<td> </td>
-					</tr>
-				</table>
-			<div class="btnArea">
-			<a href="modifyUserInfoPage.jsp" id="modifyBtn">확인</a>
-			</div>
-			
+			<div class="col-sm-6">
+				<h1>회원 가입에 성공했습니다.</h1>
+				<br /><br />	
+				<div class="btnArea" id="btnArea">
+					<a href="#" id="modifyBtn">메인으로</a>
+					<a href="#" id="delBtn">로그인</a>
+						
+				</div>
 			</div>
 			<div class="col-sm-3"></div>
 		</div>
