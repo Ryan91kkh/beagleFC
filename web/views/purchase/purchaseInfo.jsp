@@ -11,12 +11,11 @@
 <link rel="stylesheet" href="/jootopia/css/user/common.css">
 <title>JooTopia</title>
 <style>
-	.imgArea{
-		width: 100%;
-		height : 600px;
-		border: 1px solid black;
-	}
-	
+.imgArea{
+	width: 100%;
+	height : 600px;
+	border: 1px solid black;
+}
 </style>
 </head>
 <body>

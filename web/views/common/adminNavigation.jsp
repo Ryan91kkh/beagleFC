@@ -8,39 +8,33 @@
 <script src="/jootopia/js/external/jquery-3.4.0.min.js"></script>
 <script src="/jootopia/js/external/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/jootopia/css/user/header.css">
+<link rel="stylesheet" type="text/css" href="/jootopia/css/admin/adminHeader.css">
 
 <title>JooTopia</title>
 </head>
 <body>
-
-	
-	<!--  -->
 	<header class="row" contextmenu="">
-		
-		<span class="col-lg-1"><img id="navHomeBtn" src="/jootopia/images/adminMenuHomeBtn.png"></span>
-		<span class="col-lg-1"><a href="#">회원관리</a></span>
-		<span class="col-lg-1">
-			<a href="/jootopia/views/admin/board/review.jsp">게시판관리</a>
+		<span class="col-lg-1" onclick="location.href='/jootopia/views/main/AdminMainPage.jsp'">
+			<img id="navHomeBtn" src="/jootopia/images/adminMenuHomeBtn.png">
 		</span>
-		<span class="col-lg-1">
-			<a href="#">매입관리</a>
+		<span class="col-lg-1" onclick="location.href='/jootopia/views/admin/board/review.jsp'">
+			회원관리
 		</span>
-		<span class="col-lg-1">
-			<a href="/jootopia/views/admin/product/productList.jsp">상품관리</a>
+		<span class="col-lg-1" onclick="location.href='/jootopia/views/admin/board/review.jsp'">
+			게시판관리
 		</span>
-		<span class="col-lg-1">
-			<a href="/jootopia/views/admin/order/orderMain.jsp">주문관리</a>
-
+		<span class="col-lg-1" onclick="location.href='/jootopia/views/admin/purchase/purchaseList.jsp'">
+			매입관리
 		</span>
-		
-		<span class="col-lg-1">
-			<a href="#" data-toggle="modal" data-target="#logModal">Login</a>
+		<span class="col-lg-1" onclick="location.href='/jootopia/views/admin/product/productList.jsp'">
+			상품관리
 		</span>
-		<span class="col-lg-1">
-			<a href="#" data-toggle="modal" data-target="#joinModal">Join us</a>
+		<span class="col-lg-1" onclick="location.href='/jootopia/views/admin/order/orderMain.jsp'">
+			주문관리
 		</span>
-		<span class="col-lg-1"></span>
+		<span class="col-lg-1" onclick="location.href='#'">
+			창고관리
+		</span>
 	</header>
 	
 	<!-- loginModal -->
@@ -71,10 +65,6 @@
 	    </div>
 	  </div>
 	</div> <!-- loginModal End -->
-
-	<nav>
-	
-	</nav>
 </body>
 </html>
 

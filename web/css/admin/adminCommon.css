@@ -1,9 +1,14 @@
-
 @charset "UTF-8";
 
-
 html, body{
+	width: 90%;
+	margin: 0 auto;
 	height : 100%;
+	padding: 0;
+}
+section{
+	width: 100%;
+	height: 100%;
 }
 .row {
 	width: 100%;
@@ -12,19 +17,17 @@ html, body{
 .title {
 	font-weight: bold;
 	margin-left: 20px;
-	margin-bottom : 30px;
 }
-
 /* adminNavigation css */
 .col-lg-1 {
 	cursor: pointer;
+	width: 14.28%;
 }
+
 #navHomeBtn {
 	width: 35px;
     height: auto;
 }
-
-
 /* 건수 출력 테이블 css */
 #listArea {
 	background: rgb(224, 224, 224);
@@ -97,24 +100,25 @@ tr td select {
 
 
 /* adminSideMenu css */
-.col-sm-2 {
+.col-sm-2 { 
+	overflow:hidden;
 	width: 15%;
-	height: 100%;
 	background: rgba(53, 15, 15, 0.27);
 	border-bottom: none;
 	z-index: auto;
-	padding-bottom: 100%;
 	padding-top: 0.5%;
-	padding-left: inherit;
-	padding-right: inherit;
+	height :100%;
+	padding-bottom: 100%;
 }
 .sideMenuImg {
+	margin-top: 8%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 4%;
 	width: 70%;
 }
 .sideMenu {
+	display:block;
+	right: 100px;
 	width: 100%;
 	height: 60px;
 	background: rgba(255, 255, 255, 0.5);
@@ -219,7 +223,43 @@ tr td select {
 	background: rgb(92, 55, 39);
 	color: white;
 }
+.jBtn {
+	border-style: none;
+	border-radius: 10px;
+	background: rgb(241, 196, 15);
+	padding: 15px 50px;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 70px 40px 30px;
+}
+.jBtn:hover {
+	color: rgb(241, 196, 15);
+	background: rgb(53, 15, 15);
+}
 
+/* .jBtnSide {
+	border-style: none;
+	background: rgba(53, 15, 15, .7);
+	color: rgb(250, 250, 250);
+	padding: 7px 30px;
+	margin: 10px 20px 30px;
+}
+.jBtnSide:hover {
+	font-weight: bold;
+	background: rgb(53, 15, 15);
+}
+.jBtnMid {
+	border-style: none;
+	background: rgb(140, 140, 140);
+	color: white;
+	padding: 7px 35px;
+	margin: 10px 20px 30px;
+}
+.jBtnMid:hover {
+	font-weight: bold;
+	background: rgb(230, 230, 230);
+	color : black;
+} */
 
 /* help css */
 .help {

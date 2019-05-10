@@ -8,28 +8,11 @@
 <link rel="stylesheet" href="jquery-3.4.0.min.js">
 <link rel="stylesheet" href="/jootopia/css/common.css">
 <title>JooTopia</title>
+</head>
 <style>
-	div>h1{
-		text-align:center;
-		font-weight:bold;
-	}
-	#modifyBtn{
-		width:100px;
-		background-color: #FFBB00;
-	   border: none;
-	   color:#fff;
-	   padding: 15px 0;
-	   text-align: center;
-	   text-decoration: none;
-	   display: inline-block;
-	   font-size: 15px;
-	   margin: 4px;
-	   cursor: pointer;
-	   border-radius:10px;
-	}
-	
 	#delBtn{
-		width:100px;
+		width:50px;
+		height:20px;
 		background-color: #7A7A7A;
 		border: none;
 		color:#fff;
@@ -37,22 +20,30 @@
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 15px;
+		font-size: 10px;
 		margin: 4px;
 		cursor: pointer;
 		border-radius:10px;
-	}
-	
-	#btnArea{
-		text-align:center;
 	}
 	
 	table{
 		text-align:center;
 	}
 	
+	div>h1{
+		text-align:center;
+		font-weight:bold;
+	}
+	
+	table>th{
+		
+	}
+	
+	table>tr>td{
+		font-color:black;
+	}
+	
 </style>
-</head>
 <body>
 <%@ include file="/views/common/navigation.jsp" %>
 	<section>

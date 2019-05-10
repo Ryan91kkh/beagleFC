@@ -23,15 +23,14 @@
 		height : 50px;
 		font-size : 1.2em;
 	}
-	tr > td:nth-child(1){
+	tr>td:nth-child(1){
 		font-weight: bold;
 		width : 200px;
 		text-align : center;
 	}
-	tr > td:nth-child(2){
+	tr>td:nth-child(2){
 		color: green;
 		width: 300px;
-		/* border : 1px solid black; */
 	}
 </style>
 </head>
@@ -42,7 +41,7 @@
 			<h2 align="center" class="title">매입 신청서</h2>
 			<br><br>
 			<div id="tableArea">
-				<table align="center">
+				<table align="center" action="">
 					<tr>
 						<td><label>신청자 명</label></td>
 						<td><input type="text" class="form-control" name="name" value="홍길동" class=""></td>
@@ -129,12 +128,22 @@
 				</table>
 			</div>
 			<div class="btnArea" align="center">
-				<button onclick="location.href='/jootopia/views/purchase/purchaseFin.jsp'" class="jBtn">신청하기</button>
+				<button onclick="return purchaseApply();" class="jBtn">신청하기</button>
 				&nbsp;&nbsp;&nbsp;
-				<button onclick="location.href='/jootopia/views/purchase/purchaseInfo.jsp'" class="jBtn">취소하기</button>
+				<button onclick="return purchaseCancle();" class="jBtn">취소하기</button>
 			</div>
 		</form>
 	</section>
+	<script>
+		function purchaseApply(){
+			location.href='/jootopia/views/purchase/purchaseFin.jsp';
+			return false;
+		}
+		function purchaseCancle(){
+			location.href='/jootopia/views/purchase/purchaseInfo.jsp';
+			return false;
+		}
+	</script>
 <%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>

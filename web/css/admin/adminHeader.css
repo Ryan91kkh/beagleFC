@@ -23,13 +23,17 @@ header > span:hover{
 	background : rgb(241, 196, 15);
 	color : rgb(53, 15, 15);
 }
-header > span:nth-child(4):hover{
+header > span:nth-child(1):hover{
 	cursor: auto;
 	background : rgb(53, 15, 15);
 	color: rgb(241, 196, 15);
 }
 header > span:nth-child(4) > *:hover{
 	cursor:pointer;
+}
+nav{
+	height: 50px;
+	border-bottom : 1px solid black;
 }
 .logo{
 	padding: 0 auto;
@@ -40,40 +44,3 @@ header > span:nth-child(4) > *:hover{
 	pointer:cursor;
 	height: 90%;
 }
-.fixNav{
-	position: fixed;
-	top: 0;
-	opacity : 0.8;
-	width: 100%;		
-}
-.navbar, .navbar *{
-	background: white;	
-}
-.navbar{
-	height : 52px;
-}
-.container-fluid{
-	padding-left: 7.4%;
-}
-.container-fluid > ul > *{
-	width: 20%;
-	text-align: center;
-	color : black;
-	font-weight : bold;
-	font-size: 1.1em;
-}
-.container-fluid > ul > *:hover{
-	background : rgb(150, 150, 150);
-}
-.container-fluid > .nav{
-	width: 	50%;
-}
-.dropdown-toggle{
-	color : black;	
-}
-.container-fluid .navbar-form{
-	margin-left: 20%;
-}
-
-
-

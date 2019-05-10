@@ -30,7 +30,6 @@
 	}
 	#listTable{
 		margin-top: 2%;
-		/* border: 2px solid red; */
 		width: 100%;
 		border-top: 1px solid black;
 	}
@@ -100,7 +99,7 @@
 	    					<input type="radio" hidden="hidden" name="status" value="확인 전" id="waiting" checked>
 	    					<label for="waiting">확인 전</label>
 	    					<input type="radio" name="status" value="수락" id="agree">
-	    					<label for="agree">수락</label>
+	    		d			<label for="agree">수락</label>
 	    					<input type="radio" name="status"  value="거절" id="disagree">
 	    					<label for="disagree">거절</label>
 	    				</td>
@@ -119,7 +118,7 @@
 	    				<th>매입여부</th>
 	    				<th>입고여부</th>
 	    			</tr>
-	    			<tr  onclick="location.href='#'">
+	    			<tr onclick="location.href='/jootopia/views/admin/purchase/purchaseDetail.jsp'">
 	    				<td>1</td>
 	    				<td>4170001</td>
 	    				<td>김채연</td>
@@ -129,7 +128,7 @@
 	    				<td>Y</td>
 	    				<td>N</td>
 	    			</tr>
-	    			<tr>
+	    			<tr onclick="location.href='/jootopia/views/admin/purchase/purchaseDetail.jsp'">
 	    				<td>2</td>
 	    				<td>4170001</td>
 	    				<td>김채연</td>
@@ -139,7 +138,7 @@
 	    				<td>Y</td>
 	    				<td>N</td>
 	    			</tr>
-	    			<tr>
+	    			<tr onclick="location.href='/jootopia/views/admin/purchase/purchaseDetail.jsp'">
 	    				<td>3</td>
 	    				<td>4170001</td>
 	    				<td>김채연</td>
@@ -220,25 +219,16 @@
 	    				<td>N</td>
 	    			</tr>
 	    		</table>
-	    	</div>
-	    	<div class="paging">
+	    	</div><br><br><br>
+	    	<div class="paging" align="center">
 				<ul class="pagination">
-					<li>
-						<a href="#">Previous</a>	
-						<ul class="pager">
-							<li><a href="#">Previous</a></li>
-						</ul>
-					</li>
+					<li><a href="#">Previous</a></li>
 					<li><a href="#">1</a></li>
 					<li><a href="#">2</a></li>
 					<li><a href="#">3</a></li>
 					<li><a href="#">4</a></li>
 					<li><a href="#">5</a></li>
-					<li>
-						<ul class="pager">
-							<li><a href="#">Next</a></li>
-						</ul>
-					</li>
+					<li><a href="#">Previous</a></li>
 				</ul>
 
 			</div>
