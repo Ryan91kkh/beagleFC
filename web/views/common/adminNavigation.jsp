@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- bootstrap연결 -->
+<link rel="stylesheet" href="/jootopia/css/external/bootstrap.min.css">
+<script src="/jootopia/js/external/jquery-3.4.0.min.js"></script>
+<script src="/jootopia/js/external/bootstrap.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="/jootopia/css/admin/adminHeader.css">
 
 <title>JooTopia</title>
