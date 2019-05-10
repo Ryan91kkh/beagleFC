@@ -1,5 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+   <%--페이지 처리 --%>
+   <%--  <%
+	ArrayList<Board> list = 
+		(ArrayList<Board>) request.getAttribute("list");
+	PageInfo pi = (PageInfo) request.getAttribute("pi");
+	int currentPage = pi.getCurrentPage();
+	int maxPage = pi.getMaxPage();
+	int startPage = pi.getStartPage();
+	int endPage = pi.getEndPage();
+	
+	%> --%>
+    
+    
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -187,11 +202,54 @@
 		<input type="checkbox" name="chk_info" value="name">이름
 		<input type="checkbox" name="chk_info" value="title" checked="checked">제목
 		<input type="checkbox" name="chk_info" value="content">내용
-		<input type="text">&nbsp;<a href=""><button type="submit">검색</button></a>
+		<input type="text">&nbsp;
+		<button onclick="location.href='<%=request.getContextPath()%>/views/notice/faqList.jsp'">검색</button>
 		</div>
 		
 		
-		<div class ="paging button" align="center">
+		<%--페이지 처리 --%>
+		
+      <%-- <div class="pagingArea" align="center">
+         <button onclick="location.href='<%= request.getContextPath() %>/selectList.bo?currentPage=1'"> << </button>
+         <% if(currentPage <= 1) { %>
+         <button disabled> < </button>
+         <% }else { %>
+         <button onclick="location.href='<%= request.getContextPath() %>/selectList.bo?currentPage=<%= currentPage - 1 %>'"> < </button>
+         <% } %>
+         
+         <%for(int p = startPage; p <= endPage; p++){ 
+         		if(p == currentPage){      
+         %>
+         
+         	<button disabled><%= p %></button>
+         
+         <%}else{ %>
+         	<button onclick="location.href='<%=request.getContextPath() %>/selectList.bo?currentPage=<%=p %>'"><%=p %></button>
+         
+         <%    } %>
+         
+         <% } %>
+         
+         
+         
+         
+         
+         <% if(currentPage >= maxPage) { %>
+         <button disabled> > </button>
+         <% }else { %>
+         <button onclick="location.href='<%= request.getContextPath() %>/selectList.bo?currentPage=<%= currentPage + 1 %>'"> > </button>
+         <% } %>
+         <button onclick="location.href='<%= request.getContextPath() %>/selectList.bo?currentPage=<%= maxPage %>'"> >> </button>
+      </div>
+		 --%>
+		
+		
+		
+		
+		
+		
+		
+		 <div class ="paging button" align="center">
 			<button type="submit"><<</button>&nbsp;
 			<button type="submit"><</button>&nbsp;
 			<button type="submit">1</button>&nbsp;
@@ -201,7 +259,7 @@
 			<button type="submit">5</button>&nbsp;
 			<button type="submit">></button>&nbsp;
 			<button type="submit">>></button>
-		</div>
+		</div> 
 		
 	</section>
 	

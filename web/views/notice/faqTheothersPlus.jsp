@@ -7,20 +7,18 @@
 <link rel="shortcut icon" href="/jootopia/images/favicon.ico">
 <link rel="stylesheet" href="jquery-3.4.0.min.js">
 <link rel="stylesheet" href="/jootopia/css/common.css">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 <title>JooTopia</title>
 
 <style>
-	.containaer{
-	margin-left:250px;
-	margin-right:150px;
 
+.containaer{
+	margin-left:420px;
+	margin-right:150px;
+	margin-top:50px;
 	width:1000px;
 	height:800px;
+	
+	
 	}
 
 	.table-bordered tr th{
@@ -29,24 +27,16 @@
 	
 	}
 	
+		
 	
-	
-	
-	
-	
-	
-	
+
 
 </style>
-
-
 </head>
 <body>
 <%@ include file="/views/common/navigation.jsp" %>
-	
-	
 	<section>
-		<h1 align="center">상품 후기</h1>
+		<h1 align="center">기타</h1>
 		<br>
 		<div class="containaer" align="center">
 			<table class="table table-bordered">
@@ -57,7 +47,7 @@
 				<tbody>
 					<tr>
 						<th>제목</th>
-						<td>제목입니다.</td>
+						<td>기타질문입니다.</td>
 						<!-- <td><input type="text" placeholder="제목을 입력하세요" name="subject" style="width:900px;"></td> -->
 					</tr>
 					
@@ -67,37 +57,58 @@
 						<td height="500px">내용입니다.</td>
 						
 					</tr>
-					
-					<tr>
-						<th>첨부파일</th>
-							<td>
-								<!--input box-->
-									<!-- <input type="text" class="upload_text" readonly="readonly"> -->
-									<!--button-->
-									<!-- <div class="upload-btn_wrap">
-									  <button type="button" title="파일찾기">
-									   <span>파일찾기</span>  
-									  </button> -->
-									  
-									  
-									  <!-- <input type="file" class="input_file" title="파일찾기"> -->
-									</div>
-							</td>
-						
-						<!-- <td><input type="text" placeholder="파일을 선택하세요" name="filename"></td> -->
-					</tr>
-					
-					
-					
-						
-					
-					
-					
-					
-					
 				</tbody>
 			
 			</table>
+			</div>
+		
+					 	
+					 	
+		<div class ="newWriting" align="center">
+			
+			<button onclick="location.href='<%=request.getContextPath()%>/views/notice/noticeList.jsp'">목록</button>
+			
+		</div>	
+		
+		
+		
+		
+		
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+	
+	
+	
+	
+	
+	
+		
+					<!-- <tr>
+						<th>첨부파일</th>
+							<td>
+								input box
+									<input type="text" class="upload_text" readonly="readonly">
+									button
+									<div class="upload-btn_wrap">
+									  <button type="button" title="파일찾기">
+									   <span>파일찾기</span>  
+									  </button>
+									  
+									  
+									  <input type="file" class="input_file" title="파일찾기">
+									</div>
+							</td>
+						
+						<td><input type="text" placeholder="파일을 선택하세요" name="filename"></td>
+					</tr> -->
 			<%-- <div class="starRev" align="center">
 						  <span class="starR on">별1</span>
 						  <span class="starR">별2</span>
@@ -120,39 +131,6 @@
 					 	
 					 	
 					 	%> --%>
-					 	<br><br>
-					 	
-					 	
-		<div class="notice">
-			<button onclick="location.href='<%=request.getContextPath()%>/views/notice/reviewList.jsp'">목록</button>
-			<button onclick="location.href='<%=request.getContextPath()%>/views/notice/reviewWrite.jsp'">수정</button>
-			<%-- <button onclick="location.href='<%=request.getContextPath()%>/'">삭제</button> --%>
-			<button onclick="review_delete();">삭제</button>
-			
-			
-			
-			
-			
-		<script>
-		
-		function review_delete(){
-			alert("게시물을 삭제하시겠습니까?");
-		}
-		
-		
-		</script>
-			
-			</div>
-		</div>	
-		
-		
-		
-		
-		
-			
-			
-			
-			
 			<!-- <br>
 			<h1 align="center">상품 후기</h1>
 			
@@ -167,19 +145,6 @@
 				</div>
 			
 			</div> -->
-			
-			
-			
-			
-	<br><br>
-
-	
-	
-	
-	
-	
-	
-		
 	</section>
 <%@ include file="/views/common/footer.jsp" %>
 </body>
