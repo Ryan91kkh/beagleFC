@@ -16,7 +16,7 @@
 <style>
 	.checkboxgroup{
 		margin-left:350px;
-		margin-rignt:150px;
+		
 	}
 
 </style>
@@ -48,7 +48,8 @@
 		      </tr>
 		    </thead>
 		    <tbody>
-		      <tr>
+		     <!--  <tr onclick="location.href='jootopia/noticeList.jsp'"> -->
+		      <tr onclick="location.href='/jootopia/views/notice/noticeListPlus.jsp'">
 		        <td>9</td>
 		        <td>공지사항</td>
 		        <td>주토피아</td>
@@ -56,7 +57,7 @@
 		        <td>2019.03.04</td>
 		        <td>4</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/noticeListPlus.jsp'">
 		        <td>8</td>
 		        <td>공지사항</td>
 		        <td>주토피아</td>
@@ -64,7 +65,7 @@
 		        <td>2019.03.04</td>
 		        <td>5</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/noticeListPlus.jsp'">
 		        <td>7</td>
 		        <td>공지사항</td>
 		        <td>주토피아</td>
@@ -75,7 +76,7 @@
 		    </tbody>
 		    
 		    <tbody>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/noticeListPlus.jsp'">
 		        <td>6</td>
 		        <td>이벤트</td>
 		        <td>주토피아</td>
@@ -83,7 +84,7 @@
 		        <td>2019.03.04</td>
 		        <td>7</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/noticeListPlus.jsp'">
 		        <td>5</td>
 		        <td>공지사항</td>
 		        <td>주토피아</td>
@@ -91,7 +92,7 @@
 		        <td>2019.03.04</td>
 		        <td>2</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/noticeListPlus.jsp'">
 		        <td>4</td>
 		        <td>이벤트</td>
 		        <td>주토피아</td>
@@ -102,7 +103,7 @@
 		    </tbody>
 		     
 		    <tbody>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/noticeListPlus.jsp'">
 		        <td>3</td>
 		        <td>공지사항</td>
 		        <td>주토피아</td>
@@ -110,7 +111,7 @@
 		        <td>2019.03.04</td>
 		        <td>4</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/noticeListPlus.jsp'">
 		        <td>2</td>
 		        <td>공지사항</td>
 		        <td>주토피아</td>
@@ -118,7 +119,7 @@
 		        <td>2019.03.04</td>
 		        <td>5</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/noticeListPlus.jsp'">
 		        <td>1</td>
 		        <td>공지사항</td>
 		        <td>주토피아</td>
@@ -130,12 +131,36 @@
 		  </table>
 		</div>
 		<br>
+		
 		<div class="checkboxgroup">
 		<input type="checkbox" name="chk_info" value="name">이름
 		<input type="checkbox" name="chk_info" value="title" checked="checked">제목
 		<input type="checkbox" name="chk_info" value="content">내용
-		<input type="text">&nbsp;<a href=""><button type="submit">검색</button></a>
-		</div>
+		<input type="text">&nbsp;
+		<button onclick="location.href='<%=request.getContextPath()%>/views/notice/noticeList.jsp'">검색</button>
+		</div> 
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+			
+			<!-- &nbsp;<a href=""><button type="submit">검색</button></a> -->
+			
+		
+		
+		
+		
+		
+		
+		
+		
+	
 		
 		
 		<div class ="paging button" align="center">

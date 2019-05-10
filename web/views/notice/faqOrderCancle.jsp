@@ -95,21 +95,21 @@
 		      </tr>
 		    </thead>
 		    <tbody>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/faqOrderCanclePlus.jsp'">
 		        <td>9</td>
 		        <td>주문절차/취소</td>
 		        <td>주문절차/취소 문의입니다</td>
 		        <td>2019.04.06</td>
 		        <td>2</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/faqOrderCanclePlus.jsp'">
 		        <td>8</td>
 		        <td>주문절차/취소</td>
 		        <td>주문절차/취소 문의입니다</td>
 		        <td>2019.04.06</td>
 		        <td>3</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/faqOrderCanclePlus.jsp'">
 		        <td>7</td>
 		        <td>주문절차/취소</td>
 		        <td>주문절차/취소 문의입니다</td>
@@ -119,21 +119,21 @@
 		    </tbody>
 		    
 		    <tbody>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/faqOrderCanclePlus.jsp'">
 		        <td>6</td>
 		        <td>주문절차/취소</td>
 		        <td>주문절차/취소 문의입니다</td>
 		        <td>2019.04.06</td>
 		        <td>5</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/faqOrderCanclePlus.jsp'">
 		        <td>5</td>
 		        <td>주문절차/취소</td>
 		        <td>주문절차/취소 문의입니다</td>
 		        <td>2019.04.06</td>
 		        <td>6</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/faqOrderCanclePlus.jsp'">
 		        <td>4</td>
 		        <td>주문절차/취소</td>
 		        <td>주문절차/취소 문의입니다</td>
@@ -143,21 +143,21 @@
 		    </tbody>
 		     
 		    <tbody>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/faqOrderCanclePlus.jsp'">
 		        <td>3</td>
 		        <td>주문절차/취소</td>
 		        <td>주문절차/취소 문의입니다</td>
 		        <td>2019.04.06</td>
 		        <td>8</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/faqOrderCanclePlus.jsp'">
 		        <td>2</td>
 		        <td>주문절차/취소</td>
 		        <td>주문절차/취소 문의입니다</td>
 		        <td>2019.04.06</td>
 		        <td>9</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/faqOrderCanclePlus.jsp'">
 		        <td>1</td>
 		        <td>주문절차/취소</td>
 		        <td>주문절차/취소 문의입니다</td>
@@ -169,12 +169,13 @@
 		</div>
 		
 		<br>
-		<div class="checkboxgroup">
+	<div class="checkboxgroup">
 		<input type="checkbox" name="chk_info" value="name">이름
 		<input type="checkbox" name="chk_info" value="title" checked="checked">제목
 		<input type="checkbox" name="chk_info" value="content">내용
-		<input type="text">&nbsp;<a href=""><button type="submit">검색</button></a>
-		</div>
+		<input type="text">&nbsp;
+		<button onclick="location.href='<%=request.getContextPath()%>/views/notice/faqOrderCancle.jsp'">검색</button>
+		</div> 
 		
 		
 		<div class ="paging button" align="center">

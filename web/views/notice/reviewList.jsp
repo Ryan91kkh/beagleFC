@@ -55,7 +55,7 @@
 		      </tr>
 		    </thead>
 		    <tbody>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/reviewWriteSceen.jsp'">
 		        <td>9</td>
 		        <td>Doe</td>
 		        <td>잘 받았습니다.</td>
@@ -63,7 +63,7 @@
 		        <td>2019.4.3</td>
 		        <td>6</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/reviewWriteSceen.jsp'">
 		        <td>8</td>
 		        <td>Moe</td>
 		        <td>잘 받았습니다.</td>
@@ -71,7 +71,7 @@
 		        <td>2019.4.3</td>
 		        <td>3</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/reviewWriteSceen.jsp'">
 		        <td>7</td>
 		        <td>Dooley</td>
 		        <td>잘 받았습니다.</td>
@@ -82,7 +82,7 @@
 		    </tbody>
 		    
 		    <tbody>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/reviewWriteSceen.jsp'">
 		        <td>6</td>
 		        <td>Doe</td>
 		        <td>잘 받았습니다.</td>
@@ -90,7 +90,7 @@
 		        <td>2019.4.3</td>
 		        <td>5</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/reviewWriteSceen.jsp'">
 		        <td>5</td>
 		        <td>Moe</td>
 		        <td>잘 받았습니다.</td>
@@ -98,7 +98,7 @@
 		        <td>2019.4.3</td>
 		        <td>4</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/reviewWriteSceen.jsp'">
 		        <td>4</td>
 		        <td>Dooley</td>
 		        <td>잘 받았습니다.</td>
@@ -109,7 +109,7 @@
 		    </tbody>
 		     
 		    <tbody>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/reviewWriteSceen.jsp'">
 		        <td>3</td>
 		        <td>Doe</td>
 		        <td>잘 받았습니다.</td>
@@ -117,7 +117,7 @@
 		        <td>2019.4.3</td>
 		        <td>8</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/reviewWriteSceen.jsp'">
 		        <td>2</td>
 		        <td>Moe</td>
 		        <td>잘 받았습니다.</td>
@@ -125,7 +125,7 @@
 		        <td>2019.4.3</td>
 		        <td>7</td>
 		      </tr>
-		      <tr>
+		      <tr onclick="location.href='/jootopia/views/notice/reviewWriteSceen.jsp'">
 		        <td>1</td>
 		        <td>Dooley</td>
 		        <td>잘 받았습니다.</td>
@@ -141,7 +141,9 @@
 		<input type="checkbox" name="chk_info" value="name">이름
 		<input type="checkbox" name="chk_info" value="title" checked="checked">제목
 		<input type="checkbox" name="chk_info" value="content">내용
-		<input type="text">&nbsp;<a href=""><button type="submit">검색</button></a>
+		<input type="text">&nbsp;
+		<button onclick="location.href='<%=request.getContextPath()%>/views/notice/reviewList.jsp'">검색</button>
+		
 		</div>
 		
 		
