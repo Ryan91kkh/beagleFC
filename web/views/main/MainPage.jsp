@@ -15,6 +15,21 @@
 .carousel-indicators.active{
     background-color: blue;
 } 
+
+
+.photogtoup1{
+	margin-bottom:400px;
+	
+}
+
+
+/* .photogroup{
+	width:100px;
+	height:50px;
+	margin: 0 auto;
+}
+ */
+
 </style>
 </head>
 <body>
@@ -23,6 +38,7 @@
 	<!-- 배너슬라이드는 section밖에서 설정해주세요! -->
 	
 	<br><br>
+	<section>
 <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
   
@@ -126,7 +142,6 @@
       <li data-target="#myCarousel1" data-slide-to="7"></li>
     </ol> 
   </div>
-	<section>
 		<%-- 
 		int size= mainList.size(); /*size메소드 : 확장개체집합의 개수표시*/
 		if(size != 0 && size >0){
@@ -138,95 +153,95 @@
 					productList pList = mainList.get(i);
 			--%>
 			<!-- <td> -->
-			<table border="1">
+			<%-- <table border="1">
 				<tr>
 					<td align="center"><a href=""><img src =""> width="40%"></a></td>	
 				</tr>
 				<tr>
-					<td align="center"><a href=""><%--=pList.getPname() --%><br><color="red" text-decoration="line-through"><%--=pList.getPrice() --%>원<br><%--=pList.getNPrice() --%>원</a></td>
+					<td align="center"><a href="">=pList.getPname()<br><color="red" text-decoration="line-through">=pList.getPrice()원<br>=pList.getNPrice()원</a></td>
 				</tr>
 			</table>
-			<%--
+			
 				if(i % 4 ==3){
-			--%>
+			
 				</tr>
 				<tr>
-			<%--
+			
 				}
 				}
 			
-			} --%>
-		</table>
+			}
+		</table> --%>
 		<br>
 		<div class = "totalList">
 		
 			<div class = "photogroup">
-				<table align="center">
+				<table class="photogtoup1" align="center">
 					<tr>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/b1.jpg"  width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/b1.jpg"  width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/c1.jpg" width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/c1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d1.jpg" width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d2.jpg" width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d2.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 					</tr>
 					<tr>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/b1.jpg"  width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/b1.jpg"  width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/c1.jpg" width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/c1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d1.jpg" width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d2.jpg" width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d2.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 					</tr>
 					<tr>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/b1.jpg"  width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/b1.jpg"  width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/c1.jpg" width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/c1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d1.jpg" width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d2.jpg" width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d2.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
@@ -237,46 +252,6 @@
 		</div>
 		
 	</section>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	
 	
 	
 	<%@ include file="/views/common/adminFooter.jsp" %>
