@@ -13,8 +13,10 @@
 <%@ include file="/views/common/adminNavigation.jsp" %>
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
+      <div id="adminSection" class="col-sm-10">
+      <h3 class="title">매입대기</h3>
+	    	<hr>
       
-      <div class="col-sm-10">
       <div class="searchArea">
 			<table id="searchBox"  border="1" align="center">
 				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">매입대기리스트</th></tr>
@@ -76,7 +78,7 @@
 				<input type="reset" value="초기화" onclick="">
 			</div>
 		</div>
-		</div>
+		
 		<br><br><br><br>
       
       <br><br>
@@ -175,6 +177,7 @@
 			<li><a href="#">4</a></li>
 			<li><a href="#">5</a></li>
 		</ul>
+	</div>
 	</div>
 	</div>
       

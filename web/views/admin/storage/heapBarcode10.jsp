@@ -31,19 +31,15 @@
 	border: 1px solid #ccc;
 }
 
-div.left {
-	width: auto;
-	float: left;
-	margin-left: 100px;
-
-	/* box-sizing: border-box;  */
+.imgArea img {
+	width: 500px;
+	height: 400px;
+	margin-bottom: 20px;
+	border: 2px solid orangered;
 }
 
-div.right {
-	width: auto;
-	float: right;
-	margin-right: 50px;
-	/* box-sizing: border-box;   */
+.btnArea {
+	margin-bottom: 30px;
 }
 </style>
 <title>JooTopia</title>
@@ -52,20 +48,21 @@ div.right {
 <%@ include file="/views/common/adminNavigation.jsp" %>
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
-      <!-- <div id="adminSection" class="col-sm-10"> -->
-      
+      <div id="adminSection" class="col-sm-10">
+      <h3 class="title">적치바코드 등록</h3>
+	    	<hr>
       
       <br />
 		<br />
 		<br />
 
 
-		<div class="left">
+		<div class="col-sm-6 imgArea">
 					
 				<div id="ImgArea1">
-				<tr>
-					<td><img src="../web/images/flower1.PNG" id="Img1" width="500" height="400"></td>
-				</tr>			
+				
+					<img src="/jootopia/images/flower1.PNG" id="Img1" width="500" height="400">
+							
 			</div>			
 		</div>
 
@@ -79,22 +76,22 @@ div.right {
 					<td width="500">a123</td>
 				</tr>
 				<tr>
-					<td width="120">적치바코드</td>
-					<td width="500">A123</td>
-				</tr>
+						<td width="120">적치바코드</td>
+						<td width="500"><input type="text" size="51"></td>
+					</tr>
 				
 				<tr>
 					<td width="120">적치일자</td>
-					<td width="500">19/01/01</td>
+					<td width="500"><input type="text" size="51"></td>
 				</tr>
 				
 			</table>
 			<br />
 			
-			<!-- </div> -->
-      	<div align="center">
-				<button type="button" class="btn btn-primary btn-lg">등록</button>				
 			</div>
+      	<div align="center" class="btnArea">
+					<button type="button">등록</button>
+				</div>
       </div>
    </section>
 <%@ include file="/views/common/adminFooter.jsp" %>
