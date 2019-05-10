@@ -52,30 +52,47 @@
 				<li class="active"><a href="#">Home</a></li>
 				<li class="dropdown">
 					<a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">가구 <span class="caret"></span></a>
+					data-toggle="dropdown" href="/jootopia/views/notice/productList.jsp">침실 가구 <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">책상</a></li>
-						<li><a href="#">의자</a></li>
-						<li><a href="#">침대</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">침대</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">옷장</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">수납장</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">화장대</a></li>
 					</ul>
 				</li>
 				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">가전 <span class="caret"></span></a>
+					data-toggle="dropdown" href="/jootopia/views/notice/productList.jsp">서재 가구 <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">책상</a></li>
-						<li><a href="#">의자</a></li>
-						<li><a href="#">침대</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">책상</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">책장</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">수납장</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">사무용의자</a></li>
 					</ul>
 				</li>
 
 				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">디자인용품 <span class="caret"></span></a>
+					data-toggle="dropdown" href="/jootopia/views/notice/productList.jsp">주방 가구 <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">책상</a></li>
-						<li><a href="#">의자</a></li>
-						<li><a href="#">침대</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">식탁</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">전자레인지</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">수납장</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">식탁의자</a></li>
 					</ul>
 				</li>
+				
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="/jootopia/views/notice/productList.jsp">거실 가구 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/jootopia/views/notice/productList.jsp">테이블</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">거실장</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">소파</a></li>
+						<li><a href="/jootopia/views/notice/productList.jsp">수납장</a></li>
+					</ul>
+				</li>
+				
+				
+				
+				
 			</ul>
 
 			<!-- 상품검색 시작 -->
