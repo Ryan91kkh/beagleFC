@@ -22,14 +22,14 @@
 		<%@ include file="/views/common/adminSideMenu.jsp" %>
 		
 		<div class="col-sm-10">
-		<h3>주문관리 전체</h3>
+		<h3 class="title">주문관리 전체</h3>
 		<hr>
 		
 		<div class="pInfo1Area">
 		<table id="pInfo1">
 			<tr>
 				<th>전체</th>
-				<td><a href="/jootopia/views/admin/order/productList.jsp">10</a>건</td>
+				<td><a href="/jootopia/views/admin/order/orderMain.jsp">10</a>건</td>
 			</tr>
 			<tr>
 				<th>입금전</th>
@@ -41,7 +41,7 @@
 			</tr>
 			<tr>
 				<th>배송중</th>
-				<td><a href="/jootopia/views/admin/order/shippingList.jsp">10</a>건</td>
+				<td><a href="/jootopia/views/admin/order/deliveryList.jsp">10</a>건</td>
 			</tr>
 			<tr>
 				<th>배송완료</th>

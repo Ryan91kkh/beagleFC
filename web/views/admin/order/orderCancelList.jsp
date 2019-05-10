@@ -41,7 +41,7 @@ br
 		<%@ include file="/views/common/adminSideMenu.jsp" %>
 		
 		<div class="col-sm-10">
-		<h3>주문취소 관리</h3>
+		<h3 class="title">주문취소 관리</h3>
 		<hr>
 		
 		<div id="listArea">
@@ -51,7 +51,7 @@ br
 		
 		<div class="searchArea">
 			<table id="searchBox"  border="1" align="center">
-				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">　</th></tr>
+				<tr><th colspan="3" style="height: 35px;">　</th></tr>
 				<tr>
 					<td>검색 분류</td>
 					<td colspan="2">
@@ -102,11 +102,11 @@ br
 			</div>
 		</div>
 		
-		<br><br><br><br>
+		<br>
 		
 		<div class="selectTopList">
 		<span>주문 목록</span><br>
-		<span>[총 <a style="color: rgb(243, 156, 18);"><%= 1 %></a>개]</span>
+		<span>[총 <a><%= 1 %></a>개]</span>
 		</div>
 		
 		<br>
@@ -122,13 +122,24 @@ br
 					<tr>
 						<th width="25px"><input type="checkbox" id="allCheck"></th>
 						<th width="25px">No</th>
-						<th width="70px">주문상태</th>
+						<th width="100px">주문상태</th>
 						<th width="150px">주문일/주문코드</th>
 						<th width="150px">결제일/결제코드</th>
 						<th width="70px">주문자</th>
-						<th width="200px">상품명</th>
+						<th width="250px">상품명</th>
 						<th width="100px">취소금액</th>
 						<th width="100px">취소사유</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>1</td>
+						<td>주문취소</td>
+						<td>2019-05-10 /<br>O20190510_01</td>
+						<td>2019-05-10 /<br>P20190510_01</td>
+						<td>주문자</td>
+						<td>상품명</td>
+						<td>취소금액</td>
+						<td><div id="memo" class="memo">MEMO</div></td>
 					</tr>
 					<%-- <% for(Product p : list) { %>
 					<tr>
@@ -147,8 +158,21 @@ br
 			</form>
 		
 	</div> <!-- selectListArea -->
-		
-		</div> <!-- col-sm-10 -->
+	
+	<br><br><br>
+	<div class="paging" align="center">
+		<ul class="pagination">
+			<li><a href="#">Previous</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">Previous</a></li>
+		</ul>
+	</div>
+	
+	</div> <!-- col-sm-10 -->
 	</section>
 <%@ include file="/views/common/adminFooter.jsp" %>
 
