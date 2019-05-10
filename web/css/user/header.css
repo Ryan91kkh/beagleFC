@@ -4,7 +4,6 @@ header{
 	background: rgb(53, 15, 15); 
 	height:50px; 
 	margin: 0 auto;
-	
 }
 header > span{
 	cursor:pointer;
@@ -49,7 +48,6 @@ header > span:nth-child(4) > *:hover{
 }
 .navbar, .navbar *{
 	background: white;	
-	z-index: 99999;
 }
 .navbar{
 	height : 52px;
