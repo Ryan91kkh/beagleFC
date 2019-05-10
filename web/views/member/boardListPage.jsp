@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="/jootopia/images/favicon.ico">
-<link rel="stylesheet" href="jquery-3.4.0.min.js">
-<link rel="stylesheet" href="/jootopia/css/common.css">
+<link rel="stylesheet" href="/jootopia/js/external/jquery-3.4.0.min.js">
+<link rel="stylesheet" href="/jootopia/css/user/common.css">
 <title>JooTopia</title>
 <style>
 	div>h1{
@@ -49,64 +49,76 @@
 	
 	table{
 		text-align:center;
+		width:800px;
+		heihgt:500px;
 	}
 	
+	#tableArea{
+		width:800px;
+		height:500px;
+	}
 </style>
 </head>
+
 <body>
 <%@ include file="/views/common/navigation.jsp" %>
 	<section>
 	<br /><br />
 		<div class="row">
-			<div class="col-sm-2"></div>
-			<div class="col-sm-8">
-			<br />
-			<h1>주문 내역</h1>
-			
-			<br /><br />
-				<table class="table table-striped">
+			<h1 align="center">주문 내역</h1>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6" id="tableArea">
+				<table class="table">
 					<tr>
-						<th>No.</th>
-						<th>상품명</th>
-						<th>결제 금액</th>
-						<th>주문일</th>
-						<th>배송 정보</th>
+						<th>No</th>
+						<th>제목</th>
+						<th>작성 일자</th>
+						<th>조회수</th>
+						<th>게시글 타입</th>
 					</tr>
-					<tr style="color:black;">
+					<tr>
 						<td>1</td>
-						<td><a href="#">멀미나는 쇼파</a></td>
-						<td>200,000</td>
-						<td>2019-04-17</td>
-						<td><a href="#" id="delBtn">조회</a></td>
+						<td>아나 쓰레기잖아효</td>
+						<td>2018-02-21</td>
+						<td>50<td>
+						<td>후기쓰</td>
 					</tr>
 					<tr>
 						<td>2</td>
-						<td><a href="#">스치면 부러지는 의자</a></td>
-						<td>100,000</td>
-						<td>2019-04-12</td>
-						<td><a href="#" id="delBtn">조회</a></td>
-					</tr>	
+						<td>너무 좋내요~~@^^@</td>
+						<td>2018-12-24</td>
+						<td>0<td>
+						<td>후기</td>
+					</tr>
 					<tr>
 						<td>3</td>
-						<td><a href="#">흔들리지 않는 흔들 의자</a></td>
-						<td>50,000</td>
-						<td>2019-03-17</td>
-						<td><a href="#" id="delBtn">조회</a></td>
+						<td>소파 가져가주세용~ㅋ</td>
+						<td>2019-01-01</td>
+						<td>30</td>
+						<td>매입 신청</td>
+					</tr>	
+					<tr>
+						<td>4</td>
+						<td>저 궁금한 게 있는데용;ㅋ</td>
+						<td>2019-02-03</td>
+						<td>25</td>
+						<td>1:1 문의</td>
 					</tr>
 				</table>
-			
-			<div class="text-center">
-				<ul class="pagination">
-					<li><a href="">1</a> </li>
-					<li><a href="">2</a></li>
-					<li><a href="">3</a></li>
-					<li><a href="">4</a></li>
-					<li><a href="">5</a></li>
-				</ul>
+				
+				<div align="center" id="btnArea">
+					<ul class="pagination">
+						<li><a href="">1</a> </li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+					</ul>
+				</div>
 			</div>
-			</div>
-			<div class="col-sm-2"></div>
-		</div>
+		<div class="col-sm-3"></div>
+	</div>
+
 	</section>
 <%@ include file="/views/common/footer.jsp" %>
 </body>

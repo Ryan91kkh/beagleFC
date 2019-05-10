@@ -8,15 +8,10 @@
 <link rel="stylesheet" href="jquery-3.4.0.min.js">
 <link rel="stylesheet" href="/jootopia/css/common.css">
 <title>JooTopia</title>
-</head>
 <style>
 	div>h1{
 		text-align:center;
 		font-weight:bold;
-	}
-	
-	table{
-		text-align:center;
 	}
 	
 	#modifyBtn{
@@ -47,10 +42,6 @@
 		margin: 4px;
 		cursor: pointer;
 		border-radius:10px;
-	}
-	
-	#btnArea{
-		text-align:center;
 	}	
 	
 	#answerBtn{
@@ -67,27 +58,29 @@
 		cursor: pointer;
 		border-radius:10px;
 	}	
+	
+	#btnArea{
+		text-align:center;
+	}
+	
+	table{
+		text-align:center;
+	}
+	
+	#replyArea{
+		text-align:center;
+	}
+	
 </style>
+</head>
 <body>
 <%@ include file="/views/common/navigation.jsp" %>
 	<section>
-	<div class="row">
-		<h1>매입 요청 내역 상세 페이지</h1>
+		<div class="row">
+		<h1>상품 리뷰 수정</h1>
 		<br /><br />
-		
-		<div class="col-sm-2"></div>
-		
-		<!-- Img Div -->
-		<div class="col-sm-2">			
-			<table>
-				<tr>
-					<td rowspan="4">
-					<img src="/jootopia/images/so.jpg" alt="" style="width:280px; heihgt:200px;"/>
-					</td>
-				</tr>
-			</table>
-			</div>
-
+			<div class="col-sm-3"></div>
+			
 			<div class="col-sm-6">
 			<table class="table">
 				<tr>
@@ -99,43 +92,57 @@
 			
 				<tr>
 					<td><label for="">제목</label></td>
-					<td colspan="3"><input type="text" value = "소파 가져가주세용~ㅋ"/></td>
+					<td colspan="3">주토피아 만세~~~~~~~~~~~</td>
 				</tr>
 				<tr>
-					<td ><label for="">내용</label><br /></td>
+					<td rowspan="2"><label for="">내용</label><br /></td>
 					<td colspan="4">
-						<textarea name="content" id="" cols="80" rows="10"
+						<textarea name="content" id="" cols="80" rows="5"
 						style="resize:none;" 
-						>제 쇼파는 첨부파일 같이 생겼구요 어쩌구 저쩌구 우애애애애앵ㅇ~!!!
-						돈 많이 줭 사 줭 나 용돈 줭!</textarea>
+						></textarea>
 					</td>
 				</tr>
-				<tr>				
-					<td><label for="">사진 첨부</label></td>
-					<td><input type="file" /></td>
-				</tr>
-				<tr>
-					<td><label for="">사진 첨부</label></td>
-					<td><input type="file" /></td>
-				</tr>
 			</table>
-		
+			
+			
+			<div id="answerArea">
+				
+					<table id="replyArea" class="table">
+						<tr>
+							<td rowspan="2">
+							<p id="answerBtn">관리자</p><br /><br />
+							</td>
+							<td colspan="4">
+									<textarea name="content" id="" cols="80" rows="3"
+									style="resize:none; " readonly>
+									</textarea>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>				
 		
-		
-		
-		<div class="col-sm-2"></div>
-	</div>		
-	
+			<div class="col-sm-3"></div>
+		</div>
 		<div align="center">
 			<div class="btnArea" id="btnArea">
-				<a href="modifyQaAPage.jsp" id="modifyBtn">완료</a>
-				<a onclick="delPurchase()" id="delBtn">삭제</a>						
+				<a href="modifyQaAPage.jsp" id="modifyBtn">수정</a>
+				<a onclick="delQaA()" id="delBtn">삭제</a>						
 			</div>	
 		</div>
 	</section>
 <%@ include file="/views/common/footer.jsp" %>
 
-
+	<script>
+		function delQaA(){
+			var answer = window.confirm("해당 후기를 삭제하시겠습니까? ");
+			
+			if(answer == true){
+				location.href="deleteQaAPage.jsp";	
+			}else{
+				alert("잘 선택하셨어요~");
+			}
+		}
+	</script>
 </body>
 </html>
