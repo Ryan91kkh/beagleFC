@@ -52,9 +52,6 @@
 		height : 50px;
 		text-align:center;
 	}
-	.pager{
-		display:inline-block;
-	}
 </style>
 </head>
 <body>
@@ -222,15 +219,14 @@
 	    	</div><br><br><br>
 	    	<div class="paging" align="center">
 				<ul class="pagination">
-					<li><a href="#">Previous</a></li>
+					<li><a href="#">이전</a></li>
 					<li><a href="#">1</a></li>
 					<li><a href="#">2</a></li>
 					<li><a href="#">3</a></li>
 					<li><a href="#">4</a></li>
 					<li><a href="#">5</a></li>
-					<li><a href="#">Previous</a></li>
+					<li><a href="#">다음</a></li>
 				</ul>
-
 			</div>
 	    </div><!-- col-sm-10 -->
 	</section>

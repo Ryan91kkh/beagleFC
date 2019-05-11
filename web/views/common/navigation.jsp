@@ -6,12 +6,10 @@
 <html>
 <head>
 <!-- bootstrap연결 -->
-<!-- <script src="/jootopia/js/external/bootstrap.min.js"></script> 주석 처리 안 하면 모달 띄우자마자 꺼짐 -->
+<link rel="stylesheet" href="/jootopia/css/external/bootstrap.min.css">
+<link rel="stylesheet" href="/jootopia/js/external/jquery-3.4.0.min.js">
+<script src="/jootopia/js/external/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="/jootopia/css/external/bootstrap.min.css"> 
-<script src="/jootopia/js/external/jquery-3.4.0.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/jootopia/css/user/header.css">
 
 <title>JooTopia</title>
@@ -236,11 +234,5 @@
 			</div>
 		</div>
 	</div>
-
-		<!-- Scripts -->
-			<script src="/jootopia/js/external/main.js"></script>
-			<script src="/jootopia/js/external/skel.min.js"></script>
-			<script src="/jootopia/js/external/util.js"></script>  
-
 </body>
 </html>

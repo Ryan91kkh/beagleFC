@@ -31,7 +31,7 @@
 	   margin: 4px;
 	   cursor: pointer;
 	   border-radius:10px;
-	}
+	} 
 	
 	#delBtn{
 		width:100px;

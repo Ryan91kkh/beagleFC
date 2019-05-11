@@ -16,9 +16,11 @@
 <style>
 	.checkboxgroup{
 		margin-left:80%;
-		
 	}
-
+	.totalList img{
+		width: 300px;
+		height : 300px;
+	}
 </style>
 
 <title>JooTopia</title>
@@ -27,120 +29,87 @@
 <body>
 <%@ include file="/views/common/navigation.jsp" %>
 	<section>
-		<br>
-		
-			<!-- <div class="checkboxgroup">
-			<input type="checkbox" name="chk_info" value="name">이름
-			<input type="checkbox" name="chk_info" value="title" checked="checked">제목
-			<input type="checkbox" name="chk_info" value="content">내용
-			<input type="text">&nbsp;<a href=""><button type="submit">검색</button></a>
-		
-			</div> -->
-			
-			
-			<div class = "totalList">
-			
-			
+			<div class="totalList" align="center">
 				<table align="center">
 					<tr>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/bed1.jpg"  width="400px" height="400px"></a>
-						<p>삼성 15인치 세탁기</p>
-						<p>125,000원</p>
+							<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/bed1.jpg"></a>
+							<p>삼성 15인치 세탁기</p>
+							<p>125,000원</p>
 						</td> 
-						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/chair1.jpg" width="400px" height="400px"></a>
+							<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/chair1.jpg"></a>
+							<p>삼성 15인치 세탁기</p>
+							<p>125,000원</p>
+						</td>
+						<td align="center">
+							<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk1.jpg"></a>
+							<p>삼성 15인치 세탁기</p>
+							<p>125,000원</p>
+						</td>
+						<td align="center">
+							<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk2.jpg"></a>
+							<p>삼성 15인치 세탁기</p>
+							<p>125,000원</p>
+						</td> 
+					</tr>
+					<tr>
+						<td align="center">
+							<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/bed1.jpg"></a>
+							<p>삼성 15인치 세탁기</p>
+							<p>125,000원</p>
+						</td> 
+						<td align="center">
+							<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/chair1.jpg"></a>
+							<p>삼성 15인치 세탁기</p>
+							<p>125,000원</p>
+						</td>
+						<td align="center">
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk1.jpg"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk1.jpg" width="400px" height="400px"></a>
-						<p>삼성 15인치 세탁기</p>
-						<p>125,000원</p>
-						</td>
-						
-						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk2.jpg" width="400px" height="400px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk2.jpg"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 						
 					</tr>
-					
-					
 					<tr>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/bed1.jpg"  width="400px" height="400px"></a>
-						<p>삼성 15인치 세탁기</p>
-						<p>125,000원</p>
+							<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/bed1.jpg"></a>
+							<p>삼성 15인치 세탁기</p>
+							<p>125,000원</p>
 						</td> 
-						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/chair1.jpg" width="400px" height="400px"></a>
-						<p>삼성 15인치 세탁기</p>
-						<p>125,000원</p>
+							<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/chair1.jpg"></a>
+							<p>삼성 15인치 세탁기</p>
+							<p>125,000원</p>
 						</td>
-						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk1.jpg" width="400px" height="400px"></a>
-						<p>삼성 15인치 세탁기</p>
-						<p>125,000원</p>
+							<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk1.jpg"></a>
+							<p>삼성 15인치 세탁기</p>
+							<p>125,000원</p>
 						</td>
-						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk2.jpg" width="400px" height="400px"></a>
-						<p>삼성 15인치 세탁기</p>
-						<p>125,000원</p>
+							<a href="/jootopia/views/notice/productListPlus.jsp">
+								<img src="/jootopia/images/desk2.jpg">
+							</a>
+							<p>삼성 15인치 세탁기</p>
+							<p>125,000원</p>
 						</td> 
-						
-					</tr>
-					
-					
-					
-					<tr>
-						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/bed1.jpg"  width="400px" height="400px"></a>
-						<p>삼성 15인치 세탁기</p>
-						<p>125,000원</p>
-						</td> 
-						
-						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/chair1.jpg" width="400px" height="400px"></a>
-						<p>삼성 15인치 세탁기</p>
-						<p>125,000원</p>
-						</td>
-						
-						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk1.jpg" width="400px" height="400px"></a>
-						<p>삼성 15인치 세탁기</p>
-						<p>125,000원</p>
-						</td>
-						
-						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk2.jpg" width="400px" height="400px"></a>
-						<p>삼성 15인치 세탁기</p>
-						<p>125,000원</p>
-						</td> 
-						
 					</tr>
 				</table>
 			</div>
-			
 			<br><br><br><br><br>
-			
 			<div class="checkboxgroup">
 			<input type="checkbox" name="chk_info" value="name">이름
 			<input type="checkbox" name="chk_info" value="title" checked="checked">제목
 			<input type="checkbox" name="chk_info" value="content">내용
 			<input type="text">&nbsp;<a href=""><button type="submit">검색</button></a>
-		
 			</div>
-			
-			
-			
-			
 			<div class ="paging button" align="center">
 			<button type="submit"><<</button>&nbsp;
 			<button type="submit"><</button>&nbsp;
