@@ -15,21 +15,17 @@
 .carousel-indicators.active{
     background-color: blue;
 } 
-
-
-.photogtoup1{
-	margin-bottom:400px;
+.photogroup1{
+	margin-left:10%;
+	margin-right:10%;
 	
 }
-
-
 /* .photogroup{
 	width:100px;
 	height:50px;
 	margin: 0 auto;
 }
  */
-
 </style>
 </head>
 <body>
@@ -50,14 +46,14 @@
     </ol>
     <div class="carousel-inner">
       <div class="item active">
-        <a href=""><img src="/jootopia/images/event11.jpg" alt="event" style="width:800px; margin:0 auto;"></a>
+        <a href=""><img src="/jootopia/images/event11.jpg" alt="event" style="width:100%; margin:0 auto;"></a>
       </div>
       <div class="item">
-        <a href=""><img src="/jootopia/images/event22.jpg" alt="event" style="width:700px; margin:0 auto;"></a>
+        <a href=""><img src="/jootopia/images/event22.jpg" alt="event" style="width:100%; margin:0 auto;"></a>
       </div>
     
       <div class="item">
-        <a href=""><img src="/jootopia/images/notice1.jpg" alt="notice" style="width:570px; margin:0 auto;"></a>
+        <a href=""><img src="/jootopia/images/notice1.jpg" alt="notice" style="width:100%; margin:0 auto;"></a>
       </div>
     </div>
     <!-- Left and right controls -->
@@ -73,50 +69,37 @@
 </div>
 
 <hr>
-  <!-- 신상품 슬라이드 -->
- 
   <h2 align="center">NEW PRODUCT</h2>
   <div id="myCarousel1" class="carousel slide" data-ride="carousel">
   
-    <!-- Indicators -->
-   <!--  <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
-      <li data-target="#myCarousel" data-slide-to="7"></li>
-    </ol> -->
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <a href=""><img src="/jootopia/images/b1.jpg" alt="bed" style="width:500px; margin:0 auto;"></a>
+        <a href=""><img src="/jootopia/images/bed1.jpg" alt="bed" style="width:50%; margin:0 auto;"></a>
       </div>
 
       <div class="item">
-        <a href=""><img src="/jootopia/images/c1.jpg" alt="chair" style="width:500px; margin:0 auto;"></a>
+        <a href=""><img src="/jootopia/images/chair1.jpg" alt="chair" style="width:50%; margin:0 auto;"></a>
       </div>
     
       <div class="item">
-        <a href=""><img src="/jootopia/images/d1.jpg" alt="desk" style="width:500px; margin:0 auto;"></a>
+        <a href=""><img src="/jootopia/images/desk1.jpg" alt="desk" style="width:50%; margin:0 auto;"></a>
       </div>
       
       <div class="item">
-        <a href=""><img src="/jootopia/images/d2.jpg" alt="desk" style="width:500px; margin:0 auto;"></a>
+        <a href=""><img src="/jootopia/images/desk2.jpg" alt="desk" style="width:50%; margin:0 auto;"></a>
       </div>
       
       <div class="item">
-        <a href=""><img src="/jootopia/images/sf1.jpg" alt="shelf" style="width:500px; margin:0 auto;"></a>
+        <a href=""><img src="/jootopia/images/shelf1.jpg" alt="shelf" style="width:50%; margin:0 auto;"></a>
       </div>
       
       <div class="item">
-        <a href=""><img src="/jootopia/images/s1.jpg" alt="sofa" style="width:500px; margin:0 auto;"></a>
+        <a href=""><img src="/jootopia/images/shelf1.jpg" alt="sofa" style="width:50%; margin:0 auto;"></a>
       </div>
       
       <div class="item">
-        <a href=""><img src="/jootopia/images/l1.jpg" alt="light" style="width:500px; margin:0 auto;"></a>
+        <a href=""><img src="/jootopia/images/light1.jpg" alt="light" style="width:50%; margin:0 auto;"></a>
       </div>
     </div>
 
@@ -146,8 +129,8 @@
 		int size= mainList.size(); /*size메소드 : 확장개체집합의 개수표시*/
 		if(size != 0 && size >0){
 		--%>
-		<table>
-			<tr>
+	<!-- 	<table>
+			<tr> -->
 			<%--
 				for(int i=0; i<size; i++){
 					productList pList = mainList.get(i);
@@ -179,69 +162,69 @@
 				<table class="photogtoup1" align="center">
 					<tr>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/b1.jpg"  width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/bed1.jpg"  width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/c1.jpg" width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/chair1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d1.jpg" width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d2.jpg" width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk2.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 					</tr>
 					<tr>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/b1.jpg"  width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/bed1.jpg"  width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/c1.jpg" width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/chair1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d1.jpg" width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d2.jpg" width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk2.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 					</tr>
 					<tr>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/b1.jpg"  width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/bed1.jpg"  width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/c1.jpg" width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/chair1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d1.jpg" width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk1.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td>
 						<td align="center">
-						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/d2.jpg" width="300px" height="300px"></a>
+						<a href="/jootopia/views/notice/productListPlus.jsp"><img src="/jootopia/images/desk2.jpg" width="300px" height="300px"></a>
 						<p>삼성 15인치 세탁기</p>
 						<p>125,000원</p>
 						</td> 
