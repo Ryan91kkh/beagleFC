@@ -15,15 +15,11 @@
 .carousel-indicators.active{
     background-color: blue;
 } 
-
-
 .photogroup1{
 	margin-left:10%;
 	margin-right:10%;
 	
 }
-
-
 /* .photogroup{
 	width:100px;
 	height:50px;
@@ -73,196 +69,9 @@
 </div>
 
 <hr>
-  <!-- 신상품 슬라이드 -->
-  
-  <!-- 내가 직접 쓴것 시작------------------------------------------------------>
-  
-   
-  <!-- <div id="columns" class="masonry" style="position:relative; height:580px; width:870px;">
-  	
-  	첫번째 이미지 대상 코딩 시작 -----
-  	<div class="newProductList" style="position:absolute; top:0px; left:0px;">
-  		<div class="effect-new" name="anchorBoxName_60">
-  			<a href="/jootopia/views/notice/productListPlus.jsp">
-  				<img src="/jootopia/images/desk2.jpg" alt class="thumb">
-  			</a>
-  			
-  		<div class="figcaption">
-  			<span>
-  				<img src ="/jootopia/images/desk2.jpg" onclick="zoom('60','1','3','','');" style="cursor:pointer" alt="상품 큰 이미지 보기">
-  			</span>
-  			
-  			<span></span>
-  			<span></span>
-  			
-  			<h2>
-  				<a href="/jootopia/views/notice/productListPlus.jsp" class>
-  					<span style="font-size:12px; color: #555555;">푹신푹신침대</span>
-  				</a>
-  			</h2>
-		<ul class="newProductListBed1">
-			<li class="">
-				<span style="font-size:12px; color:#000000; font-weight:bold;">50,000원</span>
-				<span id="span_product" style></span>
-			</li>
-		</ul>  		
-  	</div>
-  </div>
- </div>
- 
- 첫번째 이미지 대상 코딩 끝 -----
- 
-  두번째 이미지 대상 코딩 끝 -----
-  <div class="product xans-record-masonry-brick" style="position:absolute; top:0px; left:0px;">
-  		<div class="effect-new" name="anchorBoxName_60">
-  			<a href="">
-  				<img src="" alt class="thumb">
-  			</a>
-  			
-  		<div class="figcaption">
-  			<span>
-  				<img src ="" onclick="zoom('60','1','3','','');" style="cursor:pointer" alt="상품 큰 이미지 보기">
-  			</span>
-  			
-  			<span></span>
-  			<span></span>
-  			
-  			<h2>
-  				<a href="" class>
-  					<span style="font-size:12px; color: #555555;">썬플라워 무서음벽시계</span>
-  				</a>
-  			</h2>
-		<ul class="xans-element-xans-product xans-product-listitem-2">
-			<li class="xans-record-">
-				<span style="font-size:12px; color:#000000; font-weight:bold;">50,000원</span>
-				<span id="span_product" style></span>
-			</li>
-		</ul>  		
-  	</div>
-  </div>
- </div>
-  
-   두번째 이미지 대상 코딩 끝 -----
-   
-  세번째 이미지 대상 코딩 끝 -----
-  <div class="product xans-record-masonry-brick" style="position:absolute; top:0px; left:0px;">
-  		<div class="effect-new" name="anchorBoxName_60">
-  			<a href="">
-  				<img src="" alt class="thumb">
-  			</a>
-  			
-  		<div class="figcaption">
-  			<span>
-  				<img src ="" onclick="zoom('60','1','3','','');" style="cursor:pointer" alt="상품 큰 이미지 보기">
-  			</span>
-  			
-  			<span></span>
-  			<span></span>
-  			
-  			<h2>
-  				<a href="" class>
-  					<span style="font-size:12px; color: #555555;">썬플라워 무서음벽시계</span>
-  				</a>
-  			</h2>
-		<ul class="xans-element-xans-product xans-product-listitem-2">
-			<li class="xans-record-">
-				<span style="font-size:12px; color:#000000; font-weight:bold;">50,000원</span>
-				<span id="span_product" style></span>
-			</li>
-		</ul>  		
-  	</div>
-  </div>
- </div>
-   세번째 이미지 대상 코딩 끝 -----
-   
-   네번째 이미지 대상 코딩 끝 -----
-   <div class="product xans-record-masonry-brick" style="position:absolute; top:0px; left:0px;">
-  		<div class="effect-new" name="anchorBoxName_60">
-  			<a href="">
-  				<img src="" alt class="thumb">
-  			</a>
-  			
-  		<div class="figcaption">
-  			<span>
-  				<img src ="" onclick="zoom('60','1','3','','');" style="cursor:pointer" alt="상품 큰 이미지 보기">
-  			</span>
-  			
-  			<span></span>
-  			<span></span>
-  			
-  			<h2>
-  				<a href="" class>
-  					<span style="font-size:12px; color: #555555;">썬플라워 무서음벽시계</span>
-  				</a>
-  			</h2>
-		<ul class="xans-element-xans-product xans-product-listitem-2">
-			<li class="xans-record-">
-				<span style="font-size:12px; color:#000000; font-weight:bold;">50,000원</span>
-				<span id="span_product" style></span>
-			</li>
-		</ul>  		
-  	</div>
-  </div>
- </div>
-   네번째 이미지 대상 코딩 끝 -----
-     
-   다섯번째 이미지 대상 코딩 끝 -----
-   <div class="product xans-record-masonry-brick" style="position:absolute; top:0px; left:0px;">
-  		<div class="effect-new" name="anchorBoxName_60">
-  			<a href="">
-  				<img src="" alt class="thumb">
-  			</a>
-  			
-  		<div class="figcaption">
-  			<span>
-  				<img src ="" onclick="zoom('60','1','3','','');" style="cursor:pointer" alt="상품 큰 이미지 보기">
-  			</span>
-  			
-  			<span></span>
-  			<span></span>
-  			
-  			<h2>
-  				<a href="" class>
-  					<span style="font-size:12px; color: #555555;">썬플라워 무서음벽시계</span>
-  				</a>
-  			</h2>
-		<ul class="xans-element-xans-product xans-product-listitem-2">
-			<li class="xans-record-">
-				<span style="font-size:12px; color:#000000; font-weight:bold;">50,000원</span>
-				<span id="span_product" style></span>
-			</li>
-		</ul>  		
-  	</div>
-  </div>
- </div> -->
-   <!-- 다섯번째 이미지 대상 코딩 끝 ------->
-   
-   
- <!-- </div>  -->
-  
-  
-  
-  
-  
-   
-  
-  
-  <!-- 내가 직접 쓴것 끝-------------------------------------------------------->
- 
   <h2 align="center">NEW PRODUCT</h2>
   <div id="myCarousel1" class="carousel slide" data-ride="carousel">
   
-    <!-- Indicators -->
-   <!--  <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
-      <li data-target="#myCarousel" data-slide-to="7"></li>
-    </ol> -->
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
