@@ -19,13 +19,11 @@
       <%@ include file="/views/common/adminSideMenu.jsp" %>
       <div id="adminSection" class="col-sm-10">
       
-      <h3 class="title">재고조회</h3>
-	    	<hr>
-      	
-      	
+      
+      <div class="col-sm-10">
       <div class="searchArea">
 			<table id="searchBox"  border="1" align="center">
-				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">재고조회</th></tr>
+				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">매입완료리스트</th></tr>
 				<tr>
 					<td>검색 분류</td>
 					<td colspan="2">
@@ -84,7 +82,7 @@
 				<input type="reset" value="초기화" onclick="">
 			</div>
 		</div>
-		
+		</div>
 		<br><br><br><br>
       
       <br><br>
@@ -94,30 +92,47 @@
 		<thead>
 		<tr>
 			<th>No</th>
+			<th>상품바코드</th>
+			<th>회원ID</th>
+			<th>회원명</th>
 			<th>대분류</th>
 			<th>중분류</th>
-			<th>적치바코드</th>
-			<th>현재고</th>
-			<th>최대재고</th>			
+			<th>지역</th>
+			<th>신청날짜</th>
+			
 		</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td>1</td>
+				<td>A001</td>
+				<td>aaa</td>
+				<td>김채굼</td>
 				<td>가구</td>
 				<td>침대</td>
-				<td>A123</td>
-				<td>5</td>
-				<td>20</td>				
+				<td>서울</td>
+				<td>18/12/24</td>
 			</tr>
 			<tr>
 				<td>2</td>
-				<td>가구</td>
-				<td>책상</td>
-				<td>A124</td>
+				<td>B002</td>
+				<td>bbb</td>
+				<td>신소굼</td>
+				<td>가전</td>
+				<td>티비</td>
+				<td>서울</td>
+				<td>19/01/01</td>
+			</tr>
+			<tr>
 				<td>3</td>
-				<td>10</td>				
-			</tr>			
+				<td>C003</td>
+				<td>ccc</td>
+				<td>육라라</td>
+				<td>가전</td>
+				<td>세탁기</td>
+				<td>서울</td>
+				<td>19/02/01</td>
+			</tr>
 		</tbody>
 	</table>
 	
@@ -168,7 +183,9 @@
 		</ul>
 	</div>
 	</div>
-      	
+      
+      
+      
       	
       </div>
    </section>

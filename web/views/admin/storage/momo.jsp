@@ -17,21 +17,21 @@
 <%@ include file="/views/common/adminNavigation.jsp" %>
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
-      <div id="adminSection" class="col-sm-10">
+      <!-- <div id="adminSection" class="col-sm-10"> -->
  
  
- 	<h1><a href="buyWait3.jsp">매입대기</a></h1>
-	<h1><a href="buyWaitDetail4.jsp">매입대기상세</a></h1>
-	<h1><a href="buying5.jsp">매입진행</a></h1>
-	<h1><a href="buyCheck6.jsp">검수 및 매입</a></h1>
-	<h1><a href="buyEnd7.jsp">매입완료</a></h1>
-	<h1><a href="product8.jsp">상품등록</a></h1>
-	<h1><a href="heapWait9.jsp">상품적치 대기</a></h1>
-	<h1><a href="heapBarcode10.jsp">적치바코드 등록</a></h1>
-	<h1><a href="heapEnd11.jsp">상품적치완료</a></h1>
-	<h1><a href="heapDetail12.jsp">적치완료상품 상세</a></h1>
-	<h1><a href="stockList13.jsp">재고조회</a></h1>
-	<h1><a href="releaseList14.jsp">상품출고리스트</a></h1>
+ 	<h1><a href="BuyWait3.jsp">매입대기</a></h1>
+	<h1><a href="BuyWaitDetail4.jsp">매입대기상세</a></h1>
+	<h1><a href="Buying5.jsp">매입진행</a></h1>
+	<h1><a href="BuyCheck6.jsp">검수 및 매입</a></h1>
+	<h1><a href="BuyEnd7.jsp">매입완료</a></h1>
+	<h1><a href="Product8.jsp">상품등록</a></h1>
+	<h1><a href="HeapWait9.jsp">상품적치 대기</a></h1>
+	<h1><a href="HeapBarcode10.jsp">적치바코드 등록</a></h1>
+	<h1><a href="HeapEnd11.jsp">상품적치완료</a></h1>
+	<h1><a href="HeapDetail12.jsp">적치완료상품 상세</a></h1>
+	<h1><a href="StockList13.jsp">재고조회</a></h1>
+	<h1><a href="ReleaseList14.jsp">상품출고리스트</a></h1>
  	
 	
 	
@@ -48,7 +48,7 @@
 	</div>
       	
       	
-     
+      <!-- </div> -->
    </section>
 <%@ include file="/views/common/adminFooter.jsp" %>
 </body>

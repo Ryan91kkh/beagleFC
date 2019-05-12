@@ -5,21 +5,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="/jootopia/images/favicon.ico">
-<link rel="stylesheet" href="jquery-3.4.0.min.js">
-<link rel="stylesheet" href="/jootopia/css/adminCommon.css">
+<!-- bootStrap -->
+<link rel="stylesheet" href="/jootopia/css/external/bootstrap.min.css">
+<script src="/jootopia/js/external/jquery-3.4.0.min.js"></script>
+<script src="/jootopia/js/external/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="/jootopia/css/admin/adminCommon.css">
 <title>JooTopia</title>
 </head>
 <body>
 <%@ include file="/views/common/adminNavigation.jsp" %>
    <section class="row">
       <%@ include file="/views/common/adminSideMenu.jsp" %>
-      <div id="adminSection" class="col-sm-10">
-      <h3 class="title">매입진행</h3>
-	    	<hr>
+      <!-- <div id="adminSection" class="col-sm-10"> -->
       
+      <div class="col-sm-10">
       <div class="searchArea">
 			<table id="searchBox"  border="1" align="center">
-				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">매입진행리스트</th></tr>
+				<tr><th colspan="3" style="background: rgb(224, 224, 224); height: 35px;">상품적치완료리스트</th></tr>
 				<tr>
 					<td>검색 분류</td>
 					<td colspan="2">
@@ -78,7 +81,7 @@
 				<input type="reset" value="초기화" onclick="">
 			</div>
 		</div>
-		
+		</div>
 		<br><br><br><br>
       
       <br><br>
@@ -89,45 +92,36 @@
 		<tr>
 			<th>No</th>
 			<th>상품바코드</th>
-			<th>회원ID</th>
-			<th>회원명</th>
+			<th>적치바코드</th>
 			<th>대분류</th>
 			<th>중분류</th>
-			<th>지역</th>
-			<th>신청날짜</th>
-			
+			<th>적치날짜</th>			
 		</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td>1</td>
 				<td>A001</td>
-				<td>aaa</td>
-				<td>김채굼</td>
+				<td>AA111</td>
 				<td>가구</td>
 				<td>침대</td>
-				<td>서울</td>
-				<td>18/12/24</td>
+				<td>19/01/01</td>				
 			</tr>
 			<tr>
 				<td>2</td>
 				<td>B002</td>
-				<td>bbb</td>
-				<td>신소굼</td>
-				<td>가전</td>
-				<td>티비</td>
-				<td>서울</td>
-				<td>19/01/01</td>
+				<td>BB222</td>
+				<td>가구</td>
+				<td>책상</td>
+				<td>19/01/01</td>				
 			</tr>
 			<tr>
 				<td>3</td>
 				<td>C003</td>
-				<td>ccc</td>
-				<td>육라라</td>
-				<td>가전</td>
-				<td>세탁기</td>
-				<td>서울</td>
-				<td>19/02/01</td>
+				<td>CC333</td>
+				<td>가구</td>
+				<td>의자</td>
+				<td>19/01/01</td>				
 			</tr>
 		</tbody>
 	</table>
@@ -179,8 +173,8 @@
 		</ul>
 	</div>
 	</div>
-	</div>
-      
+      	
+      <!-- </div> -->
    </section>
 <%@ include file="/views/common/adminFooter.jsp" %>
 </body>
